@@ -1,0 +1,22 @@
+@use "../00_global" as *;
+/* ===============================================
+Base
+=============================================== */
+body {
+  font-family: $baseFont;
+  font-weight: 600;
+  line-height: 1.6;
+  color: $textColor;
+}
+
+a {
+  color: $textColor;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.br {
+  display: block;
+}

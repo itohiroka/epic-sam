@@ -1,0 +1,200 @@
+@use "../00_global" as *;
+/* ===============================================
+hamburger
+=============================================== */
+/*
+  b-hamburger
+----------------------------------------------- */
+.l-global-nav {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 80px 24px;
+  width: auto;
+  height: 120%;
+  background-color: $whiteColor;
+  transition: transform 0.3s ease-in-out; /* IE9非対応 */
+  -webkit-transform: translateX(-150%); /* Android, BrackberrXtranslateX  */
+  -ms-transform: translateX(-150%); /* IE9 */
+  transform: translateX(-150%);
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-image: url(../../images/common/background_beigeLine.svg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+
+.is-active-drawer .l-global-nav {
+  position: fixed;
+  -webkit-transform: translateX(0%); /* Android, BrackberrXtranslateX  */
+  -ms-transform: translateX(0%); /* IE9 */
+  transform: translateX(0%);
+}
+
+.m-headerNav__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.m-headerNav__box .b-nav__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0px;
+    margin: auto 0;
+    transform: translateY(-4px);
+    width: 34px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    z-index: -1;
+  }
+
+  & a {
+    position: relative;
+    display: block;
+    padding: 24px;
+  }
+}
+
+.button-hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  margin: auto 0;
+  border: 0;
+  z-index: 1;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-appearance: none; /* Chrome, Safari, Opera, Android */
+  -moz-appearance: none; /* Firefox */
+  appearance: none; /* IE非対応 */
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: auto;
+  background-color: $textColor;
+  border-radius: 3px;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:before {
+    top: -8px;
+  }
+
+  &:after {
+    top: 8px;
+  }
+}
+
+.is-active-drawer .hamburger {
+  background-color: transparent;
+}
+
+.is-active-drawer .hamburger::before,
+.is-active-drawer .hamburger::after {
+  top: 0;
+  bottom: 0%;
+  background-color: $textColor;
+}
+
+.is-active-drawer .hamburger::before {
+  -webkit-transform: rotate(45deg); /* Android, Brackberry  */
+  -ms-transform: rotate(45deg); /* IE9  */
+  transform: rotate(45deg);
+}
+
+.is-active-drawer .hamburger:after {
+  width: 24px;
+  -webkit-transform: rotate(-45deg); /* Android, Brackberry  */
+  -ms-transform: rotate(-45deg); /* IE9  */
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 1200px) {
+  .button-hamburger {
+    display: none;
+  }
+
+  .l-global-nav {
+    position: static;
+    padding: 0;
+    height: 100%;
+    background-color: transparent;
+    -webkit-transform: translateX(0); /* Android, Brackberry  */
+    -ms-transform: translateX(0); /* IE9 */
+    transform: translateX(0);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .m-headerNav__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0 24px;
+    & .b-nav__item {
+      & a {
+        display: inline-block;
+        padding: 20px 0;
+      }
+    }
+  }
+}
+
+/* Accesibility */
+.screen-reader-text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+}
