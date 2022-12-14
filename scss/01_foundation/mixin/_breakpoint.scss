@@ -5,9 +5,10 @@ $breakpoint: (
   xs: "screen and (min-width: 0px)",
   s: "screen and (min-width: 360px)",
   m: "screen and (min-width: 768px)",
-  l: "screen and (min-width: 1024px)",
+  l: "screen and (min-width: 960px)",
   xl: "screen and (min-width: 1200px)",
   xxl: "screen and (min-width: 1440px)",
+  m-max: "screen and (max-width: 700px)",
 );
 
 @mixin mq($bp) {

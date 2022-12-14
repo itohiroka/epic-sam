@@ -1,5 +1,6 @@
 @use "./color" as *;
 @use "./font" as *;
+@use "../mixin/" as *;
 /* ===============================================
 Base
 =============================================== */
@@ -20,4 +21,10 @@ img {
 
 .br {
   display: block;
+}
+
+@include mq(m-max) {
+  .spbr {
+    display: block;
+  }
 }
