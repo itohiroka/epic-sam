@@ -96,7 +96,7 @@ video {
   font: inherit;
   vertical-align: bottom;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 article,
@@ -149,8 +149,7 @@ table {
 Base
 =============================================== */
 body {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   font-weight: 600;
   line-height: 1.6;
   color: #242422;
@@ -236,11 +235,11 @@ Layout
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   height: 56px;
   padding: 0 16px;
@@ -252,7 +251,7 @@ Layout
 .header .l-S01.scroll-nav {
   background: #fff;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (min-width: 1200px) {
@@ -387,14 +386,14 @@ hamburger
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .m-headerNav__box .b-nav__item {
@@ -408,7 +407,7 @@ hamburger
   bottom: 0px;
   margin: auto 0;
   -webkit-transform: translateY(-4px);
-  transform: translateY(-4px);
+          transform: translateY(-4px);
   width: 34px;
   height: 30px;
   background-repeat: no-repeat;
@@ -459,8 +458,7 @@ hamburger
   background-color: #242422;
   border-radius: 3px;
 }
-.hamburger:before,
-.hamburger:after {
+.hamburger:before, .hamburger:after {
   content: "";
   position: absolute;
   display: block;
@@ -521,14 +519,14 @@ hamburger
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     gap: 0 24px;
   }
   .m-headerNav__box .b-nav__item a {
@@ -557,42 +555,40 @@ Block
 /*
   common
 ----------- */
-.b-sectionTitle {
+.b-heading__title {
   font-size: 1.5625rem;
   line-height: 1;
 }
-.b-sectionTitle .emphasis {
+.b-heading__title .emphasis {
   font-size: 2.8125rem;
 }
-
-.b-sectionText {
+.b-heading__text {
   font-size: 0.875rem;
   line-height: 2;
   letter-spacing: 0.05em;
 }
-.b-sectionText--white {
+.b-heading__text--white {
   line-height: 1.8;
   color: #fff;
 }
 
-.b-contentTitle {
+.b-contents__title {
   font-size: 1.5rem;
 }
-.b-contentTitle--white {
+.b-contents__title--white {
   color: #fff;
 }
-
-.b-contentText {
+.b-contents__text {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.8;
   letter-spacing: 0.05em;
 }
-.b-contentText--white {
+.b-contents__text--white {
   color: #fff;
 }
 
-.b-guidanceNumber {
+.b-guidance__number {
   font-size: 1.5rem;
   color: #fff;
 }
@@ -604,9 +600,8 @@ Block
   font-size: 1.5rem;
 }
 
-.b-navTitle {
-  font-size: 1.125rem;
-  font-size: clamp(14px, 1.25vw, 18px);
+.b-nav__title {
+  font-size: 1rem;
 }
 
 /*
@@ -623,44 +618,46 @@ Block
 /*
   about
 ----------- */
-.b-about__guidanceLabel {
+.b-aboutContents__label {
   font-size: 0.625rem;
 }
-.b-about__guidanceText {
+.b-aboutContents__text {
   font-size: 0.75rem;
   text-align: center;
 }
-.b-about__wrapperText {
+
+.b-aboutReception__text {
   font-size: 0.8125rem;
 }
 
 /*
   service
 ----------- */
-.b-service__guidanceSubTitle {
-  font-size: 0.75rem;
-}
-.b-service__guidanceMainTitle {
+.b-serviceGuidance__mainTitle {
   font-size: 1rem;
 }
-.b-service__contentNumber {
+.b-serviceGuidance__subTitle {
+  font-size: 0.75rem;
+}
+
+.b-serviceContents__number {
   font-size: 10rem;
   color: #ffae18;
   line-height: 1;
 }
-.b-service__contentSubTitle {
+.b-serviceContents__subTitle {
   font-size: 1.125rem;
 }
-.b-service__boxTitle {
+.b-serviceContents__boxTitle {
   font-size: 1.25rem;
 }
-.b-service__boxList {
+.b-serviceContents__boxList {
   font-size: 0.875rem;
 }
-.b-service__boxResult {
+.b-serviceContents__boxResult {
   font-size: 1.25rem;
 }
-.b-service__boxText {
+.b-serviceContents__boxText {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.75;
@@ -686,7 +683,8 @@ Block
   line-height: 1.8;
   letter-spacing: 0.05em;
 }
-.b-difference__graphSubText {
+
+.b-differenceDiagram__subText {
   font-size: 0.625rem;
   font-weight: 500;
 }
@@ -694,99 +692,105 @@ Block
 /*
   reason
 ----------- */
-.b-reason__guidanceTitle {
+.b-reasonGuidance__title {
   font-size: 1.25rem;
 }
-.b-reason__contentNumber {
+
+.b-reasonContents__number {
   font-size: 6.25rem;
   color: #08b9d6;
   line-height: 1;
 }
-.b-reason__boxText {
+.b-reasonContents__boxText {
   font-size: 0.875rem;
 }
-.b-reason__boxResult {
+.b-reasonContents__boxResult {
   font-size: 0.875rem;
 }
 
 /*
   flow
 ----------- */
-.b-flow__guidanceTitle {
+.b-flowContents__title {
   font-size: 1.25rem;
 }
 
 /*
   creator
 ----------- */
-.b-creator__link {
+.b-creatorContents__link {
   font-size: 0.875rem;
 }
-.b-creator__boxTitle {
+
+.b-creatorSLash__boxTitle {
   font-size: 0.5rem;
   text-align: center;
 }
-.b-creator__boxTitle--white {
+.b-creatorSLash__boxTitle--white {
   color: #fff;
 }
-.b-creator__boxText {
+.b-creatorSLash__boxText {
   font-size: 0.5rem;
   text-align: center;
 }
-.b-creator__boxText--white {
+.b-creatorSLash__boxText--white {
   color: #fff;
 }
-.b-creator__boxName--jp {
+
+.b-creatorCranks__boxName--jp {
   font-size: 0.5625rem;
 }
-.b-creator__boxName--en {
+.b-creatorCranks__boxName--en {
   font-size: 0.375rem;
 }
-.b-creator__boxStatus {
+.b-creatorCranks__boxStatus {
   font-size: 0.4375rem;
 }
-.b-creator__boxJob {
+.b-creatorCranks__boxJob {
   font-size: 0.4375rem;
 }
 
 /*
   FAQ
 ----------- */
-.b-faq__label {
+.b-faqContents__label {
   font-size: 0.6875rem;
 }
-.b-faq__boxTitle {
+.b-faqContents__boxTitle {
   font-size: 1rem;
 }
 
 /*
   message
 ----------- */
-.b-message__title {
+.b-messageContents__title {
   font-size: 1.875rem;
 }
-.b-message__deco {
+.b-messageContents__deco {
   font-size: 3.75rem;
   color: rgb(255, 255, 255);
 }
 
+/*
+  @media screen and (min-width: 960px)
+----------------------------------------------- */
 @media screen and (min-width: 960px) {
-  .b-sectionTitle {
+  .b-heading__title {
     font-size: 2.8125rem;
   }
-  .b-sectionTitle .emphasis {
+  .b-heading__title .emphasis {
     font-size: 3.75rem;
   }
-  .b-sectionText {
+  .b-heading__text {
     font-size: 1.25rem;
   }
-  .b-contentTitle {
+  .b-contents__title {
     font-size: 2.25rem;
   }
-  .b-contentText {
+  .b-contents__text {
     font-size: 1.25rem;
   }
-  .b-guidanceNumber {
+  .b-guidance__number {
     font-size: 2.875rem;
   }
   /*
@@ -795,7 +799,7 @@ Block
   .b-logo {
     font-size: 2.5rem;
   }
-  .b-navTitle {
+  .b-nav__title {
     font-size: 1.125rem;
     font-size: clamp(14px, 1.25vw, 18px);
   }
@@ -811,40 +815,40 @@ Block
   /*
     about
   ----------- */
-  .b-about__guidanceLabel {
+  .b-aboutContents__label {
     font-size: 1.25rem;
   }
-  .b-about__guidanceText {
+  .b-aboutContents__text {
     font-size: 1.625rem;
   }
-  .b-about__wrapperText {
+  .b-aboutReception__text {
     font-size: 1.5rem;
   }
   /*
     service
   ----------- */
-  .b-service__guidanceSubTitle {
+  .b-serviceGuidance__mainTitle {
+    font-size: 1.75rem;
+  }
+  .b-serviceGuidance__subTitle {
     font-size: 1.25rem;
   }
-  .b-service__guidanceMainTitle {
-    font-size: 1.75rem;
-  }
-  .b-service__contentNumber {
+  .b-serviceContents__number {
     font-size: 13.75rem;
   }
-  .b-service__contentSubTitle {
+  .b-serviceContents__subTitle {
     font-size: 2.25rem;
   }
-  .b-service__boxTitle {
+  .b-serviceContents__boxTitle {
     font-size: 1.5rem;
   }
-  .b-service__boxList {
+  .b-serviceContents__boxList {
     font-size: 1rem;
   }
-  .b-service__boxResult {
+  .b-serviceContents__boxResult {
     font-size: 1.75rem;
   }
-  .b-service__boxText {
+  .b-serviceContents__boxText {
     font-size: 1rem;
   }
   /*
@@ -863,102 +867,99 @@ Block
   .b-difference__subText {
     font-size: 1.125rem;
   }
-  .b-difference__graphSubText {
+  .b-differenceDiagram__subText {
     font-size: 0.8125rem;
   }
   /*
     reason
   ----------- */
-  .b-reason__guidanceTitle {
+  .b-reasonGuidance__title {
     font-size: 1.75rem;
   }
-  .b-reason__contentNumber {
+  .b-reasonContents__number {
     font-size: 7.5rem;
   }
-  .b-reason__boxText {
+  .b-reasonContents__boxText {
     font-size: 1.375rem;
   }
-  .b-reason__boxResult {
+  .b-reasonContents__boxResult {
     font-size: 1.25rem;
   }
   /*
     flow
   ----------- */
-  .b-flow__guidanceTitle {
+  .b-flowContents__title {
     font-size: 1.5rem;
-  }
-  .b-flow__ {
-    font-size: 0.875rem;
   }
   /*
     creator
   ----------- */
-  .b-creator__link {
+  .b-creatorContents__link {
     font-size: 1.125rem;
   }
-  .b-creator__boxTitle {
+  .b-creatorSLash__boxTitle {
     font-size: 0.875rem;
   }
-  .b-creator__boxText {
+  .b-creatorSLash__boxText {
     font-size: 0.875rem;
   }
-  .b-creator__boxName--jp {
+  .b-creatorCranks__boxName--jp {
     font-size: 1rem;
   }
-  .b-creator__boxName--en {
+  .b-creatorCranks__boxName--en {
     font-size: 0.625rem;
   }
-  .b-creator__boxStatus {
+  .b-creatorCranks__boxStatus {
     font-size: 0.75rem;
   }
-  .b-creator__boxJob {
-    font-size: 0.4375rem;
+  .b-creatorCranks__boxJob {
+    font-size: 0.75rem;
   }
   /*
     FAQ
   ----------- */
-  .b-faq__label {
+  .b-faqContents__label {
     font-size: 1.125rem;
   }
-  .b-faq__boxTitle {
+  .b-faqContents__boxTitle {
     font-size: 1.5rem;
   }
 }
 /*
   message
 ----------- */
-.b-message__title {
+.b-messageContents__title {
   font-size: 2.25rem;
 }
-.b-message__deco {
+.b-messageContents__deco {
   font-size: 11.75rem;
 }
 
 /*
   b-flame
 ----------------------------------------------- */
-.b-guidanceNumber.flame {
+.b-guidance__number.flame {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 56px;
   height: 56px;
   border-radius: 50%;
   border: 5px solid #fff;
 }
-.b-guidanceNumber.flame--orange {
+.b-guidance__number.flame--orange {
   background-color: #ffae18;
 }
-.b-guidanceNumber.flame--blue {
+.b-guidance__number.flame--blue {
   background-color: #08b9d6;
 }
-.b-guidanceNumber.flame--green {
+.b-guidance__number.flame--green {
   background-color: #30b483;
 }
 
@@ -968,11 +969,11 @@ Block
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0 12px;
   background-color: #fff;
   border-radius: 10px;
@@ -980,54 +981,52 @@ Block
 }
 .b-guidance img {
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   height: auto;
 }
-.b-guidance .b-guidanceNumber {
+.b-guidance .b-guidance__number {
   position: absolute;
   top: -28px;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
-.b-guidance--service,
-.b-guidance--reason {
+.b-guidance--service, .b-guidance--reason {
   padding: 24px;
 }
-.b-guidance--service .b-guidanceIcon,
-.b-guidance--reason .b-guidanceIcon {
+.b-guidance--service .b-guidance__icon, .b-guidance--reason .b-guidance__icon {
   width: 100px;
 }
 .b-guidance--flow {
   padding: 24px;
 }
-.b-guidance--flow .b-guidanceIcon {
+.b-guidance--flow .b-guidance__icon {
   width: 60px;
 }
 
-.b-about__guidance {
+.b-aboutContents {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   background-color: #fff;
   border-radius: 4px;
   width: 144px;
   padding: 8px;
 }
-.b-about__guidance img {
+.b-aboutContents img {
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   height: auto;
 }
-.b-about__guidance .b-about__guidanceLabel {
+.b-aboutContents .b-aboutContents__label {
   display: block;
   width: 100%;
   text-align: left;
@@ -1035,7 +1034,7 @@ Block
   margin-bottom: 8px;
   border-bottom: 1px solid #efefef;
 }
-.b-about__guidance .b-guidanceIcon {
+.b-aboutContents .b-guidance__icon {
   width: 80px;
   margin-bottom: 8px;
 }
@@ -1078,23 +1077,23 @@ Block
   background-color: #fff;
   border-radius: 16px;
   -webkit-box-shadow: 32px 32px 0 #e9525e;
-  box-shadow: 32px 32px 0 #e9525e;
+          box-shadow: 32px 32px 0 #e9525e;
 }
 .b-boxFlame__shift--blue {
   -webkit-box-shadow: 36px 36px 0 #08b9d6;
-  box-shadow: 36px 36px 0 #08b9d6;
+          box-shadow: 36px 36px 0 #08b9d6;
 }
 .b-boxFlame__shift--pink {
   -webkit-box-shadow: 32px 32px 0 #e9525e;
-  box-shadow: 32px 32px 0 #e9525e;
+          box-shadow: 32px 32px 0 #e9525e;
 }
 .b-boxFlame__shift--purple {
   -webkit-box-shadow: 32px 32px 0 #7070d1;
-  box-shadow: 32px 32px 0 #7070d1;
+          box-shadow: 32px 32px 0 #7070d1;
 }
 
 @media screen and (min-width: 960px) {
-  .b-guidanceNumber.flame {
+  .b-guidance__number.flame {
     width: 100px;
     height: 100px;
     border: 8px solid #fff;
@@ -1102,19 +1101,19 @@ Block
   .b-guidance {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     border-radius: 16px;
   }
-  .b-guidance .b-guidanceNumber {
+  .b-guidance .b-guidance__number {
     top: -50px;
   }
   .b-guidance--service {
     width: 360px;
     padding: 80px 24px 30px;
   }
-  .b-guidance--service .b-guidanceIcon {
+  .b-guidance--service .b-guidance__icon {
     width: 150px;
     margin-bottom: 24px;
   }
@@ -1122,7 +1121,7 @@ Block
     width: 360px;
     padding: 60px 24px 30px;
   }
-  .b-guidance--reason .b-guidanceIcon {
+  .b-guidance--reason .b-guidance__icon {
     width: 180px;
     margin-bottom: 24px;
   }
@@ -1130,19 +1129,19 @@ Block
     width: 214px;
     padding: 60px 24px 12px;
   }
-  .b-guidance--flow .b-guidanceIcon {
+  .b-guidance--flow .b-guidance__icon {
     width: 100px;
     margin-bottom: 24px;
   }
-  .b-about__guidance {
+  .b-aboutContents {
     border-radius: 16px;
     width: 364px;
     padding: 12px 24px;
   }
-  .b-about__guidance .b-about__guidanceLabel {
+  .b-aboutContents .b-aboutContents__label {
     margin-bottom: 24px;
   }
-  .b-about__guidance .b-guidanceIcon {
+  .b-aboutContents .b-guidance__icon {
     width: 175px;
     margin-bottom: 24px;
   }

@@ -2,7 +2,7 @@
 /*
   b-flame
 ----------------------------------------------- */
-.b-guidanceNumber.flame {
+.b-guidance__number.flame {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,7 @@
     object-fit: contain;
     height: auto;
   }
-  & .b-guidanceNumber {
+  & .b-guidance__number {
     position: absolute;
     top: -28px;
     left: 0;
@@ -47,20 +47,20 @@
   &--service,
   &--reason {
     padding: 24px;
-    & .b-guidanceIcon {
+    & .b-guidance__icon {
       width: 100px;
     }
   }
 
   &--flow {
     padding: 24px;
-    & .b-guidanceIcon {
+    & .b-guidance__icon {
       width: 60px;
     }
   }
 }
 
-.b-about__guidance {
+.b-aboutContents {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,7 +75,7 @@
     height: auto;
   }
 
-  & .b-about__guidanceLabel {
+  & .b-aboutContents__label {
     display: block;
     width: 100%;
     text-align: left;
@@ -83,7 +83,7 @@
     margin-bottom: 8px;
     border-bottom: 1px solid $aboutGuidanceLineColor;
   }
-  & .b-guidanceIcon {
+  & .b-guidance__icon {
     width: 80px;
     margin-bottom: 8px;
   }
@@ -138,7 +138,7 @@
 }
 
 @media screen and (min-width: 960px) {
-  .b-guidanceNumber.flame {
+  .b-guidance__number.flame {
     width: 100px;
     height: 100px;
     border: 8px solid $whiteColor;
@@ -149,14 +149,14 @@
     text-align: center;
     border-radius: 16px;
 
-    & .b-guidanceNumber {
+    & .b-guidance__number {
       top: -50px;
     }
 
     &--service {
       width: 360px;
       padding: 80px 24px 30px;
-      & .b-guidanceIcon {
+      & .b-guidance__icon {
         width: 150px;
         margin-bottom: 24px;
       }
@@ -165,7 +165,7 @@
     &--reason {
       width: 360px;
       padding: 60px 24px 30px;
-      & .b-guidanceIcon {
+      & .b-guidance__icon {
         width: 180px;
         margin-bottom: 24px;
       }
@@ -174,22 +174,22 @@
     &--flow {
       width: 214px;
       padding: 60px 24px 12px;
-      & .b-guidanceIcon {
+      & .b-guidance__icon {
         width: 100px;
         margin-bottom: 24px;
       }
     }
   }
 
-  .b-about__guidance {
+  .b-aboutContents {
     border-radius: 16px;
     width: 364px;
     padding: 12px 24px;
 
-    & .b-about__guidanceLabel {
+    & .b-aboutContents__label {
       margin-bottom: 24px;
     }
-    & .b-guidanceIcon {
+    & .b-guidance__icon {
       width: 175px;
       margin-bottom: 24px;
     }

@@ -5,39 +5,44 @@
 /*
   common
 ----------- */
-.b-sectionTitle {
-  @include font-size(25);
-  line-height: 1;
-  & .emphasis {
-    @include font-size(45);
+.b-heading {
+  &__title {
+    @include font-size(25);
+    line-height: 1;
+    & .emphasis {
+      @include font-size(45);
+    }
   }
-}
-.b-sectionText {
-  @include font-size(14);
-  line-height: 2;
-  letter-spacing: 0.05em;
-  &--white {
-    line-height: 1.8;
-    color: $whiteColor;
-  }
-}
-.b-contentTitle {
-  @include font-size(24);
-  &--white {
-    color: $whiteColor;
-  }
-}
-.b-contentText {
-  @include font-size(14);
-  font-weight: 500;
-  line-height: 1.8;
-  letter-spacing: 0.05em;
-  &--white {
-    color: $whiteColor;
+  &__text {
+    @include font-size(14);
+    line-height: 2;
+    letter-spacing: 0.05em;
+    &--white {
+      line-height: 1.8;
+      color: $whiteColor;
+    }
   }
 }
 
-.b-guidanceNumber {
+.b-contents {
+  &__title {
+    @include font-size(24);
+    &--white {
+      color: $whiteColor;
+    }
+  }
+  &__text {
+    @include font-size(14);
+    font-weight: 500;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    &--white {
+      color: $whiteColor;
+    }
+  }
+}
+
+.b-guidance__number {
   @include font-size(24);
   color: $whiteColor;
 }
@@ -48,10 +53,10 @@
 .b-logo {
   @include font-size(24);
 }
-.b-navTitle {
-  @include font-size(18);
-  font-size: clamp(14px, 1.25vw, 18px);
+.b-nav__title {
+  @include font-size(16);
 }
+
 /*
   hero
 ----------- */
@@ -68,35 +73,38 @@
 /*
   about
 ----------- */
-.b-about {
-  &__guidanceLabel {
+.b-aboutContents {
+  &__label {
     @include font-size(10);
   }
-  &__guidanceText {
+  &__text {
     @include font-size(12);
     text-align: center;
   }
-  &__wrapperText {
-    @include font-size(13);
-  }
+}
+.b-aboutReception__text {
+  @include font-size(13);
 }
 
 /*
   service
 ----------- */
-.b-service {
-  &__guidanceSubTitle {
-    @include font-size(12);
-  }
-  &__guidanceMainTitle {
+.b-serviceGuidance {
+  &__mainTitle {
     @include font-size(16);
   }
-  &__contentNumber {
+  &__subTitle {
+    @include font-size(12);
+  }
+}
+
+.b-serviceContents {
+  &__number {
     @include font-size(160);
     color: $orangeColor;
     line-height: 1;
   }
-  &__contentSubTitle {
+  &__subTitle {
     @include font-size(18);
   }
   &__boxTitle {
@@ -135,19 +143,26 @@
     line-height: 1.8;
     letter-spacing: 0.05em;
   }
-  &__graphSubText {
+}
+
+.b-differenceDiagram {
+  &__subText {
     @include font-size(10);
     font-weight: 500;
   }
 }
+
 /*
   reason
 ----------- */
-.b-reason {
-  &__guidanceTitle {
+.b-reasonGuidance {
+  &__title {
     @include font-size(20);
   }
-  &__contentNumber {
+}
+
+.b-reasonContents {
+  &__number {
     @include font-size(100);
     color: $blueColor;
     line-height: 1;
@@ -159,11 +174,12 @@
     @include font-size(14);
   }
 }
+
 /*
   flow
 ----------- */
-.b-flow {
-  &__guidanceTitle {
+.b-flowContents {
+  &__title {
     @include font-size(20);
   }
 }
@@ -171,10 +187,13 @@
 /*
   creator
 ----------- */
-.b-creator {
+.b-creatorContents {
   &__link {
     @include font-size(14);
   }
+}
+
+.b-creatorSLash {
   &__boxTitle {
     @include font-size(8);
     text-align: center;
@@ -189,6 +208,9 @@
       color: $whiteColor;
     }
   }
+}
+
+.b-creatorCranks {
   &__boxName--jp {
     @include font-size(9);
   }
@@ -202,10 +224,11 @@
     @include font-size(7);
   }
 }
+
 /*
   FAQ
 ----------- */
-.b-faq {
+.b-faqContents {
   &__label {
     @include font-size(11);
   }
@@ -217,7 +240,7 @@
 /*
   message
 ----------- */
-.b-message {
+.b-messageContents {
   &__title {
     @include font-size(30);
   }
@@ -227,24 +250,32 @@
   }
 }
 
+/*
+  @media screen and (min-width: 960px)
+----------------------------------------------- */
 @media screen and (min-width: 960px) {
-  .b-sectionTitle {
-    @include font-size(45);
-    & .emphasis {
-      @include font-size(60);
+  .b-heading {
+    &__title {
+      @include font-size(45);
+      & .emphasis {
+        @include font-size(60);
+      }
+    }
+    &__text {
+      @include font-size(20);
     }
   }
-  .b-sectionText {
-    @include font-size(20);
-  }
-  .b-contentTitle {
-    @include font-size(36);
-  }
-  .b-contentText {
-    @include font-size(20);
+
+  .b-contents {
+    &__title {
+      @include font-size(36);
+    }
+    &__text {
+      @include font-size(20);
+    }
   }
 
-  .b-guidanceNumber {
+  .b-guidance__number {
     @include font-size(46);
   }
 
@@ -254,7 +285,7 @@
   .b-logo {
     @include font-size(40);
   }
-  .b-navTitle {
+  .b-nav__title {
     @include font-size(18);
     font-size: clamp(14px, 1.25vw, 18px);
   }
@@ -270,35 +301,38 @@
       @include font-size(20);
     }
   }
+
   /*
   about
 ----------- */
-  .b-about {
-    &__guidanceLabel {
+  .b-aboutContents {
+    &__label {
       @include font-size(20);
     }
-    &__guidanceText {
+    &__text {
       @include font-size(26);
     }
-    &__wrapperText {
-      @include font-size(24);
-    }
+  }
+  .b-aboutReception__text {
+    @include font-size(24);
   }
 
   /*
   service
 ----------- */
-  .b-service {
-    &__guidanceSubTitle {
-      @include font-size(20);
-    }
-    &__guidanceMainTitle {
+  .b-serviceGuidance {
+    &__mainTitle {
       @include font-size(28);
     }
-    &__contentNumber {
+    &__subTitle {
+      @include font-size(20);
+    }
+  }
+  .b-serviceContents {
+    &__number {
       @include font-size(220);
     }
-    &__contentSubTitle {
+    &__subTitle {
       @include font-size(36);
     }
     &__boxTitle {
@@ -332,7 +366,9 @@
     &__subText {
       @include font-size(18);
     }
-    &__graphSubText {
+  }
+  .b-differenceDiagram {
+    &__subText {
       @include font-size(13);
     }
   }
@@ -340,11 +376,13 @@
   /*
   reason
 ----------- */
-  .b-reason {
-    &__guidanceTitle {
+  .b-reasonGuidance {
+    &__title {
       @include font-size(28);
     }
-    &__contentNumber {
+  }
+  .b-reasonContents {
+    &__number {
       @include font-size(120);
     }
     &__boxText {
@@ -354,31 +392,33 @@
       @include font-size(20);
     }
   }
+
   /*
   flow
 ----------- */
-  .b-flow {
-    &__guidanceTitle {
+  .b-flowContents {
+    &__title {
       @include font-size(24);
-    }
-    &__ {
-      @include font-size(14);
     }
   }
 
   /*
   creator
 ----------- */
-  .b-creator {
+  .b-creatorContents {
     &__link {
       @include font-size(18);
     }
+  }
+  .b-creatorSLash {
     &__boxTitle {
       @include font-size(14);
     }
     &__boxText {
       @include font-size(14);
     }
+  }
+  .b-creatorCranks {
     &__boxName--jp {
       @include font-size(16);
     }
@@ -389,14 +429,14 @@
       @include font-size(12);
     }
     &__boxJob {
-      @include font-size(7);
+      @include font-size(12);
     }
   }
 
   /*
   FAQ
 ----------- */
-  .b-faq {
+  .b-faqContents {
     &__label {
       @include font-size(18);
     }
@@ -409,7 +449,7 @@
 /*
   message
 ----------- */
-.b-message {
+.b-messageContents {
   &__title {
     @include font-size(36);
   }
