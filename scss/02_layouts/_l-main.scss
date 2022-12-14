@@ -15,6 +15,44 @@
   about
 ----------------------------------------------- */
 .s-about {
+  & .l-L04 {
+    background-color: $pinkColor;
+  }
+  & .l-L05,
+  & .l-L07 {
+    max-width: 930px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  & .l-L07 {
+    & .b-aboutReception__box {
+      flex: 0 0 33%;
+      & .b-boxFlame__lineCircle {
+        position: relative;
+        width: 100%;
+        &::before {
+          content: "";
+          display: block;
+          padding-top: 100%;
+        }
+
+        & img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          width: 50%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@include mq(l) {
 }
 /*
   service
