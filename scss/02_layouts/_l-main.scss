@@ -5,11 +5,73 @@
 /*
   hero
 ----------------------------------------------- */
+.s-hero {
+  .l-S01 {
+    height: 100vh;
+  }
+}
 
 /*
   about
 ----------------------------------------------- */
+.s-about {
+  & .l-L01 {
+    padding: 104px 0 80px 0;
+  }
+  & .l-L02 {
+    padding-bottom: 40px;
+  }
+  & .l-L04 {
+    padding: 56px 0;
+    background-color: $pinkColor;
+  }
+  & .l-L06 {
+    padding: 160px 0 104px 0;
+  }
+  & .l-L07 {
+    padding-bottom: 40px;
+  }
+  & .l-L05,
+  & .l-L08 {
+    max-width: 930px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  & .l-L05 {
+    align-items: center;
+  }
+  & .l-L08 {
+    gap: 0 64px;
 
+    & .b-aboutReception__box {
+      flex: 1;
+      & .b-boxFlame__lineCircle {
+        position: relative;
+        width: 100%;
+        &::before {
+          content: "";
+          display: block;
+          padding-top: 100%;
+        }
+
+        & img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          width: 50%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@include mq(l) {
+}
 /*
   service
 ----------------------------------------------- */

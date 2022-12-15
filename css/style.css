@@ -167,6 +167,11 @@ img {
   display: block;
 }
 
+@media screen and (max-width: 700px) {
+  .spbr {
+    display: block;
+  }
+}
 /* ===============================================
 Layout
 =============================================== */
@@ -223,7 +228,6 @@ Layout
 .l-L16 {
   position: relative;
   width: 100%;
-  min-height: 24px;
 }
 
 /*
@@ -272,9 +276,72 @@ Layout
 /*
   hero
 ----------------------------------------------- */
+.s-hero .l-S01 {
+  height: 100vh;
+}
+
 /*
   about
 ----------------------------------------------- */
+.s-about .l-L01 {
+  padding: 104px 0 80px 0;
+}
+.s-about .l-L02 {
+  padding-bottom: 40px;
+}
+.s-about .l-L04 {
+  padding: 56px 0;
+  background-color: #e9525e;
+}
+.s-about .l-L06 {
+  padding: 160px 0 104px 0;
+}
+.s-about .l-L07 {
+  padding-bottom: 40px;
+}
+.s-about .l-L05, .s-about .l-L08 {
+  max-width: 930px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.s-about .l-L05 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.s-about .l-L08 {
+  gap: 0 64px;
+}
+.s-about .l-L08 .b-aboutReception__box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.s-about .l-L08 .b-aboutReception__box .b-boxFlame__lineCircle {
+  position: relative;
+  width: 100%;
+}
+.s-about .l-L08 .b-aboutReception__box .b-boxFlame__lineCircle::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.s-about .l-L08 .b-aboutReception__box .b-boxFlame__lineCircle img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50%;
+  height: auto;
+}
+
 /*
   service
 ----------------------------------------------- */
@@ -618,15 +685,15 @@ Block
 /*
   about
 ----------- */
-.b-aboutContents__label {
+.b-aboutContents__boxLabel {
   font-size: 0.625rem;
 }
-.b-aboutContents__text {
+.b-aboutContents__boxText {
   font-size: 0.75rem;
   text-align: center;
 }
 
-.b-aboutReception__text {
+.b-aboutReception__boxText {
   font-size: 0.8125rem;
 }
 
@@ -815,13 +882,13 @@ Block
   /*
     about
   ----------- */
-  .b-aboutContents__label {
+  .b-aboutContents__boxLabel {
     font-size: 1.25rem;
   }
-  .b-aboutContents__text {
+  .b-aboutContents__boxText {
     font-size: 1.625rem;
   }
-  .b-aboutReception__text {
+  .b-aboutReception__boxText {
     font-size: 1.5rem;
   }
   /*
@@ -984,7 +1051,7 @@ Block
      object-fit: contain;
   height: auto;
 }
-.b-guidance .b-guidance__number {
+.b-guidance__number {
   position: absolute;
   top: -28px;
   left: 0;
@@ -1004,7 +1071,7 @@ Block
   width: 60px;
 }
 
-.b-aboutContents {
+.b-aboutContents__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1022,11 +1089,15 @@ Block
   padding: 8px;
 }
 .b-aboutContents img {
+  max-width: 100%;
+  height: auto;
   -o-object-fit: contain;
      object-fit: contain;
-  height: auto;
 }
-.b-aboutContents .b-aboutContents__label {
+.b-aboutContents__icon {
+  width: 48px;
+}
+.b-aboutContents__boxLabel {
   display: block;
   width: 100%;
   text-align: left;
@@ -1034,7 +1105,7 @@ Block
   margin-bottom: 8px;
   border-bottom: 1px solid #efefef;
 }
-.b-aboutContents .b-guidance__icon {
+.b-aboutContents__boxIcon {
   width: 80px;
   margin-bottom: 8px;
 }
@@ -1057,8 +1128,6 @@ Block
 }
 
 .b-boxFlame__lineCircle {
-  width: 268px;
-  height: 268px;
   background-color: #fff;
   border-radius: 50%;
   border: 3px solid #e9525e;
@@ -1106,7 +1175,7 @@ Block
     text-align: center;
     border-radius: 16px;
   }
-  .b-guidance .b-guidance__number {
+  .b-guidance__number {
     top: -50px;
   }
   .b-guidance--service {
@@ -1133,16 +1202,39 @@ Block
     width: 100px;
     margin-bottom: 24px;
   }
-  .b-aboutContents {
+  .b-aboutContents__box {
     border-radius: 16px;
     width: 364px;
     padding: 12px 24px;
   }
-  .b-aboutContents .b-aboutContents__label {
+  .b-aboutContents__icon {
+    width: 150px;
+  }
+  .b-aboutContents__boxLabel {
     margin-bottom: 24px;
   }
-  .b-aboutContents .b-guidance__icon {
-    width: 175px;
-    margin-bottom: 24px;
+  .b-aboutContents__boxIcon {
+    width: 232px;
+    margin-bottom: 0;
   }
+}
+/*
+  b-flame
+----------------------------------------------- */
+.b-aboutReception__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px 0;
+}
+.b-aboutReception__boxText {
+  text-align: center;
+  margin: auto 0;
 }

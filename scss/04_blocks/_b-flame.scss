@@ -36,7 +36,7 @@
     object-fit: contain;
     height: auto;
   }
-  & .b-guidance__number {
+  &__number {
     position: absolute;
     top: -28px;
     left: 0;
@@ -61,21 +61,25 @@
 }
 
 .b-aboutContents {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: $whiteColor;
-  border-radius: 4px;
-  width: 144px;
-  padding: 8px;
-
-  & img {
-    object-fit: contain;
-    height: auto;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $whiteColor;
+    border-radius: 4px;
+    width: 144px;
+    padding: 8px;
   }
-
-  & .b-aboutContents__label {
+  & img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  &__icon {
+    width: 48px;
+  }
+  &__boxLabel {
     display: block;
     width: 100%;
     text-align: left;
@@ -83,7 +87,7 @@
     margin-bottom: 8px;
     border-bottom: 1px solid $aboutGuidanceLineColor;
   }
-  & .b-guidance__icon {
+  &__boxIcon {
     width: 80px;
     margin-bottom: 8px;
   }
@@ -107,8 +111,8 @@
   }
 }
 .b-boxFlame__lineCircle {
-  width: 268px;
-  height: 268px;
+  // width: 268px;
+  // height: 268px;
   background-color: $whiteColor;
   border-radius: 50%;
   border: 3px solid $pinkColor;
@@ -149,7 +153,7 @@
     text-align: center;
     border-radius: 16px;
 
-    & .b-guidance__number {
+    &__number {
       top: -50px;
     }
 
@@ -182,16 +186,20 @@
   }
 
   .b-aboutContents {
-    border-radius: 16px;
-    width: 364px;
-    padding: 12px 24px;
-
-    & .b-aboutContents__label {
+    &__box {
+      border-radius: 16px;
+      width: 364px;
+      padding: 12px 24px;
+    }
+    &__icon {
+      width: 150px;
+    }
+    &__boxLabel {
       margin-bottom: 24px;
     }
-    & .b-guidance__icon {
-      width: 175px;
-      margin-bottom: 24px;
+    &__boxIcon {
+      width: 232px;
+      margin-bottom: 0;
     }
   }
 }
