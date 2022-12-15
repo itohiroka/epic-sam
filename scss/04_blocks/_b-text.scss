@@ -74,15 +74,15 @@
   about
 ----------- */
 .b-aboutContents {
-  &__label {
+  &__boxLabel {
     @include font-size(10);
   }
-  &__text {
+  &__boxText {
     @include font-size(12);
     text-align: center;
   }
 }
-.b-aboutReception__text {
+.b-aboutReception__boxText {
   @include font-size(13);
 }
 
@@ -306,14 +306,14 @@
   about
 ----------- */
   .b-aboutContents {
-    &__label {
+    &__boxLabel {
       @include font-size(20);
     }
-    &__text {
+    &__boxText {
       @include font-size(26);
     }
   }
-  .b-aboutReception__text {
+  .b-aboutReception__boxText {
     @include font-size(24);
   }
 
