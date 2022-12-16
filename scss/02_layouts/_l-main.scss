@@ -3,6 +3,23 @@
   l-main
 ----------------------------------------------- */
 /*
+  common
+----------------------------------------------- */
+.s-about,
+.s-service,
+.s-reason,
+.s-flow,
+.s-creator,
+.s-faq,
+.s-message {
+  & .l-L01 {
+    padding: 104px 0 80px 0;
+  }
+  & .l-L02 {
+    padding-bottom: 40px;
+  }
+}
+/*
   hero
 ----------------------------------------------- */
 .s-hero {
@@ -15,12 +32,6 @@
   about
 ----------------------------------------------- */
 .s-about {
-  & .l-L01 {
-    padding: 104px 0 80px 0;
-  }
-  & .l-L02 {
-    padding-bottom: 40px;
-  }
   & .l-L04 {
     padding: 56px 0;
     background-color: $pinkColor;
@@ -75,7 +86,63 @@
 /*
   service
 ----------------------------------------------- */
-
+.s-service {
+  & .l-L04 {
+    padding: 106px 0 56px 0;
+    background-color: $orangeColor;
+  }
+  & .l-L05 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  & .l-L05 {
+    align-items: center;
+  }
+  & .l-L06 {
+    padding-bottom: 104px;
+  }
+  & .l-L07,
+  & .l-L10,
+  & .l-L13 {
+    padding-top: 160px;
+  }
+  & .l-L08,
+  & .l-L11,
+  & .l-L14 {
+    padding-bottom: 40px;
+  }
+  & .l-L09 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 104px 64px;
+    & .kari-1,
+    & .kari-2 {
+      width: calc((100% - 64px) / 2);
+      height: 226px;
+    }
+    & .kari-3 {
+      width: 100%;
+      height: 174px;
+    }
+  }
+  & .kari-4 {
+    width: 100%;
+    height: 395px;
+  }
+  & .l-L15 {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 64px;
+    & .kari-5,
+    & .kari-6 {
+      width: calc((100% - 64px) / 2);
+      height: 452px;
+    }
+  }
+}
 /*
   difference
 ----------------------------------------------- */
