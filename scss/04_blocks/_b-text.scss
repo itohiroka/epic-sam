@@ -257,6 +257,32 @@
 }
 
 /*
+  footer
+----------- */
+.footer,
+.footer a {
+  color: $whiteColor;
+}
+.b-footerCompany {
+  line-height: 1;
+  &__label {
+    @include font-size(11);
+  }
+  &__text {
+    @include font-size(11);
+    font-weight: 500;
+  }
+  &__subText {
+    @include font-size(8);
+    font-weight: 500;
+  }
+}
+.b-copyRight {
+  @include font-size(10);
+  font-weight: 500;
+}
+
+/*
   @media screen and (min-width: 960px)
 ----------------------------------------------- */
 @media screen and (min-width: 960px) {
@@ -466,4 +492,22 @@
   &__deco {
     @include font-size(188);
   }
+}
+
+/*
+  footer
+----------- */
+.b-footerCompany {
+  &__label {
+    @include font-size(20);
+  }
+  &__text {
+    @include font-size(20);
+  }
+  &__subText {
+    @include font-size(14);
+  }
+}
+.b-copyRight {
+  @include font-size(12);
 }

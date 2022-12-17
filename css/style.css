@@ -757,6 +757,59 @@ Layout
 /*
   l-footer
 ----------------------------------------------- */
+.footer .l-S02 {
+  background-color: #242422;
+}
+.footer .l-S03 {
+  padding: 104px 0;
+}
+.footer .l-L02 {
+  text-align: center;
+  padding-bottom: 48px;
+}
+.footer .l-L05 {
+  width: 216px;
+}
+.footer .b-footerCompany {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 624px;
+  margin: 0 auto;
+  border-top: 1px solid #d9d9d9;
+}
+.footer .b-footerCompany__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 184px;
+  padding: 16px 16px 16px 48px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.footer .b-footerCompany__text {
+  width: calc(100% - 184px);
+  padding: 16px 48px 16px 16px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.footer .l-L04 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0 24px;
+}
+.footer .l-L07 {
+  text-align: center;
+  padding: 24px 0;
+}
+
 /* ===============================================
 Module
 =============================================== */
@@ -857,26 +910,9 @@ hamburger
 .m-headerNav__box .b-nav__item {
   position: relative;
 }
-.m-headerNav__box .b-nav__item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0px;
-  margin: auto 0;
-  -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
-  width: 34px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom right;
-  z-index: -1;
-}
 .m-headerNav__box .b-nav__item a {
   position: relative;
   display: block;
-  padding: 24px;
 }
 
 .button-hamburger {
@@ -1237,6 +1273,34 @@ Block
 }
 
 /*
+  footer
+----------- */
+.footer,
+.footer a {
+  color: #fff;
+}
+
+.b-footerCompany {
+  line-height: 1;
+}
+.b-footerCompany__label {
+  font-size: 0.6875rem;
+}
+.b-footerCompany__text {
+  font-size: 0.6875rem;
+  font-weight: 500;
+}
+.b-footerCompany__subText {
+  font-size: 0.5rem;
+  font-weight: 500;
+}
+
+.b-copyRight {
+  font-size: 0.625rem;
+  font-weight: 500;
+}
+
+/*
   @media screen and (min-width: 960px)
 ----------------------------------------------- */
 @media screen and (min-width: 960px) {
@@ -1401,6 +1465,23 @@ Block
 }
 .b-messageContents__deco {
   font-size: 11.75rem;
+}
+
+/*
+  footer
+----------- */
+.b-footerCompany__label {
+  font-size: 1.25rem;
+}
+.b-footerCompany__text {
+  font-size: 1.25rem;
+}
+.b-footerCompany__subText {
+  font-size: 0.875rem;
+}
+
+.b-copyRight {
+  font-size: 0.75rem;
 }
 
 /*
