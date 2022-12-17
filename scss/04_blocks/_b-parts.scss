@@ -1,4 +1,10 @@
 @use "../01_foundation" as *;
+.b-image {
+  // width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
 .b-aboutReception {
   &__box {
@@ -10,5 +16,54 @@
   &__boxText {
     text-align: center;
     margin: auto 0;
+  }
+}
+
+.b-reasonContents {
+  &__boxText {
+    position: relative;
+    padding-left: 36px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+      background-color: $blueColor;
+    }
+  }
+
+  &__boxResult {
+    position: relative;
+    padding-left: 36px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto 0;
+      border-radius: 1.5px;
+    }
+    &:before {
+      left: 0px;
+      width: 20px;
+      height: 3px;
+      background: $blueColor;
+    }
+    &:after {
+      left: 8px;
+      width: 8px;
+      height: 9px;
+      border-top: 3px solid $blueColor;
+      border-right: 3px solid $blueColor;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
   }
 }

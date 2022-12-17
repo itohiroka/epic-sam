@@ -432,6 +432,52 @@ Layout
 /*
   reason
 ----------------------------------------------- */
+.s-reason .l-L04 {
+  padding: 106px 0 56px 0;
+  background-color: #08b9d6;
+}
+.s-reason .l-L05 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.s-reason .l-L06 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 160px;
+}
+.s-reason .l-L07 {
+  width: 45%;
+}
+.s-reason .l-L11 {
+  width: 48%;
+}
+.s-reason .l-L08 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 40px;
+  padding-bottom: 40px;
+}
+.s-reason .l-L09 {
+  padding-bottom: 64px;
+}
+.s-reason .l-L10 .b-reasonContents__boxResult {
+  margin: 16px 0 0 40px;
+}
+
 /*
   flow
 ----------------------------------------------- */
@@ -1169,12 +1215,6 @@ Block
   width: 144px;
   padding: 8px;
 }
-.b-aboutContents img {
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
 .b-aboutContents__icon {
   width: 48px;
 }
@@ -1300,6 +1340,13 @@ Block
 /*
   b-flame
 ----------------------------------------------- */
+.b-image {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .b-aboutReception__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1316,4 +1363,49 @@ Block
 .b-aboutReception__boxText {
   text-align: center;
   margin: auto 0;
+}
+
+.b-reasonContents__boxText {
+  position: relative;
+  padding-left: 36px;
+}
+.b-reasonContents__boxText::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #08b9d6;
+}
+.b-reasonContents__boxResult {
+  position: relative;
+  padding-left: 36px;
+}
+.b-reasonContents__boxResult::before, .b-reasonContents__boxResult::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto 0;
+  border-radius: 1.5px;
+}
+.b-reasonContents__boxResult:before {
+  left: 0px;
+  width: 20px;
+  height: 3px;
+  background: #08b9d6;
+}
+.b-reasonContents__boxResult:after {
+  left: 8px;
+  width: 8px;
+  height: 9px;
+  border-top: 3px solid #08b9d6;
+  border-right: 3px solid #08b9d6;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

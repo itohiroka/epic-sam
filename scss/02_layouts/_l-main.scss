@@ -150,6 +150,43 @@
 /*
   reason
 ----------------------------------------------- */
+.s-reason {
+  & .l-L04 {
+    padding: 106px 0 56px 0;
+    background-color: $blueColor;
+  }
+  & .l-L05 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  & .l-L06 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 160px;
+  }
+  & .l-L07 {
+    width: 45%;
+  }
+  & .l-L11 {
+    width: 48%;
+  }
+  & .l-L08 {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+    padding-bottom: 40px;
+  }
+  & .l-L09 {
+    padding-bottom: 64px;
+  }
+  & .l-L10 {
+    .b-reasonContents__boxResult {
+      margin: 16px 0 0 40px;
+    }
+  }
+}
 
 /*
   flow
