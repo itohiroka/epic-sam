@@ -337,7 +337,26 @@
 /*
   FAQ
 ----------------------------------------------- */
-
+.s-faq {
+  & .l-S03 {
+    padding-bottom: 104px;
+  }
+  & .l-L03 {
+    max-width: 1104px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px 0;
+    & .b-boxFlame__line {
+      width: 100%;
+      padding: 32px 72px;
+      & .b-faqContents__boxTitle {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
 /*
   message
 ----------------------------------------------- */
