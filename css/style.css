@@ -426,7 +426,7 @@ Layout
   service
 ----------------------------------------------- */
 .s-service .l-L04 {
-  padding: 106px 0 56px 0;
+  padding: 104px 0 64px 0;
   background-color: #ffae18;
 }
 .s-service .l-L05 {
@@ -573,7 +573,7 @@ Layout
   reason
 ----------------------------------------------- */
 .s-reason .l-L04 {
-  padding: 106px 0 56px 0;
+  padding: 104px 0 64px 0;
   background-color: #08b9d6;
 }
 .s-reason .l-L05 {
@@ -624,6 +624,37 @@ Layout
 /*
   flow
 ----------------------------------------------- */
+.s-flow .l-S02 {
+  padding-bottom: 104px;
+}
+.s-flow .l-L04 {
+  padding: 104px 0 64px 0;
+  background-color: #30b483;
+}
+.s-flow .l-L05 {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.s-flow .l-L05::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 90%;
+  height: 5px;
+  background-color: #fff;
+}
+
 /*
   creator
 ----------------------------------------------- */
