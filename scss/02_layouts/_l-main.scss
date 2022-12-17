@@ -299,7 +299,40 @@
 /*
   creator
 ----------------------------------------------- */
-
+.s-creator {
+  & .l-S02 {
+    background-color: $textColor;
+  }
+  & .l-L05 {
+    display: flex;
+    justify-content: space-between;
+    & div {
+      flex: 1;
+      height: 380px;
+      &:nth-child(1n) {
+        background: #f2f2f2;
+      }
+      &:nth-child(2n + 1) {
+        background: #cdcdcd;
+      }
+    }
+  }
+  & .l-L07 {
+    padding-top: 160px;
+  }
+  & .l-L09 {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 64px;
+  }
+  & .l-L08,
+  & .l-L11 {
+    padding-bottom: 40px;
+  }
+  & .l-L12 {
+    padding-bottom: 56px;
+  }
+}
 /*
   FAQ
 ----------------------------------------------- */

@@ -408,6 +408,12 @@
   /*
   creator
 ----------- */
+  .s-creator {
+    color: $whiteColor;
+    & a {
+      color: $whiteColor;
+    }
+  }
   .b-creatorContents {
     &__link {
       @include font-size(18);

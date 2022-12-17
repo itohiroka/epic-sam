@@ -99,7 +99,50 @@
 /*
   creator
 ----------------------------------------------- */
-
+.m-creatorSlash,
+.m-creatorCranks {
+  & .b-creatorContents__link {
+    position: relative;
+    padding: 0 32px 0 24px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+    }
+    &::before {
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $pinkColor;
+    }
+    &::after {
+      right: 0;
+      background-image: url(../../img/mdi_external-link.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.m-creatorSlash {
+  & .b-creatorContents__link {
+    &::before {
+      background-color: $pinkColor;
+    }
+  }
+}
+.m-creatorCranks {
+  & .b-creatorContents__link {
+    &::before {
+      background-color: $purpleColor;
+    }
+  }
+}
 /*
   FAQ
 ----------------------------------------------- */

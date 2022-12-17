@@ -658,6 +658,48 @@ Layout
 /*
   creator
 ----------------------------------------------- */
+.s-creator .l-S02 {
+  background-color: #242422;
+}
+.s-creator .l-L05 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.s-creator .l-L05 div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 380px;
+}
+.s-creator .l-L05 div:nth-child(1n) {
+  background: #f2f2f2;
+}
+.s-creator .l-L05 div:nth-child(2n+1) {
+  background: #cdcdcd;
+}
+.s-creator .l-L07 {
+  padding-top: 160px;
+}
+.s-creator .l-L09 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0 64px;
+}
+.s-creator .l-L08, .s-creator .l-L11 {
+  padding-bottom: 40px;
+}
+.s-creator .l-L12 {
+  padding-bottom: 56px;
+}
+
 /*
   FAQ
 ----------------------------------------------- */
@@ -1265,6 +1307,12 @@ Block
   /*
     creator
   ----------- */
+  .s-creator {
+    color: #fff;
+  }
+  .s-creator a {
+    color: #fff;
+  }
   .b-creatorContents__link {
     font-size: 1.125rem;
   }
@@ -1621,6 +1669,46 @@ Block
 /*
   creator
 ----------------------------------------------- */
+.m-creatorSlash .b-creatorContents__link,
+.m-creatorCranks .b-creatorContents__link {
+  position: relative;
+  padding: 0 32px 0 24px;
+}
+.m-creatorSlash .b-creatorContents__link::before, .m-creatorSlash .b-creatorContents__link::after,
+.m-creatorCranks .b-creatorContents__link::before,
+.m-creatorCranks .b-creatorContents__link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+.m-creatorSlash .b-creatorContents__link::before,
+.m-creatorCranks .b-creatorContents__link::before {
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #e9525e;
+}
+.m-creatorSlash .b-creatorContents__link::after,
+.m-creatorCranks .b-creatorContents__link::after {
+  right: 0;
+  background-image: url(../../img/mdi_external-link.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
+
+.m-creatorSlash .b-creatorContents__link::before {
+  background-color: #e9525e;
+}
+
+.m-creatorCranks .b-creatorContents__link::before {
+  background-color: #7070d1;
+}
+
 /*
   FAQ
 ----------------------------------------------- */
