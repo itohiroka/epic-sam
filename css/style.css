@@ -344,8 +344,7 @@ Layout
 .s-reason .l-L01,
 .s-flow .l-L01,
 .s-creator .l-L01,
-.s-faq .l-L01,
-.s-message .l-L01 {
+.s-faq .l-L01 {
   padding: 104px 0 80px 0;
 }
 .s-about .l-L02,
@@ -353,8 +352,7 @@ Layout
 .s-reason .l-L02,
 .s-flow .l-L02,
 .s-creator .l-L02,
-.s-faq .l-L02,
-.s-message .l-L02 {
+.s-faq .l-L02 {
   padding-bottom: 40px;
 }
 
@@ -732,6 +730,30 @@ Layout
 /*
   message
 ----------------------------------------------- */
+.s-message .l-S02 {
+  position: relative;
+  background-color: #edf2f5;
+}
+.s-message .l-S02::before {
+  content: "SLashNext";
+  font-size: 11.75rem;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  margin: 0 auto;
+}
+.s-message .l-L01 {
+  padding: 104px 0 120px 0;
+}
+.s-message .l-L02 {
+  text-align: center;
+  padding-bottom: 32px;
+}
+
 /*
   l-footer
 ----------------------------------------------- */
