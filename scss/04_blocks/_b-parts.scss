@@ -1,11 +1,17 @@
 @use "../01_foundation" as *;
 .b-image {
-  // width: 100%;
   max-width: 100%;
   height: auto;
   object-fit: contain;
 }
 
+/*
+  hero
+----------------------------------------------- */
+
+/*
+  about
+----------------------------------------------- */
 .b-aboutReception {
   &__box {
     display: flex;
@@ -19,6 +25,24 @@
   }
 }
 
+/*
+  service
+----------------------------------------------- */
+
+/*
+  difference
+----------------------------------------------- */
+.b-difference__callText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 43px;
+  background-color: $blueColor;
+  border-radius: 8px;
+}
+/*
+  reason
+----------------------------------------------- */
 .b-reasonContents {
   &__boxText {
     position: relative;
@@ -67,3 +91,19 @@
     }
   }
 }
+
+/*
+  flow
+----------------------------------------------- */
+
+/*
+  creator
+----------------------------------------------- */
+
+/*
+  FAQ
+----------------------------------------------- */
+
+/*
+  message
+----------------------------------------------- */

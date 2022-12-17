@@ -230,6 +230,70 @@ Layout
   width: 100%;
 }
 
+.l-L01 {
+  grid-area: l-L01;
+}
+
+.l-L02 {
+  grid-area: l-L02;
+}
+
+.l-L03 {
+  grid-area: l-L03;
+}
+
+.l-L04 {
+  grid-area: l-L04;
+}
+
+.l-L05 {
+  grid-area: l-L05;
+}
+
+.l-L06 {
+  grid-area: l-L06;
+}
+
+.l-L07 {
+  grid-area: l-L07;
+}
+
+.l-L08 {
+  grid-area: l-L08;
+}
+
+.l-L09 {
+  grid-area: l-L09;
+}
+
+.l-L10 {
+  grid-area: l-L10;
+}
+
+.l-L11 {
+  grid-area: l-L11;
+}
+
+.l-L12 {
+  grid-area: l-L12;
+}
+
+.l-L13 {
+  grid-area: l-L13;
+}
+
+.l-L14 {
+  grid-area: l-L14;
+}
+
+.l-L15 {
+  grid-area: l-L15;
+}
+
+.l-L16 {
+  grid-area: l-L16;
+}
+
 /*
   l-header
 ----------------------------------------------- */
@@ -429,6 +493,82 @@ Layout
 /*
   difference
 ----------------------------------------------- */
+.s-difference .l-S02 {
+  background-color: #edf2f9;
+}
+.s-difference .l-S03 {
+  padding: 104px 0;
+}
+.s-difference .l-L01 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.s-difference .l-L02 {
+  display: grid;
+  grid-template-columns: 1fr 53%;
+  grid-template-rows: repeat(5, auto);
+  gap: 0 64px;
+  grid-template-areas: "l-L03 l-L07" "l-L04 l-L07" "l-L05 l-L07" "l-L06 l-L07" "l-L08 l-L07";
+}
+.s-difference .l-L03, .s-difference .l-L04 {
+  padding-bottom: 32px;
+}
+.s-difference .l-L05 {
+  padding-bottom: 24px;
+}
+.s-difference .l-L07 {
+  padding: 32px;
+}
+.s-difference .l-L08 .b-difference__subText {
+  padding: 48px 24px;
+}
+.s-difference .l-L06 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 56px;
+}
+.s-difference .l-L06 .b-boxFlame__lineCircle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 132px;
+  height: 132px;
+}
+.s-difference .l-L06 .b-boxFlame__lineCircle:nth-of-type(2) {
+  position: relative;
+}
+.s-difference .l-L06 .b-boxFlame__lineCircle:nth-of-type(2)::before, .s-difference .l-L06 .b-boxFlame__lineCircle:nth-of-type(2)::after {
+  content: "+";
+  font-size: 2.25rem;
+  line-height: 0.9;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 36px;
+  height: 36px;
+}
+.s-difference .l-L06 .b-boxFlame__lineCircle:nth-of-type(2)::before {
+  left: -44px;
+}
+.s-difference .l-L06 .b-boxFlame__lineCircle:nth-of-type(2)::after {
+  right: -44px;
+}
+
 /*
   reason
 ----------------------------------------------- */
@@ -1064,6 +1204,9 @@ Block
   .b-difference__subText {
     font-size: 1.125rem;
   }
+  .b-difference__subText .red {
+    color: #e90000;
+  }
   .b-differenceDiagram__subText {
     font-size: 0.8125rem;
   }
@@ -1263,8 +1406,6 @@ Block
 
 .b-boxFlame__shift {
   position: relative;
-  width: 568px;
-  height: 433px;
   background-color: #fff;
   border-radius: 16px;
   -webkit-box-shadow: 32px 32px 0 #e9525e;
@@ -1350,6 +1491,12 @@ Block
      object-fit: contain;
 }
 
+/*
+  hero
+----------------------------------------------- */
+/*
+  about
+----------------------------------------------- */
 .b-aboutReception__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1368,6 +1515,30 @@ Block
   margin: auto 0;
 }
 
+/*
+  service
+----------------------------------------------- */
+/*
+  difference
+----------------------------------------------- */
+.b-difference__callText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 43px;
+  background-color: #08b9d6;
+  border-radius: 8px;
+}
+
+/*
+  reason
+----------------------------------------------- */
 .b-reasonContents__boxText {
   position: relative;
   padding-left: 36px;
@@ -1412,3 +1583,16 @@ Block
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+/*
+  flow
+----------------------------------------------- */
+/*
+  creator
+----------------------------------------------- */
+/*
+  FAQ
+----------------------------------------------- */
+/*
+  message
+----------------------------------------------- */

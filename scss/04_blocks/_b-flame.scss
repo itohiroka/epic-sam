@@ -89,8 +89,6 @@
 }
 
 .b-boxFlame__line {
-  // width: 200px;
-  // height: 200px;
   background-color: $whiteColor;
   border-radius: 16px;
   border: 3px solid $orangeColor;
@@ -106,8 +104,6 @@
   }
 }
 .b-boxFlame__lineCircle {
-  // width: 268px;
-  // height: 268px;
   background-color: $whiteColor;
   border-radius: 50%;
   border: 3px solid $pinkColor;
@@ -120,8 +116,6 @@
 }
 .b-boxFlame__shift {
   position: relative;
-  width: 568px;
-  height: 433px;
   background-color: $whiteColor;
   border-radius: 16px;
   box-shadow: 32px 32px 0 $pinkColor;

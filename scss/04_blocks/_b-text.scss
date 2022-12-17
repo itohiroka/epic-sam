@@ -365,6 +365,9 @@
     }
     &__subText {
       @include font-size(18);
+      & .red {
+        color: $redColor;
+      }
     }
   }
   .b-differenceDiagram {
