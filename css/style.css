@@ -446,7 +446,7 @@ Layout
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.s-reason .l-L06 {
+.s-reason .l-L07 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,13 +455,13 @@ Layout
           justify-content: space-between;
   padding-top: 160px;
 }
-.s-reason .l-L07 {
+.s-reason .l-L08 {
   width: 45%;
 }
-.s-reason .l-L11 {
+.s-reason .l-L12 {
   width: 48%;
 }
-.s-reason .l-L08 {
+.s-reason .l-L09 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,10 +471,10 @@ Layout
   gap: 0 40px;
   padding-bottom: 40px;
 }
-.s-reason .l-L09 {
+.s-reason .l-L10 {
   padding-bottom: 64px;
 }
-.s-reason .l-L10 .b-reasonContents__boxResult {
+.s-reason .l-L11 .b-reasonContents__boxResult {
   margin: 16px 0 0 40px;
 }
 
