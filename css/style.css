@@ -446,6 +446,9 @@ Layout
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.s-reason .l-L06 {
+  padding-bottom: 104px;
+}
 .s-reason .l-L07 {
   display: -webkit-box;
   display: -ms-flexbox;
