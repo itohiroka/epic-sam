@@ -8,9 +8,9 @@
 .b-heading {
   &__title {
     @include font-size(25);
-    line-height: 1;
     & .emphasis {
       @include font-size(45);
+      line-height: 1.35;
     }
   }
   &__text {
