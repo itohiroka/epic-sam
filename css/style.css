@@ -153,6 +153,7 @@ body {
   font-weight: 600;
   line-height: 1.6;
   color: #242422;
+  background-color: #fff;
 }
 
 a {
@@ -408,6 +409,7 @@ Layout
   right: 9.5%;
   top: 10px;
   right: 136px;
+  z-index: 1;
 }
 .s-hero .l-L03 .b-hero__parts05 {
   top: 17%;
@@ -1736,6 +1738,10 @@ Block
   .b-guidance--reason .b-guidance__icon {
     width: 180px;
     margin-bottom: 24px;
+  }
+  .b-guidance--reason .b-guidance__icon.small {
+    width: 160px;
+    height: 180px;
   }
   .b-guidance--flow {
     width: 214px;

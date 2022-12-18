@@ -167,6 +167,10 @@
       & .b-guidance__icon {
         width: 180px;
         margin-bottom: 24px;
+        &.small {
+          width: 160px;
+          height: 180px;
+        }
       }
     }
 
