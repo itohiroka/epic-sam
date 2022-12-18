@@ -529,6 +529,9 @@ Layout
 .s-service .l-L12 .b-serviceContents__support {
   width: 100%;
 }
+.s-service .l-L15 {
+  padding-bottom: 64px;
+}
 .s-service .l-L16 {
   display: -webkit-box;
   display: -ms-flexbox;
