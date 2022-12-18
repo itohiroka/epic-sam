@@ -8,9 +8,9 @@
 .b-heading {
   &__title {
     @include font-size(25);
-    line-height: 1;
     & .emphasis {
       @include font-size(45);
+      line-height: 1.35;
     }
   }
   &__text {
@@ -187,6 +187,12 @@
 /*
   creator
 ----------- */
+.s-creator {
+  color: $whiteColor;
+  & a {
+    color: $whiteColor;
+  }
+}
 .b-creatorContents {
   &__link {
     @include font-size(14);
@@ -248,6 +254,32 @@
     @include font-size(60);
     color: rgba(255, 255, 255, 07);
   }
+}
+
+/*
+  footer
+----------- */
+.footer,
+.footer a {
+  color: $whiteColor;
+}
+.b-footerCompany {
+  line-height: 1.1;
+  &__label {
+    @include font-size(11);
+  }
+  &__text {
+    @include font-size(11);
+    font-weight: 500;
+  }
+  &__subText {
+    @include font-size(8);
+    font-weight: 500;
+  }
+}
+.b-copyRight {
+  @include font-size(10);
+  font-weight: 500;
 }
 
 /*
@@ -365,6 +397,9 @@
     }
     &__subText {
       @include font-size(18);
+      & .red {
+        color: $redColor;
+      }
     }
   }
   .b-differenceDiagram {
@@ -405,6 +440,7 @@
   /*
   creator
 ----------- */
+
   .b-creatorContents {
     &__link {
       @include font-size(18);
@@ -456,4 +492,22 @@
   &__deco {
     @include font-size(188);
   }
+}
+
+/*
+  footer
+----------- */
+.b-footerCompany {
+  &__label {
+    @include font-size(20);
+  }
+  &__text {
+    @include font-size(20);
+  }
+  &__subText {
+    @include font-size(14);
+  }
+}
+.b-copyRight {
+  @include font-size(12);
 }

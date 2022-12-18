@@ -12,20 +12,69 @@
     <script src="js/index.js" defer></script>
     <!----------------------------------------------------------------------------->
     <!-- ガイドライン表示表スタイル（サーバーへのアップロード不要） -->
-    <link rel="stylesheet" href="css/guide.css" />
+    <!-- <link rel="stylesheet" href="css/guide.css" /> -->
   </head>
   <body>
+<<<<<<< HEAD
     <div class="container">
       <header class="header"></header>
+=======
+    <div class="container guide">
+      <header class="header">
+        <div class="l-S01">
+          <div class="l-S03">
+            <div class="l-L01">
+              <h1 class="b-logo">
+                <a href="index.html">SLashNext</a>
+              </h1>
+            </div>
+            <nav class="l-L02">
+              <button
+                type="button"
+                class="js-button-hamburger button-hamburger"
+                aria-controls="global-nav"
+                aria-expanded="false"
+              >
+                <div class="hamburger-text">
+                  <span class="hamburger">
+                    <span class="screen-reader-text">メニューを開閉する</span>
+                  </span>
+                </div>
+              </button>
+              <div id="global-nav" class="l-global-nav">
+                <ul class="m-headerNav__box">
+                  <li class="b-nav__item b-nav__title"><a href="">SLashNextとは</a></li>
+                  <li class="b-nav__item b-nav__title"><a href="">サービスの特徴</a></li>
+                  <li class="b-nav__item b-nav__title"><a href="">価格の違い</a></li>
+                  <li class="b-nav__item b-nav__title"><a href="">低価格のワケ</a></li>
+                  <li class="b-nav__item b-nav__title"><a href="">納品までの流れ</a></li>
+                  <li class="b-nav__item b-nav__title"><a href="">所属クリエイター</a></li>
+                  <li class="b-nav__item b-nav__title"><a href="">よくある質問</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+>>>>>>> master
 
       <main class="contents">
         <div class="l-S01 s-hero">
           <div class="l-S02">
-            <div class="l-S03">
-              <div class="l-L01">
-                <div class="l-L02"></div>
-                <div class="l-L03"></div>
+            <div class="l-L01">
+              <div class="l-L02">
+                <p class="b-hero__mainCopy"><span class="br">あなたの課題に</span>適材適所のクリエイターを。</p>
+                <p class="b-hero__subCopy">高品質で低価格なWebサイト制作サービス</p>
               </div>
+            </div>
+
+            <div class="l-L03">
+              <img class="b-hero__parts01" src="img/hero_01.svg" alt="" />
+              <img class="b-hero__parts02" src="img/hero_02.svg" alt="" />
+              <img class="b-hero__parts03" src="img/hero_03.svg" alt="" />
+              <img class="b-hero__parts04" src="img/hero_04.svg" alt="" />
+              <img class="b-hero__parts05" src="img/hero_05.svg" alt="" />
+              <img class="b-hero__parts06" src="img/hero_06.svg" alt="" />
             </div>
           </div>
         </div>
@@ -53,7 +102,7 @@
                 <div class="b-aboutContents__box">
                   <p class="b-aboutContents__boxLabel">クライアント</p>
                   <img
-                    class="b-aboutContents__boxIcon"
+                    class="b-aboutContents__boxIcon b-image"
                     src="img/about_contents_01.png"
                     width="175px"
                     height="175px"
@@ -61,11 +110,13 @@
                   />
                   <p class="b-aboutContents__boxText"><span class="br">高品質で低価格な</span>Webサイト</p>
                 </div>
-                <picture class="b-aboutContents__icon"><img src="img/about_contents_02.png" alt="" /></picture>
+                <picture class="b-aboutContents__icon"
+                  ><img class="b-image" src="img/about_contents_02.png" alt=""
+                /></picture>
                 <div class="b-aboutContents__box">
                   <p class="b-aboutContents__boxLabel">強みを持ったクリエイター</p>
                   <img
-                    class="b-aboutContents__boxIcon"
+                    class="b-aboutContents__boxIcon b-image"
                     src="img/about_contents_03.png"
                     width="175px"
                     height="175px"
@@ -83,19 +134,19 @@
                 <div class="l-L08 b-aboutReception">
                   <div class="b-aboutReception__box">
                     <figure class="b-boxFlame__lineCircle b-boxFlame__lineCircle--pink">
-                      <img src="img/about_reception_01.png" alt="" />
+                      <img class="b-image" src="img/about_reception_01.png" alt="" />
                     </figure>
                     <p class="b-aboutReception__boxText">Webサイト制作</p>
                   </div>
                   <div class="b-aboutReception__box">
                     <figure class="b-boxFlame__lineCircle b-boxFlame__lineCircle--pink">
-                      <img src="img/about_reception_02.png" alt="" />
+                      <img class="b-image" src="img/about_reception_02.png" alt="" />
                     </figure>
                     <p class="b-aboutReception__boxText"><span class="spbr">ランディング</span>ページ制作</p>
                   </div>
                   <div class="b-aboutReception__box">
                     <figure class="b-boxFlame__lineCircle b-boxFlame__lineCircle--pink">
-                      <img src="img/about_reception_03.png" alt="" />
+                      <img class="b-image" src="img/about_reception_03.png" alt="" />
                     </figure>
                     <p class="b-aboutReception__boxText"><span class="br">Webサイトの</span>リニューアル</p>
                   </div>
@@ -122,10 +173,16 @@
             </div>
 
             <div class="l-L04">
-              <div class="l-L05 b-aboutContents">
+              <div class="l-L05">
                 <div class="b-guidance b-guidance--service">
                   <p class="b-guidance__number flame flame--orange">01</p>
-                  <img class="b-guidance__icon" src="img/service_guidance_01.png" width="150px" height="150px" alt="" />
+                  <img
+                    class="b-guidance__icon b-image"
+                    src="img/service_guidance_01.png"
+                    width="150px"
+                    height="150px"
+                    alt=""
+                  />
                   <p class="b-serviceGuidance__mainTitle">
                     <span class="br b-serviceGuidance__subTitle">様々なクリエイターが集結</span>
                     最適なWebサイトを制作
@@ -133,7 +190,13 @@
                 </div>
                 <div class="b-guidance b-guidance--service">
                   <p class="b-guidance__number flame flame--orange">02</p>
-                  <img class="b-guidance__icon" src="img/service_guidance_02.png" width="150px" height="150px" alt="" />
+                  <img
+                    class="b-guidance__icon b-image"
+                    src="img/service_guidance_02.png"
+                    width="150px"
+                    height="150px"
+                    alt=""
+                  />
                   <p class="b-serviceGuidance__mainTitle">
                     <span class="br b-serviceGuidance__subTitle">細やかな対応で不安感を払拭</span>
                     「わからない」をゼロに
@@ -141,7 +204,13 @@
                 </div>
                 <div class="b-guidance b-guidance--service">
                   <p class="b-guidance__number flame flame--orange">03</p>
-                  <img class="b-guidance__icon" src="img/service_guidance_03.png" width="150px" height="150px" alt="" />
+                  <img
+                    class="b-guidance__icon b-image"
+                    src="img/service_guidance_03.png"
+                    width="150px"
+                    height="150px"
+                    alt=""
+                  />
                   <p class="b-serviceGuidance__mainTitle">
                     <span class="br b-serviceGuidance__subTitle">制作における見えないコストを削減</span>
                     低価格の実現
@@ -188,9 +257,458 @@
             </div>
           </div>
         </section>
+
+        <section class="l-S01 s-difference">
+          <div class="l-S02">
+            <div class="l-S03">
+              <div class="l-L01"><h2 class="b-difference__mainTitle">他社との価格の違い</h2></div>
+              <div class="l-L02">
+                <div class="l-L03"><p class="b-difference__callText">例えばこのくらい！</p></div>
+                <div class="l-L04"><h3 class="b-contents__title">過去の案件の参考例</h3></div>
+                <div class="l-L05">
+                  <p class="b-difference__mainText">5ページのWebサイトをご依頼いただいた場合</p>
+                </div>
+                <div class="l-L06">
+                  <p class="b-difference__mainText flame b-boxFlame__lineCircle b-boxFlame__lineCircle--blue">
+                    <span class="br">トップ</span>ページ
+                  </p>
+                  <p class="b-difference__mainText flame b-boxFlame__lineCircle b-boxFlame__lineCircle--blue">
+                    <span class="br">下層</span>4ページ
+                  </p>
+                  <p class="b-difference__mainText flame b-boxFlame__lineCircle b-boxFlame__lineCircle--blue">
+                    <span class="br">スマホ</span>対応
+                  </p>
+                </div>
+                <div class="l-L07 b-boxFlame__shift b-boxFlame__shift--blue">
+                  <img class="b-image" src="img/difference.png" alt="" />
+                </div>
+                <div class="l-L08">
+                  <p class="b-difference__subText b-boxFlame__line b-boxFlame__line--blue">
+                    この金額は一例です。価格は<span class="red">ご依頼内容により変動</span
+                    >いたしますので、具体的なお見積りにつきましてはお問い合わせください。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-S01 s-reason">
+          <div class="l-S02">
+            <div class="l-S03">
+              <div class="l-L01">
+                <div class="l-L02">
+                  <h2 class="b-heading__title icon icon--orange">
+                    <span class="emphasis">低価格</span>が実現できるワケ
+                  </h2>
+                </div>
+                <div class="l-L03">
+                  <p class="b-heading__text">SLashNextだからこそ様々なコスト削減が可能です。</p>
+                  <p class="b-heading__text">
+                    クライアントに寄り添ったお見積りを心がけているため、安心してご利用ください。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="l-L04">
+              <div class="l-L05">
+                <div class="b-guidance b-guidance--reason">
+                  <p class="b-guidance__number flame flame--blue">01</p>
+                  <img
+                    class="b-guidance__icon b-image"
+                    src="img/about_contents_03.png"
+                    width="180px"
+                    height="180px"
+                    alt=""
+                  />
+                  <p class="b-reasonGuidance__title">安定した人材確保</p>
+                </div>
+                <div class="b-guidance b-guidance--reason">
+                  <p class="b-guidance__number flame flame--blue">02</p>
+                  <img
+                    class="b-guidance__icon b-image"
+                    src="img/reason_guidance_01.png"
+                    width="180px"
+                    height="180px"
+                    alt=""
+                  />
+                  <p class="b-reasonGuidance__title">最適な人材配置</p>
+                </div>
+                <div class="b-guidance b-guidance--reason">
+                  <p class="b-guidance__number flame flame--blue">03</p>
+                  <img
+                    class="b-guidance__icon b-image"
+                    src="img/reason_guidance_02.png"
+                    width="180px"
+                    height="180px"
+                    alt=""
+                  />
+                  <p class="b-reasonGuidance__title"><span class="br">コミュニケーション</span>コストの削減</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="l-S03">
+              <div class="l-L06">
+                <div class="l-L07">
+                  <div class="l-L08">
+                    <div class="l-L09">
+                      <p class="b-reasonContents__number">01</p>
+                      <h3 class="b-contents__title">安定した人材確保</h3>
+                    </div>
+                    <div class="l-L10">
+                      <p class="b-contents__text">
+                        人材を雇用して抱え込むことやプロジェクトに適した人をその都度集めることは容易ではなく、人材の確保には本来であれば時間的にも労働費用的にも大きなコストがかかっています。
+                      </p>
+                    </div>
+                    <div class="l-L11">
+                      <p class="b-reasonContents__boxText">常に一定数以上のクリエイターが稼働可能</p>
+                      <p class="b-reasonContents__boxResult">人材の確保にコストがかからない</p>
+                    </div>
+                  </div>
+                  <div class="l-L12">
+                    <img class="b-image" src="img/reason_keepstaff.png" alt="常に一定数以上のクリエイターが稼働可能" />
+                  </div>
+                </div>
+                <div class="l-L07">
+                  <div class="l-L08">
+                    <div class="l-L09">
+                      <p class="b-reasonContents__number">02</p>
+                      <h3 class="b-contents__title">最適な人材配置</h3>
+                    </div>
+                    <div class="l-L10">
+                      <p class="b-contents__text">
+                        Webサイト制作には幅広い知識と経験が求められるため、知見の浅い制作工程にも携わる場合が多く、調べながら制作を進める作業に多くの工程をかけています。
+                      </p>
+                    </div>
+                    <div class="l-L11">
+                      <p class="b-reasonContents__boxText">得意に合った人材配置でスマートな制作過程</p>
+                      <p class="b-reasonContents__boxResult">制作工数の削減につながる</p>
+                    </div>
+                  </div>
+                  <div class="l-L12">
+                    <img
+                      class="b-image"
+                      src="img/reason_assign.png"
+                      alt="例えばアニメーションの入った親しみやすいコーポレートサイトご依頼の場合。情報設計はコーポレートサイトが得意な人、デザインはイラストを使ったデザインが得意な人、コーディングはアニメーションが得意な人をアサインします。"
+                    />
+                  </div>
+                </div>
+                <div class="l-L07">
+                  <div class="l-L08">
+                    <div class="l-L09">
+                      <p class="b-reasonContents__number">03</p>
+                      <h3 class="b-contents__title"><span class="br">コミュニケーション</span>コストの削減</h3>
+                    </div>
+                    <div class="l-L10">
+                      <p class="b-contents__text">
+                        外部のフリーランスに作業の一部を委託する際などは、認識の齟齬を避けるために共通認識のすり合わせに時間がかかります。また、別々のシステム環境の中で作業をしているので、使用しているツールやルールが違うといった不都合も生まれます。
+                      </p>
+                    </div>
+                    <div class="l-L11">
+                      <p class="b-reasonContents__boxText">普段からコミュニケーションを交わしている</p>
+                      <p class="b-reasonContents__boxResult">共通認識のすり合わせに時間をかける必要がない</p>
+                    </div>
+                  </div>
+                  <div class="l-L12">
+                    <img
+                      class="b-image"
+                      src="img/reason_communication.png"
+                      alt="常に一定数以上のクリエイターが稼働可能"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-S01 s-flow">
+          <div class="l-S02">
+            <div class="l-S03">
+              <div class="l-L01">
+                <div class="l-L02">
+                  <h2 class="b-heading__title icon icon--orange">納品までの<span class="emphasis">流れ</span></h2>
+                </div>
+                <div class="l-L03">
+                  <p class="b-heading__text">ご依頼いただいてから納品までの流れは通常のWeb制作と変わりありません。</p>
+                  <p class="b-heading__text">
+                    制作フェーズの内部として、案件に沿ったクリエイターをアサインしています。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="l-L04">
+              <div class="l-L05">
+                <div class="b-guidance b-guidance--flow">
+                  <p class="b-guidance__number flame flame--green">01</p>
+                  <img class="b-guidance__icon b-image" src="img/flow_01.png" width="100px" height="100px" alt="" />
+                  <p class="b-flowContents__title">ご依頼</p>
+                </div>
+                <div class="b-guidance b-guidance--flow">
+                  <p class="b-guidance__number flame flame--green">02</p>
+                  <img class="b-guidance__icon b-image" src="img/flow_02.png" width="100px" height="100px" alt="" />
+                  <p class="b-flowContents__title">打ち合わせ</p>
+                </div>
+                <div class="b-guidance b-guidance--flow">
+                  <p class="b-guidance__number flame flame--green">03</p>
+                  <img class="b-guidance__icon b-image" src="img/flow_03.png" width="100px" height="100px" alt="" />
+                  <p class="b-flowContents__title">お見積り</p>
+                </div>
+                <div class="b-guidance b-guidance--flow">
+                  <p class="b-guidance__number flame flame--green">04</p>
+                  <img class="b-guidance__icon b-image" src="img/flow_04.png" width="100px" height="100px" alt="" />
+                  <p class="b-flowContents__title">制作</p>
+                </div>
+                <div class="b-guidance b-guidance--flow">
+                  <p class="b-guidance__number flame flame--green">05</p>
+                  <img
+                    class="b-guidance__icon b-image"
+                    src="img/service_advantage_03.png"
+                    width="100px"
+                    height="100px"
+                    alt=""
+                  />
+                  <p class="b-flowContents__title">納品</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-S01 s-creator">
+          <div class="l-S02">
+            <div class="l-S03">
+              <div class="l-L01">
+                <div class="l-L02">
+                  <h2 class="b-heading__title icon icon--purpul">
+                    <span class="emphasis">所属クリエイター</span>について
+                  </h2>
+                </div>
+                <div class="l-L03">
+                  <p class="b-heading__text">
+                    <span class="br"
+                      >SLashNextの提供元である株式会社CRANKSが運営する「Webクリエイター育成スクール SLash」には、</span
+                    >フリーランスを目指す一定水準以上の人が集まっています。
+                  </p>
+                  <p class="b-heading__text">
+                    SLashNextは、SLashの受講生と卒業生の中から選抜された一部のクリエイターで構成されています。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="l-L04">
+              <div class="l-L05">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="l-S03">
+              <div class="l-L06">
+                <div class="l-L07">
+                  <div class="l-L08">
+                    <h3 class="b-contents__title b-contents__titlet--white">
+                      <span class="br">フリーランスWebクリエイター</span>育成スクール - SLash -
+                    </h3>
+                  </div>
+                  <div class="l-L09 m-creatorSlash">
+                    <div class="l-L10">
+                      <div class="l-L11">
+                        <p class="b-heading__text b-heading__text--white">
+                          自らの思考や行動によって新しい価値を創造し、自主的かつ継続的な経済活動を行えるクリエイターを育成します。
+                        </p>
+                      </div>
+                      <div class="l-L12">
+                        <p class="b-contents__text b-contents__text--white">
+                          SLashでは、単なる技術教育にとどまらず、人としての本質的な思考力や価値観の改善・育成を行うことを主題としています。「どんなスキルを身につけるか」ではなく「どんな人がスキルを身につけるか」に真意を見出し、社会から求められる優秀な人材教育をする中で技術教育も行います。
+                        </p>
+                      </div>
+                      <div class="l-L13">
+                        <a class="b-creatorContents__link">フリーランスWebクリエイター育成スクール - SLash -</a>
+                      </div>
+                    </div>
+                    <div class="l-L14 b-boxFlame__shift b-boxFlame__shift--pink"></div>
+                  </div>
+                </div>
+                <div class="l-L07">
+                  <div class="l-L08">
+                    <h3 class="b-contents__title b-contents__titlet--white">株式会社CRANKS</h3>
+                  </div>
+                  <div class="l-L09 m-creatorCranks">
+                    <div class="l-L10">
+                      <div class="l-L11">
+                        <p class="b-heading__text b-heading__text--white">
+                          株式会社CRANKSは、Webを中心に世の中に溢れる課題解決に挑むクリエイティブカンパニーです。
+                        </p>
+                      </div>
+                      <div class="l-L12">
+                        <p class="b-contents__text b-contents__text--white">
+                          Webサイト制作における企画提案、丁寧なヒアリング、クオリティの高いデザイン、コーディング、保守運用までトータルで行える2名の現役クリエイターが代表を務めます。
+                        </p>
+                      </div>
+                      <div class="l-L13">
+                        <a class="b-creatorContents__link">株式会社CRANKS</a>
+                      </div>
+                    </div>
+                    <div class="l-L14 b-boxFlame__shift b-boxFlame__shift--purple"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-S01 s-faq">
+          <div class="l-S02">
+            <div class="l-S03">
+              <div class="l-L01">
+                <div class="l-L02">
+                  <h2 class="b-heading__title icon icon--yellow">よくある<span class="emphasis">質問</span></h2>
+                </div>
+                <ul class="l-L03">
+                  <li class="b-boxFlame__line b-boxFlame__line--yellow">
+                    <dl class="b-faqContents__box">
+                      <dt class="b-faqContents__boxTitle">SLashNextとはどのようなサービスですか？</dt>
+                      <dd class="b-contents__text">
+                        株式会社CRANKSと幅広い強みを持ったクリエイター陣によるWebサイト制作プロジェクトです。所属しているクリエイター全員が個々人の様々な強みを発揮し、クライアントに高品質で低価格なWebサイト制作を提供することを目的としています。
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="b-boxFlame__line b-boxFlame__line--yellow">
+                    <dl class="b-faqContents__box">
+                      <dt class="b-faqContents__boxTitle">相場と比べてどのくらい安くなりますか？</dt>
+                      <dd class="b-contents__text">
+                        金額の詳細につきましては一概にはお伝えできません。価格はご依頼内容などにより変動いたしますので、詳しくはお気軽にお問い合わせください。
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="b-boxFlame__line b-boxFlame__line--yellow">
+                    <dl class="b-faqContents__box">
+                      <dt class="b-faqContents__boxTitle">制作期間はどのくらいですか？</dt>
+                      <dd class="b-contents__text">
+                        制作するWebサイトの規模感などにより変動しますが、通常のWebサイト制作と同様の制作期間を見込んでいただければ良いかと思います。詳しくはお気軽にお問い合わせください。
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="b-boxFlame__line b-boxFlame__line--yellow">
+                    <dl class="b-faqContents__box">
+                      <dt class="b-faqContents__boxTitle">
+                        制作着手後に追加したい要素が発生した場合は対応していただけますか？
+                      </dt>
+                      <dd class="b-contents__text">対応いたします。</dd>
+                      <dd class="b-contents__text">
+                        制作時期や追加要素の内容により追加料金が変動いたしますので、都度お見積りを作成させていただきます。
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="b-boxFlame__line b-boxFlame__line--yellow">
+                    <dl class="b-faqContents__box">
+                      <dt class="b-faqContents__boxTitle">所属しているクリエイターの人数はどのくらいですか？</dt>
+                      <dd class="b-contents__text">2022年11月時点で20人以上のクリエイターが所属しています。</dd>
+                    </dl>
+                  </li>
+                  <li class="b-boxFlame__line b-boxFlame__line--yellow">
+                    <dl class="b-faqContents__box">
+                      <dt class="b-faqContents__boxTitle">ロゴや印刷物などの依頼は受け付けていますか？</dt>
+                      <dd class="b-contents__text">
+                        SLashNextではWebサイト制作に関連するご依頼のみを対象としていますので、ロゴや印刷物などをご希望の場合は株式会社CRANKSへご依頼ください。
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-S01 s-message">
+          <div class="l-S02">
+            <div class="l-S03">
+              <div class="l-L01">
+                <div class="l-L02"><h2 class="b-messageContents__title">本質的な成長に向けて</h2></div>
+                <div class="l-L03">
+                  <p class="b-contents__text">
+                    私たちがWeb制作を通して目指す先は「まだない価値を生み出せるカンパニー」です。そのために必要なものはいくつかありますが、最も大切なものは共に夢を目指せる仲間だと考えています。そして、仲間に対して一番求めているのは人間性。案件を通して技術に磨きをかけるだけではなく、仲間と共に案件を乗り越えて人間性を高めていってほしい。このような想いで、高品質で低価格なWeb制作プロジェクトを立ち上げました。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="l-S01">
+          <div class="l-S02">
+            <div class="l-S03">
+              <div class="l-L01">
+                <div class="l-L02"><img src="img/footer_cranks_01.svg" alt="" /></div>
+                <div class="l-L03">
+                  <dl class="b-footerCompany">
+                    <dt class="b-footerCompany__label">会社名</dt>
+                    <dd class="b-footerCompany__text">
+                      株式会社CRANKS <br /><span class="b-footerCompany__subText">CRANKS CORPORATION</span>
+                    </dd>
+                    <dt class="b-footerCompany__label">設立</dt>
+                    <dd class="b-footerCompany__text">2021年2月</dd>
+                    <dt class="b-footerCompany__label">事業内容</dt>
+                    <dd class="b-footerCompany__text">Web制作事業<br />Webクリエイター育成事業</dd>
+                    <dt class="b-footerCompany__label">住所</dt>
+                    <dd class="b-footerCompany__text">
+                      <span class="b-footerCompany__subText">〒150-0001</span>
+                      <br />
+                      東京都渋谷区神宮前6-23-4 桑野ビル2F
+                    </dd>
+                    <dt class="b-footerCompany__label">代表者</dt>
+                    <dd class="b-footerCompany__text">
+                      <div class="ashizawa">
+                        <span class="b-footerCompany__subText">代表取締役 社長</span>
+                        <br />
+                        芦沢 哲也 <br />
+                      </div>
+                      <div class="ogino">
+                        <span class="b-footerCompany__subText">代表取締役 副社長</span>
+                        <br />
+                        荻野 裕行
+                      </div>
+                    </dd>
+                    <dt class="b-footerCompany__label">ホームページ</dt>
+                    <dd class="b-footerCompany__text"><a href="https://cranks.co.jp/">https://cranks.co.jp/</a></dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="l-L04">
+              <div class="l-L05">
+                <h1 class="b-logo">
+                  <a href="index.html">SLashNext</a>
+                </h1>
+              </div>
+              <nav class="l-L06">
+                <ul class="m-footerNav__box">
+                  <li class="b-nav__item b-nav__title"><a href="">SLashNextとは</a></li>
+                  <li class="b-nav__item b-nav__title"><a href="">サービスの特徴</a></li>
+                  <li class="b-nav__item b-nav__title"><a href="">価格の違い</a></li>
+                  <li class="b-nav__item b-nav__title"><a href="">低価格のワケ</a></li>
+                  <li class="b-nav__item b-nav__title"><a href="">納品までの流れ</a></li>
+                  <li class="b-nav__item b-nav__title"><a href="">所属クリエイター</a></li>
+                  <li class="b-nav__item b-nav__title"><a href="">よくある質問</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="l-L07">
+              <p class="b-copyRight">&copy;2022 CRANKS CORPORATION</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

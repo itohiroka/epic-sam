@@ -1,5 +1,17 @@
 @use "../01_foundation" as *;
+.b-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
+/*
+  hero
+----------------------------------------------- */
+
+/*
+  about
+----------------------------------------------- */
 .b-aboutReception {
   &__box {
     display: flex;
@@ -12,3 +24,162 @@
     margin: auto 0;
   }
 }
+
+/*
+  service
+----------------------------------------------- */
+
+/*
+  difference
+----------------------------------------------- */
+.b-difference__callText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 43px;
+  background-color: $blueColor;
+  border-radius: 8px;
+}
+/*
+  reason
+----------------------------------------------- */
+.b-reasonContents {
+  &__boxText {
+    position: relative;
+    padding-left: 36px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+      background-color: $blueColor;
+    }
+  }
+
+  &__boxResult {
+    position: relative;
+    padding-left: 36px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto 0;
+      border-radius: 1.5px;
+    }
+    &:before {
+      left: 0px;
+      width: 20px;
+      height: 3px;
+      background: $blueColor;
+    }
+    &:after {
+      left: 8px;
+      width: 8px;
+      height: 9px;
+      border-top: 3px solid $blueColor;
+      border-right: 3px solid $blueColor;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}
+
+/*
+  flow
+----------------------------------------------- */
+
+/*
+  creator
+----------------------------------------------- */
+.m-creatorSlash,
+.m-creatorCranks {
+  & .b-creatorContents__link {
+    position: relative;
+    padding: 0 32px 0 24px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+    }
+    &::before {
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $pinkColor;
+    }
+    &::after {
+      right: 0;
+      background-image: url(../../img/mdi_external-link.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.m-creatorSlash {
+  & .b-creatorContents__link {
+    &::before {
+      background-color: $pinkColor;
+    }
+  }
+}
+.m-creatorCranks {
+  & .b-creatorContents__link {
+    &::before {
+      background-color: $purpleColor;
+    }
+  }
+}
+/*
+  FAQ
+----------------------------------------------- */
+.b-faqContents__boxTitle {
+  position: relative;
+  z-index: 0;
+  &::before,
+  &::after {
+    content: "";
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+  }
+  &::before {
+    content: "Q";
+    @include font-size(18);
+    line-height: 1;
+    text-align: center;
+    top: 12px;
+    left: -35px;
+    width: 18px;
+    height: 18px;
+    z-index: 2;
+  }
+  &::after {
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../../img/faq_icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+  }
+}
+/*
+  message
+----------------------------------------------- */

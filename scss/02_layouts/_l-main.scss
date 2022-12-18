@@ -10,8 +10,7 @@
 .s-reason,
 .s-flow,
 .s-creator,
-.s-faq,
-.s-message {
+.s-faq {
   & .l-L01 {
     padding: 104px 0 80px 0;
   }
@@ -23,8 +22,75 @@
   hero
 ----------------------------------------------- */
 .s-hero {
-  .l-S01 {
+  &.l-S01 {
     height: 100vh;
+    overflow: hidden;
+  }
+  & .l-S02 {
+    position: relative;
+    z-index: 0;
+  }
+  & .l-L01 {
+    position: absolute;
+    top: 38%;
+    z-index: 10;
+  }
+  & .l-L02 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  & .l-L03 {
+    width: 100%;
+    height: 100%;
+    & .b-hero {
+      &__parts01,
+      &__parts02,
+      &__parts03,
+      &__parts04,
+      &__parts05,
+      &__parts06 {
+        position: absolute;
+      }
+      &__parts01 {
+        bottom: -43%;
+        left: -10%;
+        bottom: -358px;
+        left: -145px;
+      }
+      &__parts02 {
+        top: -7%;
+        left: -6%;
+        top: -56px;
+        left: -84px;
+      }
+      &__parts03 {
+        top: -33%;
+        left: 2.5%;
+        top: -270px;
+        left: 38px;
+      }
+
+      &__parts04 {
+        top: 1%;
+        right: 9.5%;
+        top: 10px;
+        right: 136px;
+      }
+
+      &__parts05 {
+        top: 17%;
+        right: -10%;
+        top: 142px;
+        right: -144px;
+      }
+      &__parts06 {
+        bottom: -34%;
+        right: 14%;
+        bottom: -278px;
+        right: 198px;
+      }
+    }
   }
 }
 
@@ -88,7 +154,7 @@
 ----------------------------------------------- */
 .s-service {
   & .l-L04 {
-    padding: 106px 0 56px 0;
+    padding: 104px 0 64px 0;
     background-color: $orangeColor;
   }
   & .l-L05 {
@@ -146,23 +212,243 @@
 /*
   difference
 ----------------------------------------------- */
+.s-difference {
+  & .l-S02 {
+    background-color: $differenceBgColor;
+  }
+  & .l-S03 {
+    padding: 104px 0;
+  }
+  & .l-L01 {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  & .l-L02 {
+    display: grid;
+    grid-template-columns: 1fr 53%;
+    grid-template-rows: repeat(5, auto);
+    gap: 0 64px;
+    grid-template-areas:
+      "l-L03 l-L07"
+      "l-L04 l-L07"
+      "l-L05 l-L07"
+      "l-L06 l-L07"
+      "l-L08 l-L07";
+  }
+  & .l-L03,
+  & .l-L04 {
+    padding-bottom: 32px;
+  }
+  & .l-L05 {
+    padding-bottom: 24px;
+  }
+  & .l-L07 {
+    padding: 32px;
+  }
+  & .l-L08 {
+    & .b-difference__subText {
+      padding: 48px 24px;
+    }
+  }
+
+  & .l-L06 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 56px;
+    & .b-boxFlame__lineCircle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 132px;
+      height: 132px;
+      &:nth-of-type(2) {
+        position: relative;
+        &::before,
+        &::after {
+          content: "+";
+          @include font-size(36);
+          line-height: 0.9;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto 0;
+          width: 36px;
+          height: 36px;
+        }
+        &::before {
+          left: -44px;
+        }
+        &::after {
+          right: -44px;
+        }
+      }
+    }
+  }
+}
 
 /*
   reason
 ----------------------------------------------- */
+.s-reason {
+  & .l-L04 {
+    padding: 104px 0 64px 0;
+    background-color: $blueColor;
+  }
+  & .l-L05 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  & .l-L06 {
+    padding-bottom: 104px;
+  }
+  & .l-L07 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 160px;
+  }
+  & .l-L08 {
+    width: 45%;
+  }
+  & .l-L12 {
+    width: 48%;
+  }
+  & .l-L09 {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+    padding-bottom: 40px;
+  }
+  & .l-L10 {
+    padding-bottom: 64px;
+  }
+  & .l-L11 {
+    .b-reasonContents__boxResult {
+      margin: 16px 0 0 40px;
+    }
+  }
+}
 
 /*
   flow
 ----------------------------------------------- */
-
+.s-flow {
+  & .l-S02 {
+    padding-bottom: 104px;
+  }
+  & .l-L04 {
+    padding: 104px 0 64px 0;
+    background-color: $greenColor;
+  }
+  & .l-L05 {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 90%;
+      height: 5px;
+      background-color: $whiteColor;
+    }
+  }
+}
 /*
   creator
 ----------------------------------------------- */
-
+.s-creator {
+  & .l-S02 {
+    background-color: $textColor;
+    padding-bottom: 64px;
+  }
+  & .l-L05 {
+    display: flex;
+    justify-content: space-between;
+    & div {
+      flex: 1;
+      height: 380px;
+      &:nth-child(1n) {
+        background: #f2f2f2;
+      }
+      &:nth-child(2n + 1) {
+        background: #cdcdcd;
+      }
+    }
+  }
+  & .l-L07 {
+    padding-top: 160px;
+  }
+  & .l-L09 {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 64px;
+  }
+  & .l-L08,
+  & .l-L11 {
+    padding-bottom: 40px;
+  }
+  & .l-L12 {
+    padding-bottom: 56px;
+  }
+}
 /*
   FAQ
 ----------------------------------------------- */
+.s-faq {
+  & .l-S03 {
+    padding-bottom: 104px;
+  }
+  & .l-L03 {
+    max-width: 1104px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px 0;
+    & .b-boxFlame__line {
+      width: 100%;
+      padding: 32px 72px;
+      & .b-faqContents__boxTitle {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
 
 /*
   message
 ----------------------------------------------- */
+.s-message {
+  & .l-S02 {
+    position: relative;
+    background-color: $messageBgColor;
+    &::before {
+      content: "SLashNext";
+      @include font-size(188);
+      line-height: 1;
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -30px;
+      margin: 0 auto;
+    }
+  }
+  & .l-L01 {
+    padding: 104px 0 120px 0;
+  }
+  & .l-L02 {
+    text-align: center;
+    padding-bottom: 32px;
+  }
+}
