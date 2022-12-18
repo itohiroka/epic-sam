@@ -31,3 +31,23 @@ window.addEventListener("scroll", function () {
   // 500px以上スクロールしたらヘッダーに「scroll-nav」クラスをつける
   header.classList.toggle("scroll-nav", window.scrollY > 500);
 });
+
+const thisBody = document.querySelector("body"),
+  footer = document.querySelector(".sitefooter");
+
+let scrolledOffset = heroSection.scrollHeight / 2,
+  scrolledAmount = 0;
+
+//SCROLL
+document.addEventListener("scroll", () => {
+  //is-scrolled
+  if (window.pageYOffset > scrolledOffset) {
+    if (!thisBody.classList.contains("is-scrolled")) {
+      thisBody.classList.add("is-scrolled");
+    }
+  } else {
+    if (thisBody.classList.contains("is-scrolled")) {
+      thisBody.classList.remove("is-scrolled");
+    }
+  }
+});

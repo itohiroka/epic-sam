@@ -3,16 +3,16 @@
   l-footer
 ----------------------------------------------- */
 .footer {
-  & .l-S01 {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 900px;
+  &.sitefooter {
+    position: sticky;
+    left: 0px;
+    bottom: 0px;
+    height: 1200px;
     background-color: $textColor;
-    z-index: -100;
+    z-index: -1;
   }
   & .l-S03 {
-    padding: 104px 0;
+    padding: 376px 0 104px 0;
     height: auto;
   }
   & .l-L02 {
@@ -72,5 +72,17 @@
   & .l-L07 {
     text-align: center;
     padding: 24px 0;
+  }
+}
+
+@media screen and (max-height: 850px) {
+  .footer {
+    &.sitefooter {
+      position: static;
+      height: auto;
+    }
+    & .l-S03 {
+      padding: 104px 0;
+    }
   }
 }
