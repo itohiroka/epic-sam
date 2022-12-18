@@ -184,28 +184,24 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 104px 64px;
-    & .kari-1,
-    & .kari-2 {
+    & .b-serviceContents__advantage {
       width: calc((100% - 64px) / 2);
-      height: 226px;
     }
-    & .kari-3 {
+    & .b-serviceContents__advantageResult {
       width: 100%;
-      height: 174px;
     }
   }
-  & .kari-4 {
-    width: 100%;
-    height: 395px;
+  & .l-L12 {
+    & .b-serviceContents__support {
+      width: 100%;
+    }
   }
-  & .l-L15 {
+  & .l-L16 {
     display: flex;
     justify-content: space-between;
     gap: 0 64px;
-    & .kari-5,
-    & .kari-6 {
+    & .b-serviceContents__lowPrice {
       width: calc((100% - 64px) / 2);
-      height: 452px;
     }
   }
 }

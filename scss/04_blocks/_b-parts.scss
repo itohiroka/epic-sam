@@ -28,7 +28,133 @@
 /*
   service
 ----------------------------------------------- */
+.b-serviceContents {
+  &__advantage {
+    padding: 32px 40px;
+    position: relative;
+    & .b-serviceContents__boxTitle {
+      padding-bottom: 16px;
+    }
+    & .b-serviceContents__boxIcon {
+      position: absolute;
+      bottom: 32px;
+      left: 40px;
+      width: 110px;
+    }
+  }
+  &__advantageResult {
+    padding: 32px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0 24px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -84px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 56px;
+      height: 56px;
+      background-image: url(../../img/hero_04.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: rotate(21deg);
+    }
+  }
+  &__advantageWrapper {
+    padding-left: 144px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+  }
+  &__support {
+    padding: 32px 64px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 64px;
+    & .b-serviceContents {
+      &__supportWrapper {
+        width: 45%;
+        & .b-serviceContents__boxIcon {
+          padding-bottom: 24px;
+          margin: 0 auto;
+        }
+      }
+      &__boxIcon {
+        width: 55%;
+      }
+      &__boxTitle {
+        padding-bottom: 24px;
+      }
+    }
+  }
+  &__lowPrice {
+    padding: 32px;
+    & .b-serviceContents {
+      &__lowPriceWrapper {
+        padding-bottom: 48px;
+        display: flex;
+        justify-content: space-between;
+        gap: 0 64px;
+        & .b-serviceContents__boxIcon:first-child {
+          position: relative;
+          width: 55%;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -18%;
+            bottom: 0;
+            margin: auto 0;
+            width: 32px;
+            height: 32px;
+            background-image: url(../../img/hero_04.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            transform: rotate(52deg);
+          }
+        }
+        & .b-serviceContents__boxIcon:last-child {
+          width: 45%;
+        }
+      }
+      &__boxTitle {
+        padding-bottom: 32px;
+      }
+      &__boxIcon.com {
+        padding-bottom: 48px;
+      }
+    }
+  }
+}
 
+.b-serviceContents__boxList {
+  &.icon {
+    position: relative;
+    padding-left: 24px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 4px;
+      margin: auto 0;
+      width: 14px;
+      height: 14px;
+      background-image: url(../../img/hero_04.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: rotate(50deg);
+    }
+    & span {
+      padding-left: 24px;
+    }
+  }
+}
 /*
   difference
 ----------------------------------------------- */

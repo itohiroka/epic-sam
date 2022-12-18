@@ -520,19 +520,16 @@ Layout
           justify-content: space-between;
   gap: 104px 64px;
 }
-.s-service .l-L09 .kari-1, .s-service .l-L09 .kari-2 {
+.s-service .l-L09 .b-serviceContents__advantage {
   width: calc((100% - 64px) / 2);
-  height: 226px;
 }
-.s-service .l-L09 .kari-3 {
+.s-service .l-L09 .b-serviceContents__advantageResult {
   width: 100%;
-  height: 174px;
 }
-.s-service .kari-4 {
+.s-service .l-L12 .b-serviceContents__support {
   width: 100%;
-  height: 395px;
 }
-.s-service .l-L15 {
+.s-service .l-L16 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -541,9 +538,8 @@ Layout
           justify-content: space-between;
   gap: 0 64px;
 }
-.s-service .l-L15 .kari-5, .s-service .l-L15 .kari-6 {
+.s-service .l-L16 .b-serviceContents__lowPrice {
   width: calc((100% - 64px) / 2);
-  height: 452px;
 }
 
 /*
@@ -1815,6 +1811,151 @@ Block
 /*
   service
 ----------------------------------------------- */
+.b-serviceContents__advantage {
+  padding: 32px 40px;
+  position: relative;
+}
+.b-serviceContents__advantage .b-serviceContents__boxTitle {
+  padding-bottom: 16px;
+}
+.b-serviceContents__advantage .b-serviceContents__boxIcon {
+  position: absolute;
+  bottom: 32px;
+  left: 40px;
+  width: 110px;
+}
+.b-serviceContents__advantageResult {
+  padding: 32px 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0 24px;
+}
+.b-serviceContents__advantageResult::before {
+  content: "";
+  position: absolute;
+  top: -84px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 56px;
+  height: 56px;
+  background-image: url(../../img/hero_04.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: rotate(21deg);
+          transform: rotate(21deg);
+}
+.b-serviceContents__advantageWrapper {
+  padding-left: 144px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px 0;
+}
+.b-serviceContents__support {
+  padding: 32px 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0 64px;
+}
+.b-serviceContents__support .b-serviceContents__supportWrapper {
+  width: 45%;
+}
+.b-serviceContents__support .b-serviceContents__supportWrapper .b-serviceContents__boxIcon {
+  padding-bottom: 24px;
+  margin: 0 auto;
+}
+.b-serviceContents__support .b-serviceContents__boxIcon {
+  width: 55%;
+}
+.b-serviceContents__support .b-serviceContents__boxTitle {
+  padding-bottom: 24px;
+}
+.b-serviceContents__lowPrice {
+  padding: 32px;
+}
+.b-serviceContents__lowPrice .b-serviceContents__lowPriceWrapper {
+  padding-bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0 64px;
+}
+.b-serviceContents__lowPrice .b-serviceContents__lowPriceWrapper .b-serviceContents__boxIcon:first-child {
+  position: relative;
+  width: 55%;
+}
+.b-serviceContents__lowPrice .b-serviceContents__lowPriceWrapper .b-serviceContents__boxIcon:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -18%;
+  bottom: 0;
+  margin: auto 0;
+  width: 32px;
+  height: 32px;
+  background-image: url(../../img/hero_04.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: rotate(52deg);
+          transform: rotate(52deg);
+}
+.b-serviceContents__lowPrice .b-serviceContents__lowPriceWrapper .b-serviceContents__boxIcon:last-child {
+  width: 45%;
+}
+.b-serviceContents__lowPrice .b-serviceContents__boxTitle {
+  padding-bottom: 32px;
+}
+.b-serviceContents__lowPrice .b-serviceContents__boxIcon.com {
+  padding-bottom: 48px;
+}
+
+.b-serviceContents__boxList.icon {
+  position: relative;
+  padding-left: 24px;
+}
+.b-serviceContents__boxList.icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 4px;
+  margin: auto 0;
+  width: 14px;
+  height: 14px;
+  background-image: url(../../img/hero_04.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+.b-serviceContents__boxList.icon span {
+  padding-left: 24px;
+}
+
 /*
   difference
 ----------------------------------------------- */
