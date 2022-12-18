@@ -360,8 +360,66 @@ Layout
 /*
   hero
 ----------------------------------------------- */
-.s-hero .l-S01 {
+.s-hero.l-S01 {
   height: 100vh;
+  overflow: hidden;
+}
+.s-hero .l-S02 {
+  position: relative;
+  z-index: 0;
+}
+.s-hero .l-L01 {
+  position: absolute;
+  top: 38%;
+  z-index: 10;
+}
+.s-hero .l-L02 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.s-hero .l-L03 {
+  width: 100%;
+  height: 100%;
+}
+.s-hero .l-L03 .b-hero__parts01, .s-hero .l-L03 .b-hero__parts02, .s-hero .l-L03 .b-hero__parts03, .s-hero .l-L03 .b-hero__parts04, .s-hero .l-L03 .b-hero__parts05, .s-hero .l-L03 .b-hero__parts06 {
+  position: absolute;
+}
+.s-hero .l-L03 .b-hero__parts01 {
+  bottom: -43%;
+  left: -10%;
+  bottom: -358px;
+  left: -145px;
+}
+.s-hero .l-L03 .b-hero__parts02 {
+  top: -7%;
+  left: -6%;
+  top: -56px;
+  left: -84px;
+}
+.s-hero .l-L03 .b-hero__parts03 {
+  top: -33%;
+  left: 2.5%;
+  top: -270px;
+  left: 38px;
+}
+.s-hero .l-L03 .b-hero__parts04 {
+  top: 1%;
+  right: 9.5%;
+  top: 10px;
+  right: 136px;
+}
+.s-hero .l-L03 .b-hero__parts05 {
+  top: 17%;
+  right: -10%;
+  top: 142px;
+  right: -144px;
+}
+.s-hero .l-L03 .b-hero__parts06 {
+  bottom: -34%;
+  right: 14%;
+  bottom: -278px;
+  right: 198px;
 }
 
 /*
@@ -1081,10 +1139,10 @@ Block
 ----------- */
 .b-heading__title {
   font-size: 1.5625rem;
-  line-height: 1;
 }
 .b-heading__title .emphasis {
   font-size: 2.8125rem;
+  line-height: 1.35;
 }
 .b-heading__text {
   font-size: 0.875rem;

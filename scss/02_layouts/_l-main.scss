@@ -22,8 +22,75 @@
   hero
 ----------------------------------------------- */
 .s-hero {
-  .l-S01 {
+  &.l-S01 {
     height: 100vh;
+    overflow: hidden;
+  }
+  & .l-S02 {
+    position: relative;
+    z-index: 0;
+  }
+  & .l-L01 {
+    position: absolute;
+    top: 38%;
+    z-index: 10;
+  }
+  & .l-L02 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  & .l-L03 {
+    width: 100%;
+    height: 100%;
+    & .b-hero {
+      &__parts01,
+      &__parts02,
+      &__parts03,
+      &__parts04,
+      &__parts05,
+      &__parts06 {
+        position: absolute;
+      }
+      &__parts01 {
+        bottom: -43%;
+        left: -10%;
+        bottom: -358px;
+        left: -145px;
+      }
+      &__parts02 {
+        top: -7%;
+        left: -6%;
+        top: -56px;
+        left: -84px;
+      }
+      &__parts03 {
+        top: -33%;
+        left: 2.5%;
+        top: -270px;
+        left: 38px;
+      }
+
+      &__parts04 {
+        top: 1%;
+        right: 9.5%;
+        top: 10px;
+        right: 136px;
+      }
+
+      &__parts05 {
+        top: 17%;
+        right: -10%;
+        top: 142px;
+        right: -144px;
+      }
+      &__parts06 {
+        bottom: -34%;
+        right: 14%;
+        bottom: -278px;
+        right: 198px;
+      }
+    }
   }
 }
 
