@@ -776,6 +776,7 @@ Layout
 .s-message .l-S02 {
   position: relative;
   background-color: #edf2f5;
+  overflow: hidden;
 }
 .s-message .l-S02::before {
   content: "SLashNext";
@@ -800,7 +801,7 @@ Layout
 /*
   l-footer
 ----------------------------------------------- */
-.footer .l-S02 {
+.footer .l-S01 {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -810,6 +811,7 @@ Layout
 }
 .footer .l-S03 {
   padding: 104px 0;
+  height: auto;
 }
 .footer .l-L02 {
   text-align: center;

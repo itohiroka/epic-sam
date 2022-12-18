@@ -411,6 +411,7 @@
   & .l-S02 {
     position: relative;
     background-color: $messageBgColor;
+    overflow: hidden;
     &::before {
       content: "SLashNext";
       @include font-size(188);

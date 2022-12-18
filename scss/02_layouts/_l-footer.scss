@@ -3,7 +3,7 @@
   l-footer
 ----------------------------------------------- */
 .footer {
-  & .l-S02 {
+  & .l-S01 {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -13,6 +13,7 @@
   }
   & .l-S03 {
     padding: 104px 0;
+    height: auto;
   }
   & .l-L02 {
     text-align: center;
