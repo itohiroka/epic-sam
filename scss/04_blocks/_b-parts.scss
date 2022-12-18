@@ -44,32 +44,17 @@
   }
   &__advantageResult {
     padding: 32px 40px;
-    position: relative;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     gap: 0 24px;
-    &::before {
-      content: "";
-      position: absolute;
-      top: -84px;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      width: 56px;
-      height: 56px;
-      background-image: url(../../img/hero_04.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      transform: rotate(21deg);
-    }
   }
   &__advantageWrapper {
     padding-left: 144px;
     display: flex;
     flex-direction: column;
-    gap: 16px 0;
+    gap: 12px 0;
   }
   &__support {
     padding: 32px 64px;
@@ -125,7 +110,9 @@
       &__boxTitle {
         padding-bottom: 32px;
       }
-      &__boxIcon.com {
+      &__boxIcon.communication {
+        width: 385px;
+        margin: 0 auto;
         padding-bottom: 48px;
       }
     }
@@ -269,6 +256,93 @@
     }
   }
 }
+
+.b-creatorSLash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  &__boxLogo {
+    width: 240px;
+    padding-bottom: 24px;
+  }
+  &__cardBox {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 32px;
+  }
+  &__cardItem {
+    padding: 24px;
+    border-radius: 8px;
+    &.blue {
+      background-color: $SLashCardColor_01;
+    }
+    &.gray {
+      background-color: $SLashCardColor_02;
+      color: $textColor;
+    }
+  }
+
+  &__boxTitle {
+    position: relative;
+    padding-top: 104px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 96px;
+      height: 104px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &.blue::before {
+      background-image: url(../../img/creator_slash_02.png);
+    }
+    &.gray::before {
+      background-image: url(../../img/creator_slash_03.png);
+    }
+  }
+  &__boxTitle span {
+    &::before,
+    &::after {
+      box-sizing: border-box;
+      border-style: solid;
+      border-width: 0;
+    }
+    &::before {
+      content: "- ";
+    }
+    &::after {
+      content: " -";
+    }
+  }
+}
+
+.b-creatorCranks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $textColor;
+  padding: 32px 64px;
+  &__boxLogo {
+    width: 318px;
+    padding-bottom: 24px;
+  }
+  &__cardBox {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 64px;
+  }
+  &__boxImage {
+    padding-bottom: 8px;
+  }
+  &__boxName--jp {
+    padding-bottom: 8px;
+  }
+}
 /*
   FAQ
 ----------------------------------------------- */
@@ -290,7 +364,7 @@
     @include font-size(18);
     line-height: 1;
     text-align: center;
-    top: 12px;
+    top: 9px;
     left: -35px;
     width: 18px;
     height: 18px;

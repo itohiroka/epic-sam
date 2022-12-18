@@ -1,0 +1,138 @@
+/*
+  about
+----------------------------------------------- */
+.s-about {
+  & .l-L04 {
+    z-index: 2;
+  }
+  & .l-L06 {
+    position: relative;
+    z-index: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -74px;
+      right: -122px;
+      width: 742px;
+      height: 742px;
+      background-image: url(../../img/background_01.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+  }
+}
+/*
+  service
+----------------------------------------------- */
+.s-service {
+  & .l-L04,
+  & .l-L08,
+  & .l-L12,
+  & .l-L15 {
+    z-index: 2;
+  }
+  & .l-L07,
+  & .l-L10,
+  & .l-L13 {
+    position: relative;
+    z-index: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 930px;
+      height: 930px;
+      background-image: url(../../img/background_02.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -2;
+    }
+  }
+  & .l-L07 {
+    &::before {
+      top: -164px;
+      right: -220px;
+      transform: rotate(-26deg);
+    }
+  }
+  & .l-L10 {
+    &::before {
+      top: -2px;
+      left: -400px;
+      transform: rotate(14deg);
+    }
+  }
+  & .l-L13 {
+    &::before {
+      top: -60px;
+      right: -245px;
+      transform: rotate(-5deg);
+    }
+  }
+}
+
+/*
+  reason
+----------------------------------------------- */
+.s-reason {
+  & .l-L04 {
+    z-index: 2;
+  }
+  & .l-L07 {
+    position: relative;
+    z-index: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 700px;
+      height: 700px;
+      background-image: url(../../img/background_03.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -2;
+    }
+  }
+  & .l-L07 {
+    &:first-child::before {
+      top: -20px;
+      left: -170px;
+      transform: rotate(-19deg);
+    }
+    &:nth-of-type(2)::before {
+      top: -2px;
+      right: -185px;
+      transform: rotate(-19deg);
+    }
+    &:last-child::before {
+      top: 118px;
+      left: -164px;
+      transform: rotate(11deg);
+    }
+  }
+}
+
+/*
+  flow
+----------------------------------------------- */
+.s-flow {
+  & .l-L04 {
+    z-index: 2;
+  }
+  & .l-L01 {
+    position: relative;
+    z-index: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 130px;
+      left: -210px;
+      width: 755px;
+      height: 755px;
+      transform: rotate(-11deg);
+      background-image: url(../../img/background_04.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -2;
+    }
+  }
+}

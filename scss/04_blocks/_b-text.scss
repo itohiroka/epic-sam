@@ -222,9 +222,11 @@
 .b-creatorCranks {
   &__boxName--jp {
     @include font-size(9);
+    line-height: 0.8;
   }
   &__boxName--en {
     @include font-size(6);
+    line-height: 1;
   }
   &__boxStatus {
     @include font-size(7);

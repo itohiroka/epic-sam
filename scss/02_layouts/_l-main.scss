@@ -178,6 +178,7 @@
   & .l-L13 {
     padding-top: 160px;
   }
+
   & .l-L08,
   & .l-L11,
   & .l-L14 {
@@ -187,12 +188,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 104px 64px;
+    gap: 22px 64px;
     & .b-serviceContents__advantage {
       width: calc((100% - 64px) / 2);
     }
     & .b-serviceContents__advantageResult {
       width: 100%;
+    }
+    & .b-serviceContents__advantageIcon {
+      width: 100%;
+      text-align: center;
+      & .b-image {
+        width: 50px;
+        transform: rotate(20deg);
+        padding-bottom: 4px;
+        margin-right: 14px;
+      }
     }
   }
   & .l-L12 {
