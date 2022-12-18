@@ -1760,6 +1760,10 @@ Block
     width: 232px;
     margin-bottom: 0;
   }
+  .b-aboutContents__boxIcon.small {
+    width: 200px;
+    height: 232px;
+  }
 }
 /*
   b-flame
