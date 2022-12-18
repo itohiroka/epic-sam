@@ -581,6 +581,9 @@ Layout
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -602,26 +605,6 @@ Layout
           justify-content: center;
   width: 132px;
   height: 132px;
-}
-.s-difference .l-L06 .b-boxFlame__lineCircle:nth-of-type(2) {
-  position: relative;
-}
-.s-difference .l-L06 .b-boxFlame__lineCircle:nth-of-type(2)::before, .s-difference .l-L06 .b-boxFlame__lineCircle:nth-of-type(2)::after {
-  content: "+";
-  font-size: 2.25rem;
-  line-height: 0.9;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  width: 36px;
-  height: 36px;
-}
-.s-difference .l-L06 .b-boxFlame__lineCircle:nth-of-type(2)::before {
-  left: -44px;
-}
-.s-difference .l-L06 .b-boxFlame__lineCircle:nth-of-type(2)::after {
-  right: -44px;
 }
 
 /*
@@ -1250,6 +1233,9 @@ Block
 .b-difference__mainText {
   font-size: 1rem;
 }
+.b-difference__plusText {
+  font-size: 1.5rem;
+}
 .b-difference__subText {
   font-size: 0.875rem;
   font-weight: 500;
@@ -1472,6 +1458,9 @@ Block
   .b-difference__mainText {
     font-size: 1.5rem;
   }
+  .b-difference__plusText {
+    font-size: 2.25rem;
+  }
   .b-difference__subText {
     font-size: 1.125rem;
   }
@@ -1624,6 +1613,9 @@ Block
 }
 .b-guidance--service .b-guidance__icon, .b-guidance--reason .b-guidance__icon {
   width: 100px;
+}
+.b-guidance--reason .b-reasonGuidance__title {
+  margin: auto 0;
 }
 .b-guidance--flow {
   padding: 24px;

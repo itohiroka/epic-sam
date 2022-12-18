@@ -252,6 +252,7 @@
 
   & .l-L06 {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding-bottom: 56px;
     & .b-boxFlame__lineCircle {
@@ -261,27 +262,6 @@
       justify-content: center;
       width: 132px;
       height: 132px;
-      &:nth-of-type(2) {
-        position: relative;
-        &::before,
-        &::after {
-          content: "+";
-          @include font-size(36);
-          line-height: 0.9;
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          margin: auto 0;
-          width: 36px;
-          height: 36px;
-        }
-        &::before {
-          left: -44px;
-        }
-        &::after {
-          right: -44px;
-        }
-      }
     }
   }
 }

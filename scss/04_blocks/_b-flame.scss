@@ -52,6 +52,12 @@
     }
   }
 
+  &--reason {
+    & .b-reasonGuidance__title {
+      margin: auto 0;
+    }
+  }
+
   &--flow {
     padding: 24px;
     & .b-guidance__icon {

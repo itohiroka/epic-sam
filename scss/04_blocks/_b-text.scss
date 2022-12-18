@@ -137,6 +137,9 @@
   &__mainText {
     @include font-size(16);
   }
+  &__plusText {
+    @include font-size(24);
+  }
   &__subText {
     @include font-size(14);
     font-weight: 500;
@@ -394,6 +397,9 @@
     }
     &__mainText {
       @include font-size(24);
+    }
+    &__plusText {
+      @include font-size(36);
     }
     &__subText {
       @include font-size(18);
