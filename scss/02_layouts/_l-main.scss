@@ -5,6 +5,12 @@
 /*
   common
 ----------------------------------------------- */
+.container {
+  background-color: $whiteColor;
+}
+.contents {
+  margin-bottom: 900px;
+}
 .s-about,
 .s-service,
 .s-reason,

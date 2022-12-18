@@ -341,6 +341,14 @@ Layout
 /*
   common
 ----------------------------------------------- */
+.container {
+  background-color: #fff;
+}
+
+.contents {
+  margin-bottom: 900px;
+}
+
 .s-about .l-L01,
 .s-service .l-L01,
 .s-reason .l-L01,
@@ -793,7 +801,12 @@ Layout
   l-footer
 ----------------------------------------------- */
 .footer .l-S02 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 900px;
   background-color: #242422;
+  z-index: -100;
 }
 .footer .l-S03 {
   padding: 104px 0;
