@@ -797,10 +797,19 @@ Layout
   padding: 16px 48px 16px 16px;
   border-bottom: 1px solid #d9d9d9;
 }
+.footer .b-footerCompany__text .ashizawa {
+  padding-bottom: 4px;
+}
 .footer .l-L04 {
+  width: 90%;
+  max-width: 1320px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1302,7 +1311,7 @@ Block
 }
 
 .b-footerCompany {
-  line-height: 1;
+  line-height: 1.1;
 }
 .b-footerCompany__label {
   font-size: 0.6875rem;
