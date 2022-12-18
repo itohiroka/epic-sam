@@ -34,10 +34,17 @@
       width: calc(100% - 184px);
       padding: 16px 48px 16px 16px;
       border-bottom: 1px solid $footerCompanyLineColor;
+      & .ashizawa {
+        padding-bottom: 4px;
+      }
     }
   }
   & .l-L04 {
+    width: 90%;
+    max-width: 1320px;
+    margin: 0 auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     gap: 0 24px;
   }
