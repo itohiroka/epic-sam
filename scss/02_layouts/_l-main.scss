@@ -307,15 +307,9 @@
   & .l-L05 {
     display: flex;
     justify-content: space-between;
-    & div {
-      flex: 1;
-      height: 380px;
-      &:nth-child(1n) {
-        background: #f2f2f2;
-      }
-      &:nth-child(2n + 1) {
-        background: #cdcdcd;
-      }
+    height: auto;
+    & img {
+      width: 20%;
     }
   }
   & .l-L07 {
