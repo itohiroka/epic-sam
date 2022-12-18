@@ -2111,7 +2111,7 @@ Block
 }
 .b-creatorSLash__boxTitle {
   position: relative;
-  padding-top: 104px;
+  padding: 104px 0 8px 0;
 }
 .b-creatorSLash__boxTitle::before {
   content: "";
@@ -2142,6 +2142,9 @@ Block
 }
 .b-creatorSLash__boxTitle span::after {
   content: " -";
+}
+.b-creatorSLash__boxText {
+  margin: auto 0;
 }
 
 .b-creatorCranks {

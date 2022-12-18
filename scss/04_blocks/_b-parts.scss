@@ -285,7 +285,7 @@
 
   &__boxTitle {
     position: relative;
-    padding-top: 104px;
+    padding: 104px 0 8px 0;
     &::before {
       content: "";
       position: absolute;
@@ -318,6 +318,9 @@
     &::after {
       content: " -";
     }
+  }
+  &__boxText {
+    margin: auto 0;
   }
 }
 
