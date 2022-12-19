@@ -157,7 +157,11 @@
       padding: 80px 16px 30px;
       & .b-guidance__icon {
         width: 150px;
+        height: 160px;
         margin-bottom: 24px;
+        &.large {
+          width: 160px;
+        }
       }
     }
 

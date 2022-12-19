@@ -182,6 +182,7 @@ Layout
 .container {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .contents {
@@ -1772,7 +1773,11 @@ Block
   }
   .b-guidance--service .b-guidance__icon {
     width: 150px;
+    height: 160px;
     margin-bottom: 24px;
+  }
+  .b-guidance--service .b-guidance__icon.large {
+    width: 160px;
   }
   .b-guidance--reason {
     width: 360px;
@@ -1971,7 +1976,7 @@ Block
   gap: 12px 0;
 }
 .b-serviceContents__support {
-  padding: 32px 64px;
+  padding: 32px 32px 32px 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1981,14 +1986,14 @@ Block
   gap: 0 64px;
 }
 .b-serviceContents__support .b-serviceContents__supportWrapper {
-  width: 45%;
+  width: 50%;
 }
 .b-serviceContents__support .b-serviceContents__supportWrapper .b-serviceContents__boxIcon {
   padding-bottom: 24px;
   margin: 0 auto;
 }
 .b-serviceContents__support .b-serviceContents__boxIcon {
-  width: 55%;
+  width: 50%;
 }
 .b-serviceContents__support .b-serviceContents__boxTitle {
   padding-bottom: 24px;
@@ -2136,6 +2141,7 @@ Block
 .m-creatorCranks .b-creatorContents__link {
   position: relative;
   padding: 0 32px 0 24px;
+  border-bottom: 1px solid #fff;
 }
 .m-creatorSlash .b-creatorContents__link::before, .m-creatorSlash .b-creatorContents__link::after,
 .m-creatorCranks .b-creatorContents__link::before,

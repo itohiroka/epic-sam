@@ -145,20 +145,20 @@
     gap: 12px 0;
   }
   &__support {
-    padding: 32px 64px;
+    padding: 32px 32px 32px 64px;
     display: flex;
     justify-content: space-between;
     gap: 0 64px;
     & .b-serviceContents {
       &__supportWrapper {
-        width: 45%;
+        width: 50%;
         & .b-serviceContents__boxIcon {
           padding-bottom: 24px;
           margin: 0 auto;
         }
       }
       &__boxIcon {
-        width: 55%;
+        width: 50%;
       }
       &__boxTitle {
         padding-bottom: 24px;
@@ -305,6 +305,7 @@
   & .b-creatorContents__link {
     position: relative;
     padding: 0 32px 0 24px;
+    border-bottom: 1px solid $whiteColor;
     &::before,
     &::after {
       content: "";
