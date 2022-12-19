@@ -365,7 +365,7 @@ Layout
     transform: translate(20px, -40px);
   }
   60% {
-    transform: translate(40px, 20px);
+    transform: translate(60px, 20px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -379,7 +379,7 @@ Layout
     transform: translate(20px, -40px);
   }
   60% {
-    transform: translate(40px, 20px);
+    transform: translate(60px, 20px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -390,7 +390,7 @@ Layout
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translateY(20px);
+    transform: translateY(50px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -401,7 +401,7 @@ Layout
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translateY(20px);
+    transform: translateY(50px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -411,22 +411,16 @@ Layout
   0% {
     transform: rotate(0deg);
   }
-  50% {
-    transform: rotate(30deg);
-  }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes anime_parts03 {
   0% {
     transform: rotate(0deg);
   }
-  50% {
-    transform: rotate(30deg);
-  }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @-webkit-keyframes anime_parts04 {
@@ -456,10 +450,10 @@ Layout
     transform: translate(0px, 0px) rotate(0);
   }
   30% {
-    transform: translate(30px, 20px) rotate(10deg);
+    transform: translate(30px, 20px) rotate(-20deg);
   }
   60% {
-    transform: translate(20px, -20px) rotate(20deg);
+    transform: translate(-70px, 40px) rotate(-40deg);
   }
   100% {
     transform: translate(0px, 0px) rotate(0);
@@ -470,10 +464,10 @@ Layout
     transform: translate(0px, 0px) rotate(0);
   }
   30% {
-    transform: translate(30px, 20px) rotate(10deg);
+    transform: translate(30px, 20px) rotate(-20deg);
   }
   60% {
-    transform: translate(20px, -20px) rotate(20deg);
+    transform: translate(-70px, 40px) rotate(-40deg);
   }
   100% {
     transform: translate(0px, 0px) rotate(0);
@@ -484,7 +478,7 @@ Layout
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(30deg);
+    transform: rotate(40deg);
   }
   100% {
     transform: rotate(0deg);
@@ -495,7 +489,7 @@ Layout
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(30deg);
+    transform: rotate(40deg);
   }
   100% {
     transform: rotate(0deg);
@@ -531,24 +525,24 @@ Layout
   left: -10%;
   bottom: -358px;
   left: -145px;
-  -webkit-animation: anime_parts01 20s linear 1s infinite;
-          animation: anime_parts01 20s linear 1s infinite;
+  -webkit-animation: anime_parts01 15s linear 1s infinite;
+          animation: anime_parts01 15s linear 1s infinite;
 }
 .s-hero .l-L03 .b-hero__parts02 {
   top: -7%;
   left: -6%;
   top: -56px;
   left: -84px;
-  -webkit-animation: anime_parts02 12s linear infinite;
-          animation: anime_parts02 12s linear infinite;
+  -webkit-animation: anime_parts02 7s linear infinite;
+          animation: anime_parts02 7s linear infinite;
 }
 .s-hero .l-L03 .b-hero__parts03 {
   top: -33%;
   left: 2.5%;
   top: -270px;
   left: 38px;
-  -webkit-animation: anime_parts03 20s linear infinite;
-          animation: anime_parts03 20s linear infinite;
+  -webkit-animation: anime_parts03 30s linear infinite;
+          animation: anime_parts03 30s linear infinite;
 }
 .s-hero .l-L03 .b-hero__parts04 {
   top: 1%;
@@ -556,24 +550,24 @@ Layout
   top: 10px;
   right: 136px;
   z-index: 1;
-  -webkit-animation: anime_parts04 20s linear 2s infinite;
-          animation: anime_parts04 20s linear 2s infinite;
+  -webkit-animation: anime_parts04 15s linear 2s infinite;
+          animation: anime_parts04 15s linear 2s infinite;
 }
 .s-hero .l-L03 .b-hero__parts05 {
   top: 17%;
   right: -10%;
   top: 142px;
   right: -144px;
-  -webkit-animation: anime_parts05 25s linear infinite;
-          animation: anime_parts05 25s linear infinite;
+  -webkit-animation: anime_parts05 20s ease-in-out infinite;
+          animation: anime_parts05 20s ease-in-out infinite;
 }
 .s-hero .l-L03 .b-hero__parts06 {
   bottom: -34%;
   right: 14%;
   bottom: -278px;
-  right: 198px;
-  -webkit-animation: anime_parts06 20s ease 1s infinite;
-          animation: anime_parts06 20s ease 1s infinite;
+  right: 400px;
+  -webkit-animation: anime_parts06 10s ease-in-out 1s infinite;
+          animation: anime_parts06 10s ease-in-out 1s infinite;
 }
 
 /*
