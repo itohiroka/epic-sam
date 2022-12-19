@@ -515,6 +515,27 @@ Layout
 .s-service .l-L08, .s-service .l-L11, .s-service .l-L14 {
   padding-bottom: 40px;
 }
+.s-service .l-L08, .s-service .l-L11, .s-service .l-L14 {
+  position: relative;
+}
+.s-service .l-L08::before, .s-service .l-L11::before, .s-service .l-L14::before {
+  content: "";
+  font-size: 13.75rem;
+  color: #ffae18;
+  line-height: 1;
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+}
+.s-service .l-L08::before {
+  content: "01";
+}
+.s-service .l-L11::before {
+  content: "02";
+}
+.s-service .l-L14::before {
+  content: "03";
+}
 .s-service .l-L09 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1868,6 +1889,17 @@ Block
   border-radius: 50%;
   background-color: #7070d1;
   z-index: -3;
+}
+.b-heading__title .emphasis.icon--yellow::before {
+  top: -19px;
+  right: -44px;
+  width: 64px;
+  height: 64px;
+  -webkit-transform: rotate(13deg);
+          transform: rotate(13deg);
+  background-image: url(../../img/hero_06.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /*

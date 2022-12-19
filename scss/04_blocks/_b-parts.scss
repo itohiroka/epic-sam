@@ -79,6 +79,18 @@
       z-index: -3;
     }
   }
+  &--yellow {
+    &::before {
+      top: -19px;
+      right: -44px;
+      width: 64px;
+      height: 64px;
+      transform: rotate(13deg);
+      background-image: url(../../img/hero_06.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
 }
 
 /*

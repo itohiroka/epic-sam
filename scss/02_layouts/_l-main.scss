@@ -184,6 +184,35 @@
   & .l-L14 {
     padding-bottom: 40px;
   }
+  & .l-L08,
+  & .l-L11,
+  & .l-L14 {
+    position: relative;
+    &::before {
+      content: "";
+      @include font-size(220);
+      color: $orangeColor;
+      line-height: 1;
+      position: absolute;
+      right: 50px;
+      bottom: 0;
+    }
+  }
+  & .l-L08 {
+    &::before {
+      content: "01";
+    }
+  }
+  & .l-L11 {
+    &::before {
+      content: "02";
+    }
+  }
+  & .l-L14 {
+    &::before {
+      content: "03";
+    }
+  }
   & .l-L09 {
     display: flex;
     flex-wrap: wrap;
