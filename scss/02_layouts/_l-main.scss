@@ -71,7 +71,7 @@
   }
 
   50% {
-    transform: translate(-400px, 30px) rotate(180deg);
+    transform: translate(-400px, -70px) rotate(180deg);
   }
 
   100% {
@@ -79,22 +79,6 @@
   }
 }
 @keyframes anime_parts05 {
-  // 0% {
-  //   transform: translate(0px, 0px) rotate(0);
-  // }
-
-  // 30% {
-  //   transform: translate(30px, 20px) rotate(-10deg);
-  // }
-
-  // 60% {
-  //   transform: translate(-100px, 40px) rotate(-20deg);
-  // }
-
-  // 100% {
-  //   transform: translate(0px, 0px) rotate(-0deg);
-  // }
-
   0% {
     transform: translate(0px, 0px) rotate(0);
   }
@@ -157,7 +141,7 @@
         left: -10%;
         bottom: -358px;
         left: -145px;
-        animation: anime_parts01 15s linear 1s infinite;
+        animation: anime_parts01 25s linear 1s infinite;
       }
       &__parts02 {
         top: -7%;
@@ -171,7 +155,7 @@
         left: 2.5%;
         top: -270px;
         left: 38px;
-        animation: anime_parts03 30s linear infinite;
+        animation: anime_parts03 50s linear infinite;
       }
 
       &__parts04 {
@@ -180,7 +164,7 @@
         top: 10px;
         right: 136px;
         z-index: 1;
-        animation: anime_parts04 80s linear 2s infinite;
+        animation: anime_parts04 90s linear infinite;
       }
 
       &__parts05 {
@@ -195,7 +179,7 @@
         right: 14%;
         bottom: -278px;
         right: 400px;
-        animation: anime_parts06 60s linear 1s infinite;
+        animation: anime_parts06 50s linear infinite;
       }
     }
   }
