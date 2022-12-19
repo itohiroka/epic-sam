@@ -4,6 +4,82 @@
   height: auto;
   object-fit: contain;
 }
+.b-heading__title .emphasis.icon {
+  position: relative;
+  z-index: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: -2;
+  }
+
+  &--pink {
+    &::before {
+      top: -24px;
+      left: -30px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: $pinkColor;
+    }
+  }
+  &--orange {
+    &::before {
+      top: -26px;
+      right: -29px;
+      width: 66px;
+      height: 66px;
+      transform: rotate(7deg);
+      background-image: url(../../img/hero_04.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  &--blue {
+    &::before {
+      top: -24px;
+      left: -30px;
+      width: 60px;
+      height: 60px;
+      border-radius: 3px;
+      background-color: $blueColor;
+    }
+  }
+  &--green {
+    &::before {
+      top: -25px;
+      right: -18px;
+      width: 60px;
+      height: 60px;
+      background-image: url(../../img/hero_03.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  &--purple {
+    &::before {
+      top: -34px;
+      left: -10px;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background-color: $pinkColor;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -30px;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: $purpleColor;
+      z-index: -3;
+    }
+  }
+}
 
 /*
   hero

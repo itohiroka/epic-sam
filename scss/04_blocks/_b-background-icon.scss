@@ -32,11 +32,13 @@
   & .l-L15 {
     z-index: 2;
   }
+  & .l-L06 {
+    z-index: 0;
+  }
   & .l-L07,
   & .l-L10,
   & .l-L13 {
     position: relative;
-    z-index: 0;
     &::before {
       content: "";
       position: absolute;
@@ -78,9 +80,11 @@
   & .l-L04 {
     z-index: 2;
   }
+  & .l-L06 {
+    z-index: 0;
+  }
   & .l-L07 {
     position: relative;
-    z-index: 0;
     &::before {
       content: "";
       position: absolute;
@@ -99,12 +103,12 @@
       transform: rotate(-19deg);
     }
     &:nth-of-type(2)::before {
-      top: -2px;
+      top: -18px;
       right: -185px;
       transform: rotate(-19deg);
     }
     &:last-child::before {
-      top: 118px;
+      top: 90px;
       left: -164px;
       transform: rotate(11deg);
     }
@@ -133,6 +137,37 @@
       background-repeat: no-repeat;
       background-size: contain;
       z-index: -2;
+    }
+  }
+}
+
+/*
+  FAQ
+----------------------------------------------- */
+.s-faq {
+  & .l-L01 {
+    position: relative;
+    z-index: 0;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 940px;
+      height: 940px;
+      background-image: url(../../img/background_02.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -2;
+    }
+    &::before {
+      top: 95px;
+      left: -70px;
+      transform: rotate(49deg);
+    }
+    &::after {
+      bottom: -120px;
+      right: -190px;
+      transform: rotate(20deg);
     }
   }
 }
