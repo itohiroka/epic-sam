@@ -912,7 +912,7 @@ Layout
 }
 .footer .l-L06 .m-footerNav__box .b-nav__item a {
   display: inline-block;
-  padding: 20px 0;
+  padding: 20px 0 4px;
 }
 .footer .l-L07 {
   text-align: center;
@@ -1131,7 +1131,7 @@ hamburger
   }
   .m-headerNav__box .b-nav__item a {
     display: inline-block;
-    padding: 20px 0;
+    padding: 20px 0 0;
   }
 }
 /* Accesibility */
@@ -2140,7 +2140,7 @@ Block
 .m-creatorSlash .b-creatorContents__link,
 .m-creatorCranks .b-creatorContents__link {
   position: relative;
-  padding: 0 32px 0 24px;
+  margin: 0 32px 0 24px;
   border-bottom: 1px solid #fff;
 }
 .m-creatorSlash .b-creatorContents__link::before, .m-creatorSlash .b-creatorContents__link::after,
@@ -2154,7 +2154,7 @@ Block
 }
 .m-creatorSlash .b-creatorContents__link::before,
 .m-creatorCranks .b-creatorContents__link::before {
-  left: 0;
+  left: -24px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -2162,7 +2162,7 @@ Block
 }
 .m-creatorSlash .b-creatorContents__link::after,
 .m-creatorCranks .b-creatorContents__link::after {
-  right: 0;
+  right: -32px;
   background-image: url(../../img/mdi_external-link.png);
   background-repeat: no-repeat;
   background-size: contain;
