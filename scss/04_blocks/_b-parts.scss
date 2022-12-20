@@ -118,47 +118,50 @@
 ----------------------------------------------- */
 .b-serviceContents {
   &__advantage {
-    padding: 32px 40px;
+    padding: 32px 24px;
     position: relative;
     & .b-serviceContents__boxTitle {
-      padding-bottom: 16px;
+      padding-left: 64px;
+      padding-bottom: 24px;
     }
     & .b-serviceContents__boxIcon {
       position: absolute;
-      bottom: 32px;
-      left: 40px;
-      width: 110px;
+      top: 20px;
+      left: 20px;
+      width: 55px;
     }
   }
   &__advantageResult {
     padding: 32px 40px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    gap: 0 24px;
+    text-align: center;
+    gap: 24px 0;
+    & .b-serviceContents__boxIcon {
+      width: 80px;
+    }
   }
   &__advantageWrapper {
-    padding-left: 144px;
+    padding-left: 0;
     display: flex;
     flex-direction: column;
     gap: 12px 0;
   }
   &__support {
-    padding: 32px 32px 32px 64px;
+    padding: 32px 16px;
     display: flex;
-    justify-content: space-between;
-    gap: 0 64px;
+    flex-direction: column;
     & .b-serviceContents {
       &__supportWrapper {
-        width: 50%;
         & .b-serviceContents__boxIcon {
           padding-bottom: 24px;
           margin: 0 auto;
         }
       }
       &__boxIcon {
-        width: 50%;
+        width: 70%;
       }
       &__boxTitle {
         padding-bottom: 24px;
@@ -166,7 +169,7 @@
     }
   }
   &__lowPrice {
-    padding: 32px;
+    padding: 32px 16px;
     & .b-serviceContents {
       &__lowPriceWrapper {
         padding-bottom: 48px;
@@ -199,7 +202,7 @@
         padding-bottom: 32px;
       }
       &__boxIcon.communication {
-        width: 385px;
+        width: 90%;
         margin: 0 auto;
         padding-bottom: 48px;
       }
@@ -227,6 +230,108 @@
     }
     & span {
       padding-left: 24px;
+    }
+  }
+}
+
+@include mq(l) {
+  .b-serviceContents {
+    &__advantage {
+      padding: 32px 40px;
+      & .b-serviceContents__boxTitle {
+        padding-left: 0;
+        padding-bottom: 16px;
+      }
+      & .b-serviceContents__boxIcon {
+        top: auto;
+        bottom: 32px;
+        left: 40px;
+        width: 110px;
+      }
+    }
+    &__advantageResult {
+      flex-direction: row-reverse;
+      gap: 0 24px;
+      & .b-serviceContents__boxIcon {
+        width: 110px;
+      }
+    }
+    &__advantageWrapper {
+      padding-left: 144px;
+    }
+    &__support {
+      padding: 32px 32px 32px 64px;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0 64px;
+      & .b-serviceContents {
+        &__supportWrapper {
+          width: 50%;
+          & .b-serviceContents__boxIcon {
+            padding-bottom: 24px;
+          }
+        }
+        &__boxIcon,
+        &__boxImage {
+          width: 50%;
+        }
+        &__boxTitle {
+          padding-bottom: 24px;
+        }
+      }
+    }
+    &__lowPrice {
+      padding: 32px;
+      & .b-serviceContents {
+        &__lowPriceWrapper {
+          padding-bottom: 48px;
+          gap: 0 64px;
+          & .b-serviceContents__boxIcon:first-child {
+            width: 55%;
+            &::before {
+              content: "";
+              top: 0;
+              right: -18%;
+              bottom: 0;
+              margin: auto 0;
+              width: 32px;
+              height: 32px;
+              transform: rotate(52deg);
+            }
+          }
+        }
+        &__boxTitle {
+          padding-bottom: 32px;
+        }
+        &__boxIcon.communication {
+          width: 385px;
+          padding-bottom: 48px;
+        }
+      }
+    }
+  }
+
+  .b-serviceContents__boxList {
+    &.icon {
+      position: relative;
+      padding-left: 24px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 4px;
+        margin: auto 0;
+        width: 14px;
+        height: 14px;
+        background-image: url(../../img/hero_04.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotate(50deg);
+      }
+      & span {
+        padding-left: 24px;
+      }
     }
   }
 }
