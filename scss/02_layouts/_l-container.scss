@@ -1,3 +1,4 @@
+@use "../01_foundation" as *;
 /* ===============================================
 Layout
 =============================================== */
@@ -27,9 +28,16 @@ Layout
 }
 .l-S03 {
   width: 90%;
-  max-width: 1200px;
+  max-width: 600px;
   margin: 0 auto;
 }
+
+@include mq(l) {
+  .l-S03 {
+    max-width: 1200px;
+  }
+}
+
 .l-L01,
 .l-L02,
 .l-L03,

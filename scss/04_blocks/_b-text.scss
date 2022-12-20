@@ -8,9 +8,10 @@
 .b-heading {
   &__title {
     @include font-size(25);
+    text-align: center;
     & .emphasis {
       @include font-size(45);
-      line-height: 1.35;
+      line-height: 1.13;
     }
   }
   &__text {
@@ -145,6 +146,9 @@
     font-weight: 500;
     line-height: 1.8;
     letter-spacing: 0.05em;
+    & .red {
+      color: $redColor;
+    }
   }
 }
 
@@ -290,12 +294,14 @@
 /*
   @media screen and (min-width: 960px)
 ----------------------------------------------- */
-@media screen and (min-width: 960px) {
+@include mq(l) {
   .b-heading {
     &__title {
       @include font-size(45);
+      text-align: left;
       & .emphasis {
         @include font-size(60);
+        line-height: 1.35;
       }
     }
     &__text {
@@ -405,9 +411,6 @@
     }
     &__subText {
       @include font-size(18);
-      & .red {
-        color: $redColor;
-      }
     }
   }
   .b-differenceDiagram {

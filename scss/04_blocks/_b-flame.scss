@@ -136,7 +136,7 @@
   }
 }
 
-@media screen and (min-width: 960px) {
+@include mq(l) {
   .b-guidance__number.flame {
     width: 100px;
     height: 100px;
