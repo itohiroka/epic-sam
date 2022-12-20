@@ -491,34 +491,34 @@
       @include font-size(24);
     }
   }
-}
 
-/*
+  /*
   message
 ----------- */
-.b-messageContents {
-  &__title {
-    @include font-size(36);
+  .b-messageContents {
+    &__title {
+      @include font-size(36);
+    }
+    &__deco {
+      @include font-size(188);
+    }
   }
-  &__deco {
-    @include font-size(188);
-  }
-}
 
-/*
+  /*
   footer
 ----------- */
-.b-footerCompany {
-  &__label {
-    @include font-size(20);
+  .b-footerCompany {
+    &__label {
+      @include font-size(20);
+    }
+    &__text {
+      @include font-size(20);
+    }
+    &__subText {
+      @include font-size(14);
+    }
   }
-  &__text {
-    @include font-size(20);
+  .b-copyRight {
+    @include font-size(12);
   }
-  &__subText {
-    @include font-size(14);
-  }
-}
-.b-copyRight {
-  @include font-size(12);
 }
