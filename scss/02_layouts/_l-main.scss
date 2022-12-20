@@ -24,6 +24,87 @@
 /*
   hero
 ----------------------------------------------- */
+
+/*アニメーションの開始から終了までを指定する*/
+@keyframes anime_parts01 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  30% {
+    transform: translate(20px, -40px);
+  }
+
+  60% {
+    transform: translate(60px, 20px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes anime_parts02 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translateY(50px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes anime_parts03 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes anime_parts04 {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(-300px, -70px) rotate(180deg);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(360deg);
+  }
+}
+@keyframes anime_parts05 {
+  0% {
+    transform: translate(0px, 0px) rotate(0);
+  }
+
+  50% {
+    transform: translateY(180px) rotate(90deg);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(180deg);
+  }
+}
+@keyframes anime_parts06 {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(-100px, -150px) rotate(-180deg);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(-360deg);
+  }
+}
+
 .s-hero {
   &.l-S01 {
     height: 100vh;
@@ -60,18 +141,21 @@
         left: -10%;
         bottom: -358px;
         left: -145px;
+        animation: anime_parts01 25s linear 1s infinite;
       }
       &__parts02 {
         top: -7%;
         left: -6%;
         top: -56px;
         left: -84px;
+        animation: anime_parts02 10s linear infinite;
       }
       &__parts03 {
         top: -33%;
         left: 2.5%;
         top: -270px;
         left: 38px;
+        animation: anime_parts03 140s linear infinite;
       }
 
       &__parts04 {
@@ -80,6 +164,7 @@
         top: 10px;
         right: 136px;
         z-index: 1;
+        animation: anime_parts04 60s linear infinite;
       }
 
       &__parts05 {
@@ -87,12 +172,14 @@
         right: -10%;
         top: 142px;
         right: -144px;
+        animation: anime_parts05 40s linear infinite;
       }
       &__parts06 {
         bottom: -34%;
         right: 14%;
         bottom: -278px;
-        right: 198px;
+        right: 400px;
+        animation: anime_parts06 160s linear infinite;
       }
     }
   }
