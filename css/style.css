@@ -1666,6 +1666,7 @@ Layout
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    height: auto;
     gap: 0 24px;
   }
   .footer .l-L06 .m-footerNav__box .b-nav__item a {
