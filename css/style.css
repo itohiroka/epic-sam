@@ -431,7 +431,7 @@ Layout
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translateY(50px);
+    transform: translateY(20px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -442,7 +442,7 @@ Layout
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translateY(50px);
+    transform: translateY(20px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -469,7 +469,7 @@ Layout
     transform: translate(0px, 0px) rotate(0deg);
   }
   50% {
-    transform: translate(-300px, -70px) rotate(180deg);
+    transform: translate(-90px, -70px) rotate(180deg);
   }
   100% {
     transform: translate(0px, 0px) rotate(360deg);
@@ -480,7 +480,7 @@ Layout
     transform: translate(0px, 0px) rotate(0deg);
   }
   50% {
-    transform: translate(-300px, -70px) rotate(180deg);
+    transform: translate(-90px, -70px) rotate(180deg);
   }
   100% {
     transform: translate(0px, 0px) rotate(360deg);
@@ -491,7 +491,7 @@ Layout
     transform: translate(0px, 0px) rotate(0);
   }
   50% {
-    transform: translateY(180px) rotate(90deg);
+    transform: translateY(30px) rotate(90deg);
   }
   100% {
     transform: translate(0px, 0px) rotate(180deg);
@@ -502,7 +502,7 @@ Layout
     transform: translate(0px, 0px) rotate(0);
   }
   50% {
-    transform: translateY(180px) rotate(90deg);
+    transform: translateY(30px) rotate(90deg);
   }
   100% {
     transform: translate(0px, 0px) rotate(180deg);
@@ -556,55 +556,195 @@ Layout
   position: absolute;
 }
 .s-hero .l-L03 .b-hero__parts01 {
-  bottom: -43%;
-  left: -10%;
-  bottom: -358px;
-  left: -145px;
+  bottom: -190px;
+  left: -175px;
   -webkit-animation: anime_parts01 25s linear 1s infinite;
           animation: anime_parts01 25s linear 1s infinite;
+  z-index: 1;
+  width: 120%;
 }
 .s-hero .l-L03 .b-hero__parts02 {
-  top: -7%;
-  left: -6%;
-  top: -56px;
-  left: -84px;
+  top: -76px;
+  left: -64px;
   -webkit-animation: anime_parts02 10s linear infinite;
           animation: anime_parts02 10s linear infinite;
+  width: 40%;
 }
 .s-hero .l-L03 .b-hero__parts03 {
-  top: -33%;
-  left: 2.5%;
-  top: -270px;
+  top: -120px;
   left: 38px;
   -webkit-animation: anime_parts03 140s linear infinite;
           animation: anime_parts03 140s linear infinite;
+  width: 60%;
 }
 .s-hero .l-L03 .b-hero__parts04 {
-  top: 1%;
-  right: 9.5%;
-  top: 10px;
-  right: 136px;
+  top: 150px;
+  right: 26px;
   z-index: 1;
   -webkit-animation: anime_parts04 60s linear infinite;
           animation: anime_parts04 60s linear infinite;
+  width: 30%;
 }
 .s-hero .l-L03 .b-hero__parts05 {
-  top: 17%;
-  right: -10%;
-  top: 142px;
-  right: -144px;
+  top: 92px;
+  right: -114px;
   -webkit-animation: anime_parts05 40s linear infinite;
           animation: anime_parts05 40s linear infinite;
+  width: 80%;
 }
 .s-hero .l-L03 .b-hero__parts06 {
-  bottom: -34%;
-  right: 14%;
-  bottom: -278px;
-  right: 400px;
+  bottom: -68px;
+  right: -90px;
   -webkit-animation: anime_parts06 160s linear infinite;
           animation: anime_parts06 160s linear infinite;
+  width: 70%;
 }
 
+@media screen and (min-width: 1000px) {
+  @-webkit-keyframes anime_parts02 {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translateY(50px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  @keyframes anime_parts02 {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translateY(50px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  @-webkit-keyframes anime_parts04 {
+    0% {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+    50% {
+      transform: translate(-300px, -70px) rotate(180deg);
+    }
+    100% {
+      transform: translate(0px, 0px) rotate(360deg);
+    }
+  }
+  @keyframes anime_parts04 {
+    0% {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+    50% {
+      transform: translate(-300px, -70px) rotate(180deg);
+    }
+    100% {
+      transform: translate(0px, 0px) rotate(360deg);
+    }
+  }
+  @-webkit-keyframes anime_parts05 {
+    0% {
+      transform: translate(0px, 0px) rotate(0);
+    }
+    50% {
+      transform: translateY(180px) rotate(90deg);
+    }
+    100% {
+      transform: translate(0px, 0px) rotate(180deg);
+    }
+  }
+  @keyframes anime_parts05 {
+    0% {
+      transform: translate(0px, 0px) rotate(0);
+    }
+    50% {
+      transform: translateY(180px) rotate(90deg);
+    }
+    100% {
+      transform: translate(0px, 0px) rotate(180deg);
+    }
+  }
+  @-webkit-keyframes anime_parts06 {
+    0% {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+    50% {
+      transform: translate(-100px, -150px) rotate(-180deg);
+    }
+    100% {
+      transform: translate(0px, 0px) rotate(-360deg);
+    }
+  }
+  @keyframes anime_parts06 {
+    0% {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+    50% {
+      transform: translate(-100px, -150px) rotate(-180deg);
+    }
+    100% {
+      transform: translate(0px, 0px) rotate(-360deg);
+    }
+  }
+  .s-hero .l-L03 .b-hero__parts01 {
+    bottom: -43%;
+    left: -10%;
+    bottom: -358px;
+    left: -145px;
+    -webkit-animation: anime_parts01 25s linear 1s infinite;
+            animation: anime_parts01 25s linear 1s infinite;
+    max-width: 626px;
+  }
+  .s-hero .l-L03 .b-hero__parts02 {
+    top: -7%;
+    left: -6%;
+    top: -56px;
+    left: -84px;
+    -webkit-animation: anime_parts02 10s linear infinite;
+            animation: anime_parts02 10s linear infinite;
+    max-width: 231px;
+  }
+  .s-hero .l-L03 .b-hero__parts03 {
+    top: -33%;
+    left: 2.5%;
+    top: -270px;
+    left: 38px;
+    -webkit-animation: anime_parts03 140s linear infinite;
+            animation: anime_parts03 140s linear infinite;
+    max-width: 464px;
+  }
+  .s-hero .l-L03 .b-hero__parts04 {
+    top: 1%;
+    right: 9.5%;
+    top: 10px;
+    right: 136px;
+    z-index: 1;
+    -webkit-animation: anime_parts04 60s linear infinite;
+            animation: anime_parts04 60s linear infinite;
+    max-width: 314px;
+  }
+  .s-hero .l-L03 .b-hero__parts05 {
+    top: 17%;
+    right: -10%;
+    top: 142px;
+    right: -144px;
+    -webkit-animation: anime_parts05 40s linear infinite;
+            animation: anime_parts05 40s linear infinite;
+    max-width: 594px;
+  }
+  .s-hero .l-L03 .b-hero__parts06 {
+    bottom: -34%;
+    right: 14%;
+    bottom: -278px;
+    right: 400px;
+    -webkit-animation: anime_parts06 160s linear infinite;
+            animation: anime_parts06 160s linear infinite;
+    max-width: 485px;
+  }
+}
 /*
   about
 ----------------------------------------------- */
