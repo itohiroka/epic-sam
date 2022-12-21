@@ -30,4 +30,21 @@ window.addEventListener("scroll", function () {
   const header = document.querySelector(".header .l-S01");
   // 800px以上スクロールしたらヘッダーに「scroll-nav」クラスをつける
   header.classList.toggle("scroll-nav", window.scrollY > 800);
+  fadeAnime();
 });
+
+$(window).on("load", function () {
+  fadeAnime();
+});
+
+function fadeAnime() {
+  $(".fadeUpTrigger").each(function () {
+    var elemPos = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass("fadeUp");
+    }
+  });
+}
