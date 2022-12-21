@@ -9,6 +9,7 @@ $breakpoint: (
   xl: "screen and (min-width: 1200px)",
   xxl: "screen and (min-width: 1440px)",
   m-max: "screen and (max-width: 700px)",
+  footerHeight: "screen and (max-height: 850px)",
 );
 
 @mixin mq($bp) {

@@ -1635,11 +1635,13 @@ Layout
   padding: 24px 0;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-height: 850px) {
   .footer.sitefooter {
     position: static;
     height: auto;
   }
+}
+@media screen and (min-width: 1000px) {
   .footer .l-S03 {
     padding: 104px 0;
   }

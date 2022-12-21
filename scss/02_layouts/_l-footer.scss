@@ -75,12 +75,17 @@
   }
 }
 
-@include mq(l) {
+@include mq(footerHeight) {
   .footer {
     &.sitefooter {
       position: static;
       height: auto;
     }
+  }
+}
+
+@include mq(l) {
+  .footer {
     & .l-S03 {
       padding: 104px 0;
     }
