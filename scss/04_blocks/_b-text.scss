@@ -286,6 +286,9 @@
     font-weight: 500;
   }
 }
+.b-nav__footerTitle {
+  @include font-size(11);
+}
 .b-copyRight {
   @include font-size(10);
   font-weight: 500;
@@ -518,6 +521,10 @@
       @include font-size(14);
     }
   }
+  .b-nav__footerTitle {
+    @include font-size(16);
+  }
+
   .b-copyRight {
     @include font-size(12);
   }
