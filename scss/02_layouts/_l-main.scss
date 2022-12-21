@@ -16,10 +16,26 @@
 .s-creator,
 .s-faq {
   & .l-L01 {
-    padding: 104px 0 80px 0;
+    padding: 56px 0;
   }
   & .l-L02 {
-    padding-bottom: 40px;
+    padding-bottom: 24px;
+  }
+}
+
+@include mq(l) {
+  .s-about,
+  .s-service,
+  .s-reason,
+  .s-flow,
+  .s-creator,
+  .s-faq {
+    & .l-L01 {
+      padding: 104px 0 80px 0;
+    }
+    & .l-L02 {
+      padding-bottom: 40px;
+    }
   }
 }
 
@@ -49,14 +65,14 @@
 ----------------------------------------------- */
 .s-about {
   & .l-L04 {
-    padding: 56px 0;
+    padding: 32px 0;
     background-color: $pinkColor;
   }
   & .l-L06 {
-    padding: 160px 0 104px 0;
+    padding: 80px 0 56px 0;
   }
   & .l-L07 {
-    padding-bottom: 40px;
+    padding-bottom: 24px;
   }
   & .l-L05,
   & .l-L08 {
@@ -68,9 +84,10 @@
   & .l-L05 {
     width: 90%;
     align-items: center;
+    gap: 0 4px;
   }
   & .l-L08 {
-    gap: 0 24px;
+    gap: 0 16px;
 
     & .b-aboutReception__box {
       flex: 1;
@@ -90,7 +107,7 @@
           right: 0;
           bottom: 0;
           margin: auto;
-          width: 50%;
+          width: 55%;
           height: auto;
         }
       }
@@ -102,7 +119,6 @@
   .s-about {
     & .l-L04 {
       padding: 56px 0;
-      background-color: $pinkColor;
     }
     & .l-L06 {
       padding: 160px 0 104px 0;
@@ -113,49 +129,22 @@
     & .l-L05,
     & .l-L08 {
       max-width: 930px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
     }
     & .l-L05 {
-      width: 90%;
-      align-items: center;
+      gap: 0 10px;
     }
     & .l-L08 {
       gap: 0 64px;
-
-      & .b-aboutReception__box {
-        flex: 1;
-        & .b-boxFlame__lineCircle {
-          position: relative;
-          width: 100%;
-          &::before {
-            content: "";
-            display: block;
-            padding-top: 100%;
-          }
-
-          & img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            width: 50%;
-            height: auto;
-          }
-        }
-      }
     }
   }
 }
+
 /*
   service
 ----------------------------------------------- */
 .s-service {
   & .l-L04 {
-    padding: 104px 0 64px 0;
+    padding: 64px 0 48px 0;
     background-color: $orangeColor;
   }
   & .l-L05 {
@@ -164,24 +153,25 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 56px 0;
-  }
-  & .l-L05 {
+    gap: 48px 0;
     align-items: center;
   }
   & .l-L06 {
-    padding-bottom: 104px;
+    padding-bottom: 96px;
   }
   & .l-L07,
   & .l-L10,
   & .l-L13 {
-    padding-top: 160px;
+    padding-top: 96px;
+  }
+  & .l-L10 {
+    padding-top: 125px;
   }
 
   & .l-L08,
   & .l-L11,
   & .l-L14 {
-    padding-bottom: 40px;
+    margin-bottom: 32px;
   }
   & .l-L08,
   & .l-L11,
@@ -190,12 +180,12 @@
     z-index: 0;
     &::before {
       content: "";
-      @include font-size(220);
+      @include font-size(160);
       color: $orangeColor;
       line-height: 1;
       position: absolute;
-      right: 50px;
-      bottom: 0;
+      right: 0;
+      bottom: -16px;
       z-index: -2;
     }
   }
@@ -217,7 +207,7 @@
   & .l-L09 {
     display: flex;
     flex-direction: column;
-    gap: 20px 0;
+    gap: 16px 0;
 
     & .b-serviceContents__advantageIcon {
       width: 100%;
@@ -236,12 +226,12 @@
     }
   }
   & .l-L15 {
-    padding-bottom: 64px;
+    padding-bottom: 24px;
   }
   & .l-L16 {
     display: flex;
     flex-direction: column;
-    gap: 20px 0;
+    gap: 16px 0;
   }
 }
 
@@ -249,15 +239,12 @@
   .s-service {
     & .l-L04 {
       padding: 104px 0 64px 0;
-      background-color: $orangeColor;
     }
     & .l-L05 {
       max-width: 1200px;
       flex-direction: row;
       justify-content: space-between;
-    }
-    & .l-L05 {
-      align-items: center;
+      gap: 0 16px;
     }
     & .l-L06 {
       padding-bottom: 104px;
@@ -270,35 +257,14 @@
     & .l-L08,
     & .l-L11,
     & .l-L14 {
-      padding-bottom: 40px;
+      margin-bottom: 40px;
     }
     & .l-L08,
     & .l-L11,
     & .l-L14 {
-      position: relative;
       &::before {
-        content: "";
         @include font-size(220);
-        color: $orangeColor;
-        line-height: 1;
-        position: absolute;
         right: 50px;
-        bottom: 0;
-      }
-    }
-    & .l-L08 {
-      &::before {
-        content: "01";
-      }
-    }
-    & .l-L11 {
-      &::before {
-        content: "02";
-      }
-    }
-    & .l-L14 {
-      &::before {
-        content: "03";
       }
     }
     & .l-L09 {
@@ -311,16 +277,6 @@
       }
       & .b-serviceContents__advantageResult {
         width: 100%;
-      }
-      & .b-serviceContents__advantageIcon {
-        width: 100%;
-        text-align: center;
-        & .b-image {
-          width: 50px;
-          transform: rotate(20deg);
-          padding-bottom: 4px;
-          margin-right: 14px;
-        }
       }
     }
     & .l-L12 {
@@ -349,17 +305,16 @@
     background-color: $differenceBgColor;
   }
   & .l-S03 {
-    padding: 104px 0;
+    padding: 56px 0;
   }
   & .l-L01 {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
   }
   & .l-L02 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
-    gap: 0 64px;
     grid-template-areas:
       "l-L03"
       "l-L04"
@@ -370,32 +325,34 @@
   }
   & .l-L03,
   & .l-L04 {
-    padding-bottom: 32px;
-  }
-  & .l-L05 {
     padding-bottom: 24px;
   }
+  & .l-L05 {
+    padding-bottom: 32px;
+  }
   & .l-L07 {
-    padding: 32px;
+    padding: 24px 16px 16px;
+    margin-bottom: 48px;
   }
   & .l-L08 {
     & .b-difference__subText {
-      padding: 48px 24px;
+      padding: 32px 16px;
     }
   }
 
   & .l-L06 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-bottom: 56px;
+    justify-content: flex-start;
+    padding-bottom: 32px;
+    gap: 0 5px;
     & .b-boxFlame__lineCircle {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 132px;
-      height: 132px;
+      width: 90px;
+      height: 90px;
     }
   }
 }
@@ -406,7 +363,6 @@
       padding: 104px 0;
     }
     & .l-L01 {
-      text-align: center;
       padding-bottom: 40px;
     }
     & .l-L02 {
@@ -438,15 +394,8 @@
     }
 
     & .l-L06 {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       padding-bottom: 56px;
       & .b-boxFlame__lineCircle {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         width: 132px;
         height: 132px;
       }
@@ -459,7 +408,7 @@
 ----------------------------------------------- */
 .s-reason {
   & .l-L04 {
-    padding: 104px 0 64px 0;
+    padding: 56px 0 48px 0;
     background-color: $blueColor;
   }
   & .l-L05 {
@@ -468,29 +417,28 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 56px 0;
+    gap: 48px 0;
   }
   & .l-L06 {
-    padding-bottom: 144px;
+    padding-bottom: 56px;
   }
   & .l-L07 {
     display: flex;
     flex-direction: column;
-    padding-top: 160px;
+    padding-top: 80px;
   }
-
   & .l-L09 {
     display: flex;
     align-items: center;
-    gap: 0 40px;
+    gap: 0 8px;
     padding-bottom: 40px;
   }
   & .l-L10 {
-    padding-bottom: 64px;
+    padding-bottom: 32px;
   }
   & .l-L11 {
     .b-reasonContents__boxResult {
-      margin: 16px 0 0 40px;
+      margin: 16px 0 32px 40px;
     }
   }
 }
@@ -499,13 +447,12 @@
   .s-reason {
     & .l-L04 {
       padding: 104px 0 64px 0;
-      background-color: $blueColor;
     }
     & .l-L05 {
       max-width: 1200px;
       flex-direction: row;
       justify-content: space-between;
-      gap: 0;
+      gap: 0 16px;
     }
     & .l-L06 {
       padding-bottom: 144px;
@@ -523,8 +470,6 @@
       padding-top: 14px;
     }
     & .l-L09 {
-      display: flex;
-      align-items: center;
       gap: 0 40px;
       padding-bottom: 40px;
     }
@@ -543,10 +488,10 @@
 ----------------------------------------------- */
 .s-flow {
   & .l-S02 {
-    padding-bottom: 104px;
+    padding-bottom: 56px;
   }
   & .l-L04 {
-    padding: 104px 0 64px 0;
+    padding: 64px 0 32px 0;
     background-color: $greenColor;
   }
   & .l-L05 {
@@ -556,7 +501,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 56px 0;
+    gap: 48px 0;
     &::before {
       content: "";
       position: absolute;
@@ -579,7 +524,6 @@
     }
     & .l-L04 {
       padding: 104px 0 64px 0;
-      background-color: $greenColor;
     }
     & .l-L05 {
       max-width: 1200px;
@@ -599,7 +543,7 @@
 .s-creator {
   & .l-S02 {
     background-color: $textColor;
-    padding-bottom: 104px;
+    padding-bottom: 80px;
   }
   & .l-L05 {
     display: flex;
@@ -610,7 +554,7 @@
     }
   }
   & .l-L07 {
-    padding-top: 160px;
+    padding-top: 80px;
   }
   & .l-L09 {
     display: flex;
@@ -618,28 +562,24 @@
     justify-content: space-between;
     gap: 0 64px;
   }
-  & .l-L08,
+  & .l-L08 {
+    padding-bottom: 32px;
+  }
   & .l-L11 {
-    padding-bottom: 40px;
+    padding-bottom: 16px;
   }
   & .l-L12 {
-    padding-bottom: 56px;
+    padding-bottom: 32px;
+  }
+  & .l-L13 {
+    padding-bottom: 32px;
   }
 }
 
 @include mq(l) {
   .s-creator {
     & .l-S02 {
-      background-color: $textColor;
       padding-bottom: 104px;
-    }
-    & .l-L05 {
-      display: flex;
-      justify-content: space-between;
-      height: auto;
-      & img {
-        width: 20%;
-      }
     }
     & .l-L07 {
       padding-top: 160px;
@@ -656,14 +596,17 @@
     & .l-L12 {
       padding-bottom: 56px;
     }
+    & .l-L13 {
+      padding-bottom: 0;
+    }
   }
 }
 /*
   FAQ
 ----------------------------------------------- */
 .s-faq {
-  & .l-S03 {
-    padding-bottom: 104px;
+  & .l-L02 {
+    padding-bottom: 56px;
   }
   & .l-L03 {
     max-width: 1104px;
@@ -671,10 +614,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px 0;
+    gap: 24px 0;
     & .b-boxFlame__line {
       width: 100%;
-      padding: 32px 72px;
+      padding: 24px 16px 16px 56px;
       & .b-faqContents__boxTitle {
         margin-bottom: 24px;
       }
@@ -682,6 +625,23 @@
   }
 }
 
+@include mq(l) {
+  .s-faq {
+    & .l-S03 {
+      padding-bottom: 104px;
+    }
+    & .l-L03 {
+      gap: 40px 0;
+      & .b-boxFlame__line {
+        width: 100%;
+        padding: 32px 72px;
+        & .b-faqContents__boxTitle {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}
 /*
   message
 ----------------------------------------------- */
@@ -692,22 +652,36 @@
     overflow: hidden;
     &::before {
       content: "SLashNext";
-      @include font-size(188);
+      @include font-size(60);
       line-height: 1;
       color: rgba(255, 255, 255, 0.7);
       text-align: center;
       position: absolute;
       left: 0;
       right: 0;
-      bottom: -30px;
+      bottom: -10px;
       margin: 0 auto;
     }
   }
   & .l-L01 {
-    padding: 104px 0 120px 0;
+    padding: 56px 0;
   }
   & .l-L02 {
     text-align: center;
     padding-bottom: 32px;
+  }
+}
+
+@include mq(l) {
+  .s-message {
+    & .l-S02 {
+      &::before {
+        @include font-size(188);
+        bottom: -30px;
+      }
+    }
+    & .l-L01 {
+      padding: 104px 0 120px 0;
+    }
   }
 }

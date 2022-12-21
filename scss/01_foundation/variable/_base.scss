@@ -23,9 +23,15 @@ img {
 .br {
   display: block;
 }
+.spbr {
+  display: block;
+}
 
-@include mq(m-max) {
+@include mq(m) {
   .spbr {
+    display: inline-block;
+  }
+  .pcbr {
     display: block;
   }
 }

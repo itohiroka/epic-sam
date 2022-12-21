@@ -27,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0 12px;
+  gap: 0 4%;
   background-color: $whiteColor;
   border-radius: 10px;
   width: 100%;
@@ -48,7 +48,10 @@
   &--reason {
     padding: 24px;
     & .b-guidance__icon {
-      width: 100px;
+      width: 80px;
+      &.large {
+        width: 85px;
+      }
     }
   }
 
@@ -89,7 +92,7 @@
     border-bottom: 1px solid $aboutGuidanceLineColor;
   }
   &__boxIcon {
-    width: 80px;
+    width: 85px;
     margin-bottom: 8px;
   }
 }
@@ -124,15 +127,14 @@
   position: relative;
   background-color: $whiteColor;
   border-radius: 16px;
-  box-shadow: 32px 32px 0 $pinkColor;
   &--blue {
-    box-shadow: 36px 36px 0 $blueColor;
+    box-shadow: 16px 16px 0 $blueColor;
   }
   &--pink {
-    box-shadow: 32px 32px 0 $pinkColor;
+    box-shadow: 16px 16px 0 $pinkColor;
   }
   &--purple {
-    box-shadow: 32px 32px 0 $purpleColor;
+    box-shadow: 16px 16px 0 $purpleColor;
   }
 }
 
@@ -147,6 +149,7 @@
     flex-direction: column;
     text-align: center;
     border-radius: 16px;
+    gap: 0;
 
     &__number {
       top: -50px;
@@ -207,6 +210,18 @@
         width: 200px;
         height: 232px;
       }
+    }
+  }
+
+  .b-boxFlame__shift {
+    &--blue {
+      box-shadow: 36px 36px 0 $blueColor;
+    }
+    &--pink {
+      box-shadow: 32px 32px 0 $pinkColor;
+    }
+    &--purple {
+      box-shadow: 32px 32px 0 $purpleColor;
     }
   }
 }

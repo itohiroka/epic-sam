@@ -15,30 +15,27 @@
     height: auto;
   }
   & .l-L02 {
+    width: 255px;
+    margin: 0 auto;
     text-align: center;
-    padding-bottom: 48px;
-  }
-  & .l-L05 {
-    width: 216px;
+    padding-bottom: 32px;
   }
   & .b-footerCompany {
-    display: flex;
-    flex-wrap: wrap;
     max-width: 624px;
     margin: 0 auto;
     border-top: 1px solid $footerCompanyLineColor;
-
-    &__label {
+    &__wrapper {
       display: flex;
       align-items: center;
-      width: 184px;
-      padding: 16px 16px 16px 48px;
+      padding: 16px 0;
       border-bottom: 1px solid $footerCompanyLineColor;
     }
+    &__label {
+      width: 110px;
+      padding-left: 24px;
+    }
     &__text {
-      width: calc(100% - 184px);
-      padding: 16px 48px 16px 16px;
-      border-bottom: 1px solid $footerCompanyLineColor;
+      width: 80%;
       & .ashizawa {
         padding-bottom: 4px;
       }
@@ -52,19 +49,22 @@
     justify-content: space-between;
     gap: 0 24px;
   }
+  & .l-L05 {
+    width: auto;
+  }
   & .l-L06 {
-    .m-footerNav__box {
+    max-width: 175px;
+    & .m-footerNav__box {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       align-items: flex-start;
       justify-content: flex-start;
-      height: 200px;
-      gap: 0 24px;
+      height: 120px;
+      gap: 16px;
       & .b-nav__item {
         & a {
           display: inline-block;
-          padding: 20px 0 4px;
         }
       }
     }
@@ -84,10 +84,27 @@
   }
 }
 
-@include mq(l) {
+@include mq(m) {
   .footer {
     & .l-S03 {
       padding: 104px 0;
+    }
+    & .l-L02 {
+      width: 363px;
+      padding-bottom: 48px;
+    }
+    & .b-footerCompany {
+      max-width: 624px;
+      &__label {
+        width: 40%;
+        padding-left: 48px;
+      }
+      &__text {
+        width: 60%;
+        & .ashizawa {
+          padding-bottom: 4px;
+        }
+      }
     }
     & .l-L04 {
       width: 90%;
@@ -96,7 +113,9 @@
       gap: 0 24px;
     }
     & .l-L06 {
-      .m-footerNav__box {
+      width: 90%;
+      max-width: 100%;
+      & .m-footerNav__box {
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
@@ -105,7 +124,6 @@
         gap: 0 24px;
         & .b-nav__item {
           & a {
-            display: inline-block;
             padding: 20px 0 4px;
           }
         }

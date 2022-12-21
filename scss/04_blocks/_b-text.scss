@@ -10,7 +10,7 @@
     @include font-size(25);
     text-align: center;
     & .emphasis {
-      @include font-size(45);
+      @include font-size(40);
       line-height: 1.13;
     }
   }
@@ -202,7 +202,7 @@
 }
 .b-creatorContents {
   &__link {
-    @include font-size(14);
+    @include font-size(11);
   }
 }
 
