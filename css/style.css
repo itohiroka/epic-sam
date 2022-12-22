@@ -3054,7 +3054,7 @@ b-animation
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(-90%, 20%);
+    transform: translate(30%, -20%);
   }
   100% {
     transform: translate(0, 0);
@@ -3065,7 +3065,7 @@ b-animation
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(-90%, 20%);
+    transform: translate(30%, -20%);
   }
   100% {
     transform: translate(0, 0);
@@ -3120,8 +3120,8 @@ b-animation
   }
 }
 .s-about .l-L06::before {
-  -webkit-animation: backgroundAnime01 240s linear infinite;
-          animation: backgroundAnime01 240s linear infinite;
+  -webkit-animation: backgroundAnime01 120s linear infinite;
+          animation: backgroundAnime01 120s linear infinite;
 }
 
 .s-service .l-L07::before,
