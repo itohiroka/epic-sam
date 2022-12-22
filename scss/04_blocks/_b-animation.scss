@@ -274,3 +274,97 @@ b-animation
     }
   }
 }
+
+/*
+  background
+----------------------------------------------- */
+@keyframes backgroundAnime01 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(30%, -20%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes backgroundAnime02 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes backgroundAnime03 {
+  from {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(390deg);
+  }
+}
+@keyframes backgroundAnime04 {
+  from {
+    transform: rotate(60deg);
+  }
+  to {
+    transform: rotate(420deg);
+  }
+}
+
+.s-about .l-L06::before {
+  animation: backgroundAnime01 120s linear infinite;
+}
+.s-service .l-L07::before,
+.s-reason .l-L07::before,
+.s-flow .l-L01::before,
+.s-faq .l-L01::after {
+  animation: backgroundAnime02 420s linear infinite;
+}
+
+.s-service .l-L10::before,
+.s-faq .l-L01::before {
+  animation: backgroundAnime03 420s linear infinite;
+}
+
+.s-service .l-L13::before {
+  animation: backgroundAnime04 420s linear infinite;
+}
+
+/*
+  card
+----------------------------------------------- */
+.popUpTrigger {
+  opacity: 0;
+}
+
+.popUp {
+  animation: popUpAnime 0.3s cubic-bezier(0, 0, 0.42, 1.54) forwards;
+  opacity: 0;
+}
+
+.delay-time01 {
+  animation-delay: 0.2s;
+}
+.delay-time02 {
+  animation-delay: 0.4s;
+}
+.delay-time03 {
+  animation-delay: 0.6s;
+}
+.delay-time04 {
+  animation-delay: 0.8s;
+}
+@keyframes popUpAnime {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(100%);
+  }
+}

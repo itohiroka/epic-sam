@@ -31,10 +31,12 @@ window.addEventListener("scroll", function () {
   // 800px以上スクロールしたらヘッダーに「scroll-nav」クラスをつける
   header.classList.toggle("scroll-nav", window.scrollY > 800);
   fadeAnime();
+  popAnime();
 });
 
 $(window).on("load", function () {
   fadeAnime();
+  popAnime();
 });
 
 function fadeAnime() {
@@ -45,6 +47,17 @@ function fadeAnime() {
 
     if (scroll >= elemPos - windowHeight) {
       $(this).addClass("fadeUp");
+    }
+  });
+}
+function popAnime() {
+  $(".popUpTrigger").each(function () {
+    var elemPos = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass("popUp");
     }
   });
 }
