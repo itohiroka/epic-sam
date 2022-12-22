@@ -67,8 +67,8 @@
     &::before {
       content: "";
       position: absolute;
-      width: 930px;
-      height: 930px;
+      width: 400px;
+      height: 400px;
       background-image: url(../../img/background_02.svg);
       background-repeat: no-repeat;
       background-size: contain;
@@ -77,27 +77,58 @@
   }
   & .l-L07 {
     &::before {
-      top: -164px;
-      right: -220px;
+      top: 26px;
+      right: -140px;
       transform: rotate(-26deg);
     }
   }
   & .l-L10 {
     &::before {
-      top: -2px;
-      left: -400px;
+      top: 68px;
+      left: -120px;
       transform: rotate(14deg);
     }
   }
   & .l-L13 {
     &::before {
-      top: -60px;
-      right: -245px;
+      top: 60px;
+      right: -94px;
       transform: rotate(-5deg);
     }
   }
 }
 
+
+@include mq(l) {
+  .s-service {
+    & .l-L07,
+    & .l-L10,
+    & .l-L13 {
+      &::before {
+        width: 930px;
+        height: 930px;
+      }
+    }
+    & .l-L07 {
+      &::before {
+        top: -164px;
+        right: -220px;
+      }
+    }
+    & .l-L10 {
+      &::before {
+        top: -2px;
+        left: -400px;
+      }
+    }
+    & .l-L13 {
+      &::before {
+        top: -60px;
+        right: -245px;
+      }
+    }
+  }
+}
 /*
   reason
 ----------------------------------------------- */
@@ -113,8 +144,8 @@
     &::before {
       content: "";
       position: absolute;
-      width: 700px;
-      height: 700px;
+      width: 340px;
+      height: 340px;
       background-image: url(../../img/background_03.svg);
       background-repeat: no-repeat;
       background-size: contain;
@@ -123,23 +154,47 @@
   }
   & .l-L07 {
     &:first-child::before {
-      top: -20px;
-      left: -170px;
+      top: 130px;
+      left: -80px;
       transform: rotate(-19deg);
     }
     &:nth-of-type(2)::before {
-      top: -18px;
-      right: -185px;
+      top: 112px;
+      right: -95px;
       transform: rotate(-19deg);
     }
     &:last-child::before {
-      top: 90px;
-      left: -164px;
+      top: 130px;
+      left: -114px;
       transform: rotate(11deg);
     }
   }
 }
 
+@include mq(l) {
+  .s-reason {
+    & .l-L07 {
+      &::before {
+        width: 700px;
+        height: 700px;
+      }
+    }
+    & .l-L07 {
+      &:first-child::before {
+        top: -20px;
+        left: -170px;
+      }
+      &:nth-of-type(2)::before {
+        top: -18px;
+        right: -185px;
+      }
+      &:last-child::before {
+        top: 90px;
+        left: -164px;
+      }
+    }
+  }
+}
 /*
   flow
 ----------------------------------------------- */
@@ -153,15 +208,28 @@
     &::before {
       content: "";
       position: absolute;
-      top: 130px;
-      left: -210px;
-      width: 755px;
-      height: 755px;
+      top: 40px;
+      left: -60px;
+      width: 350px;
+      height: 350px;
       transform: rotate(-11deg);
       background-image: url(../../img/background_04.svg);
       background-repeat: no-repeat;
       background-size: contain;
       z-index: -2;
+    }
+  }
+}
+
+@include mq(l) {
+  .s-flow {
+    & .l-L01 {
+      &::before {
+        top: 130px;
+        left: -210px;
+        width: 755px;
+        height: 755px;
+      }
     }
   }
 }
@@ -177,8 +245,8 @@
     &::after {
       content: "";
       position: absolute;
-      width: 940px;
-      height: 940px;
+      width: 400px;
+      height: 400px;
       background-image: url(../../img/background_02.svg);
       background-repeat: no-repeat;
       background-size: contain;
@@ -186,13 +254,33 @@
     }
     &::before {
       top: 95px;
-      left: -70px;
+      left: -130px;
       transform: rotate(49deg);
     }
     &::after {
-      bottom: -120px;
-      right: -190px;
+      bottom: -50px;
+      right: -90px;
       transform: rotate(20deg);
+    }
+  }
+}
+
+@include mq(l) {
+  .s-faq {
+    & .l-L01 {
+      &::before,
+      &::after {
+        width: 940px;
+        height: 940px;
+      }
+      &::before {
+        top: 95px;
+        left: -70px;
+      }
+      &::after {
+        bottom: -120px;
+        right: -190px;
+      }
     }
   }
 }

@@ -2562,29 +2562,47 @@ Block
 .s-service .l-L07::before, .s-service .l-L10::before, .s-service .l-L13::before {
   content: "";
   position: absolute;
-  width: 930px;
-  height: 930px;
+  width: 400px;
+  height: 400px;
   background-image: url(../../img/background_02.svg);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -2;
 }
 .s-service .l-L07::before {
-  top: -164px;
-  right: -220px;
+  top: 26px;
+  right: -140px;
   transform: rotate(-26deg);
 }
 .s-service .l-L10::before {
-  top: -2px;
-  left: -400px;
+  top: 68px;
+  left: -120px;
   transform: rotate(14deg);
 }
 .s-service .l-L13::before {
-  top: -60px;
-  right: -245px;
+  top: 60px;
+  right: -94px;
   transform: rotate(-5deg);
 }
 
+@media screen and (min-width: 1000px) {
+  .s-service .l-L07::before, .s-service .l-L10::before, .s-service .l-L13::before {
+    width: 930px;
+    height: 930px;
+  }
+  .s-service .l-L07::before {
+    top: -164px;
+    right: -220px;
+  }
+  .s-service .l-L10::before {
+    top: -2px;
+    left: -400px;
+  }
+  .s-service .l-L13::before {
+    top: -60px;
+    right: -245px;
+  }
+}
 /*
   reason
 ----------------------------------------------- */
@@ -2600,29 +2618,47 @@ Block
 .s-reason .l-L07::before {
   content: "";
   position: absolute;
-  width: 700px;
-  height: 700px;
+  width: 340px;
+  height: 340px;
   background-image: url(../../img/background_03.svg);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -2;
 }
 .s-reason .l-L07:first-child::before {
-  top: -20px;
-  left: -170px;
+  top: 130px;
+  left: -80px;
   transform: rotate(-19deg);
 }
 .s-reason .l-L07:nth-of-type(2)::before {
-  top: -18px;
-  right: -185px;
+  top: 112px;
+  right: -95px;
   transform: rotate(-19deg);
 }
 .s-reason .l-L07:last-child::before {
-  top: 90px;
-  left: -164px;
+  top: 130px;
+  left: -114px;
   transform: rotate(11deg);
 }
 
+@media screen and (min-width: 1000px) {
+  .s-reason .l-L07::before {
+    width: 700px;
+    height: 700px;
+  }
+  .s-reason .l-L07:first-child::before {
+    top: -20px;
+    left: -170px;
+  }
+  .s-reason .l-L07:nth-of-type(2)::before {
+    top: -18px;
+    right: -185px;
+  }
+  .s-reason .l-L07:last-child::before {
+    top: 90px;
+    left: -164px;
+  }
+}
 /*
   flow
 ----------------------------------------------- */
@@ -2636,10 +2672,10 @@ Block
 .s-flow .l-L01::before {
   content: "";
   position: absolute;
-  top: 130px;
-  left: -210px;
-  width: 755px;
-  height: 755px;
+  top: 40px;
+  left: -60px;
+  width: 350px;
+  height: 350px;
   transform: rotate(-11deg);
   background-image: url(../../img/background_04.svg);
   background-repeat: no-repeat;
@@ -2647,6 +2683,14 @@ Block
   z-index: -2;
 }
 
+@media screen and (min-width: 1000px) {
+  .s-flow .l-L01::before {
+    top: 130px;
+    left: -210px;
+    width: 755px;
+    height: 755px;
+  }
+}
 /*
   FAQ
 ----------------------------------------------- */
@@ -2657,8 +2701,8 @@ Block
 .s-faq .l-L01::before, .s-faq .l-L01::after {
   content: "";
   position: absolute;
-  width: 940px;
-  height: 940px;
+  width: 400px;
+  height: 400px;
   background-image: url(../../img/background_02.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -2666,15 +2710,29 @@ Block
 }
 .s-faq .l-L01::before {
   top: 95px;
-  left: -70px;
+  left: -130px;
   transform: rotate(49deg);
 }
 .s-faq .l-L01::after {
-  bottom: -120px;
-  right: -190px;
+  bottom: -50px;
+  right: -90px;
   transform: rotate(20deg);
 }
 
+@media screen and (min-width: 1000px) {
+  .s-faq .l-L01::before, .s-faq .l-L01::after {
+    width: 940px;
+    height: 940px;
+  }
+  .s-faq .l-L01::before {
+    top: 95px;
+    left: -70px;
+  }
+  .s-faq .l-L01::after {
+    bottom: -120px;
+    right: -190px;
+  }
+}
 /* ===============================================
 b-animation
 =============================================== */
