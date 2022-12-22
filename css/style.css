@@ -2714,7 +2714,7 @@ Block
   transform: rotate(49deg);
 }
 .s-faq .l-L01::after {
-  bottom: -50px;
+  bottom: 40px;
   right: -90px;
   transform: rotate(20deg);
 }
