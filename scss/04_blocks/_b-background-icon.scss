@@ -1,3 +1,4 @@
+@use "../01_foundation" as *;
 /*
   about
 ----------------------------------------------- */
@@ -13,12 +14,36 @@
       position: absolute;
       top: -74px;
       right: -122px;
-      width: 742px;
-      height: 742px;
+      width: 280px;
+      height: 280px;
       background-image: url(../../img/background_01.svg);
       background-repeat: no-repeat;
       background-size: contain;
       z-index: -1;
+    }
+  }
+}
+
+@include mq(l) {
+  .s-about {
+    & .l-L04 {
+      z-index: 2;
+    }
+    & .l-L06 {
+      position: relative;
+      z-index: 0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -74px;
+        right: -122px;
+        width: 742px;
+        height: 742px;
+        background-image: url(../../img/background_01.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -1;
+      }
     }
   }
 }
