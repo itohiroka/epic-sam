@@ -230,13 +230,16 @@
   }
   &__boxName--en {
     @include font-size(6);
-    line-height: 1;
+    line-height: 1.6;
   }
   &__boxStatus {
     @include font-size(7);
   }
   &__boxJob {
     @include font-size(7);
+    & span {
+      display: none;
+    }
   }
 }
 
@@ -480,6 +483,12 @@
     }
     &__boxJob {
       @include font-size(12);
+      & span {
+        display: inline;
+      }
+      & br {
+        display: none;
+      }
     }
   }
 
