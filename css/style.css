@@ -1933,75 +1933,120 @@ Block
 .b-heading__title .emphasis.icon::before {
   content: "";
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   z-index: -2;
 }
 .b-heading__title .emphasis.icon--pink::before {
-  top: -24px;
-  left: -30px;
-  width: 60px;
-  height: 60px;
+  top: -6px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: #e9525e;
 }
 .b-heading__title .emphasis.icon--orange::before {
-  top: -26px;
-  right: -29px;
-  width: 66px;
-  height: 66px;
+  top: -8px;
+  right: -10px;
+  width: 36px;
+  height: 36px;
   transform: rotate(7deg);
   background-image: url(../../img/hero_04.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .b-heading__title .emphasis.icon--blue::before {
-  top: -24px;
-  left: -30px;
-  width: 60px;
-  height: 60px;
+  top: -8px;
+  left: -4px;
+  width: 30px;
+  height: 30px;
   border-radius: 3px;
   background-color: #08b9d6;
 }
 .b-heading__title .emphasis.icon--green::before {
-  top: -25px;
-  right: -18px;
-  width: 60px;
-  height: 60px;
+  top: -5px;
+  right: -4px;
+  width: 34px;
+  height: 34px;
   background-image: url(../../img/hero_03.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .b-heading__title .emphasis.icon--purple::before {
-  top: -34px;
-  left: -10px;
-  width: 56px;
-  height: 56px;
+  top: -6px;
+  left: -4px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background-color: #e9525e;
 }
 .b-heading__title .emphasis.icon--purple::after {
   content: "";
   position: absolute;
-  top: -10px;
-  left: -30px;
-  width: 46px;
-  height: 46px;
+  top: 4px;
+  left: -12px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background-color: #7070d1;
   z-index: -3;
 }
 .b-heading__title .emphasis.icon--yellow::before {
-  top: -19px;
-  right: -44px;
-  width: 64px;
-  height: 64px;
+  top: -9px;
+  right: -16px;
+  width: 34px;
+  height: 34px;
   transform: rotate(13deg);
   background-image: url(../../img/hero_06.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+@media screen and (min-width: 1000px) {
+  .b-heading__title .emphasis.icon--pink::before {
+    top: -24px;
+    left: -30px;
+    width: 60px;
+    height: 60px;
+  }
+  .b-heading__title .emphasis.icon--orange::before {
+    top: -26px;
+    right: -29px;
+    width: 66px;
+    height: 66px;
+  }
+  .b-heading__title .emphasis.icon--blue::before {
+    top: -24px;
+    left: -30px;
+    width: 60px;
+    height: 60px;
+  }
+  .b-heading__title .emphasis.icon--green::before {
+    top: -25px;
+    right: -18px;
+    width: 60px;
+    height: 60px;
+  }
+  .b-heading__title .emphasis.icon--purple::before {
+    top: -34px;
+    left: -10px;
+    width: 56px;
+    height: 56px;
+  }
+  .b-heading__title .emphasis.icon--purple::after {
+    top: -10px;
+    left: -30px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+  }
+  .b-heading__title .emphasis.icon--yellow::before {
+    top: -19px;
+    right: -44px;
+    width: 64px;
+    height: 64px;
+  }
+}
 /*
   hero
 ----------------------------------------------- */
@@ -2476,30 +2521,50 @@ Block
   position: absolute;
   top: 0;
   left: -40px;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
 }
 .b-faqContents__boxTitle::before {
   content: "Q";
-  font-size: 1.125rem;
+  font-size: 0.8125rem;
   line-height: 1;
   text-align: center;
   top: 9px;
   left: -35px;
-  width: 18px;
-  height: 18px;
+  width: 13px;
+  height: 13px;
   z-index: 2;
 }
 .b-faqContents__boxTitle::after {
   left: -40px;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   background-image: url(../../img/faq_icon.svg);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 1;
 }
 
+@media screen and (min-width: 1000px) {
+  .b-faqContents__boxTitle::before, .b-faqContents__boxTitle::after {
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+  }
+  .b-faqContents__boxTitle::before {
+    font-size: 1.125rem;
+    top: 9px;
+    left: -35px;
+    width: 18px;
+    height: 18px;
+  }
+  .b-faqContents__boxTitle::after {
+    left: -40px;
+    width: 40px;
+    height: 40px;
+  }
+}
 /*
   message
 ----------------------------------------------- */
@@ -2570,20 +2635,6 @@ Block
   z-index: -2;
 }
 .s-service .l-L07::before {
-<<<<<<< HEAD
-  top: -164px;
-  right: -220px;
-  transform: rotate(-26deg);
-}
-.s-service .l-L10::before {
-  top: -2px;
-  left: -400px;
-  transform: rotate(14deg);
-}
-.s-service .l-L13::before {
-  top: -60px;
-  right: -245px;
-=======
   top: 26px;
   right: -140px;
   transform: rotate(-26deg);
@@ -2596,7 +2647,6 @@ Block
 .s-service .l-L13::before {
   top: 60px;
   right: -94px;
->>>>>>> bg_animation
   transform: rotate(-5deg);
 }
 
@@ -2641,20 +2691,6 @@ Block
   z-index: -2;
 }
 .s-reason .l-L07:first-child::before {
-<<<<<<< HEAD
-  top: -20px;
-  left: -170px;
-  transform: rotate(-19deg);
-}
-.s-reason .l-L07:nth-of-type(2)::before {
-  top: -18px;
-  right: -185px;
-  transform: rotate(-19deg);
-}
-.s-reason .l-L07:last-child::before {
-  top: 90px;
-  left: -164px;
-=======
   top: 130px;
   left: -80px;
   transform: rotate(-19deg);
@@ -2667,7 +2703,6 @@ Block
 .s-reason .l-L07:last-child::before {
   top: 130px;
   left: -114px;
->>>>>>> bg_animation
   transform: rotate(11deg);
 }
 
@@ -2702,17 +2737,10 @@ Block
 .s-flow .l-L01::before {
   content: "";
   position: absolute;
-<<<<<<< HEAD
-  top: 130px;
-  left: -210px;
-  width: 755px;
-  height: 755px;
-=======
   top: 40px;
   left: -60px;
   width: 350px;
   height: 350px;
->>>>>>> bg_animation
   transform: rotate(-11deg);
   background-image: url(../../img/background_04.svg);
   background-repeat: no-repeat;
@@ -2747,21 +2775,12 @@ Block
 }
 .s-faq .l-L01::before {
   top: 95px;
-<<<<<<< HEAD
-  left: -70px;
-  transform: rotate(49deg);
-}
-.s-faq .l-L01::after {
-  bottom: -120px;
-  right: -190px;
-=======
   left: -130px;
   transform: rotate(49deg);
 }
 .s-faq .l-L01::after {
   bottom: 40px;
   right: -90px;
->>>>>>> bg_animation
   transform: rotate(20deg);
 }
 
