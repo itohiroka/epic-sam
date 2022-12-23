@@ -675,8 +675,12 @@ Layout
 .s-difference .l-L03, .s-difference .l-L04 {
   padding-bottom: 24px;
 }
+.s-difference .l-L04 {
+  text-align: center;
+}
 .s-difference .l-L05 {
   padding-bottom: 32px;
+  text-align: center;
 }
 .s-difference .l-L07 {
   margin-bottom: 48px;
@@ -695,9 +699,9 @@ Layout
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 32px;
   gap: 0 5px;
 }
@@ -736,8 +740,12 @@ Layout
   .s-difference .l-L03, .s-difference .l-L04 {
     padding-bottom: 32px;
   }
+  .s-difference .l-L04 {
+    text-align: left;
+  }
   .s-difference .l-L05 {
     padding-bottom: 24px;
+    text-align: left;
   }
   .s-difference .l-L07 {
     padding: 32px;

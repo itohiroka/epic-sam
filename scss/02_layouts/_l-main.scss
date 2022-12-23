@@ -327,8 +327,12 @@
   & .l-L04 {
     padding-bottom: 24px;
   }
+  & .l-L04 {
+    text-align: center;
+  }
   & .l-L05 {
     padding-bottom: 32px;
+    text-align: center;
   }
   & .l-L07 {
     margin-bottom: 48px;
@@ -346,7 +350,7 @@
   & .l-L06 {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding-bottom: 32px;
     gap: 0 5px;
     & .b-boxFlame__lineCircle {
@@ -384,8 +388,12 @@
     & .l-L04 {
       padding-bottom: 32px;
     }
+    & .l-L04 {
+      text-align: left;
+    }
     & .l-L05 {
       padding-bottom: 24px;
+      text-align: left;
     }
     & .l-L07 {
       padding: 32px;
@@ -578,7 +586,7 @@
     padding-bottom: 32px;
   }
   & .l-L14 .b-boxFlame__shift--pink,
-  .l-L14 .b-boxFlame__shift--purple{
+  .l-L14 .b-boxFlame__shift--purple {
     margin-right: 16px;
   }
 }
