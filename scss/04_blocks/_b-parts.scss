@@ -10,27 +10,27 @@
   &::before {
     content: "";
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     z-index: -2;
   }
 
   &--pink {
     &::before {
-      top: -24px;
-      left: -30px;
-      width: 60px;
-      height: 60px;
+      top: -6px;
+      left: -10px;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
       background-color: $pinkColor;
     }
   }
   &--orange {
     &::before {
-      top: -26px;
-      right: -29px;
-      width: 66px;
-      height: 66px;
+      top: -8px;
+      right: -10px;
+      width: 36px;
+      height: 36px;
       transform: rotate(7deg);
       background-image: url(../../img/hero_04.svg);
       background-repeat: no-repeat;
@@ -39,20 +39,20 @@
   }
   &--blue {
     &::before {
-      top: -24px;
-      left: -30px;
-      width: 60px;
-      height: 60px;
+      top: -8px;
+      left: -4px;
+      width: 30px;
+      height: 30px;
       border-radius: 3px;
       background-color: $blueColor;
     }
   }
   &--green {
     &::before {
-      top: -25px;
-      right: -18px;
-      width: 60px;
-      height: 60px;
+      top: -5px;
+      right: -4px;
+      width: 34px;
+      height: 34px;
       background-image: url(../../img/hero_03.svg);
       background-repeat: no-repeat;
       background-size: contain;
@@ -60,20 +60,20 @@
   }
   &--purple {
     &::before {
-      top: -34px;
-      left: -10px;
-      width: 56px;
-      height: 56px;
+      top: -6px;
+      left: -4px;
+      width: 22px;
+      height: 22px;
       border-radius: 50%;
       background-color: $pinkColor;
     }
     &::after {
       content: "";
       position: absolute;
-      top: -10px;
-      left: -30px;
-      width: 46px;
-      height: 46px;
+      top: 4px;
+      left: -12px;
+      width: 18px;
+      height: 18px;
       border-radius: 50%;
       background-color: $purpleColor;
       z-index: -3;
@@ -81,14 +81,74 @@
   }
   &--yellow {
     &::before {
-      top: -19px;
-      right: -44px;
-      width: 64px;
-      height: 64px;
+      top: -9px;
+      right: -16px;
+      width: 34px;
+      height: 34px;
       transform: rotate(13deg);
       background-image: url(../../img/hero_06.svg);
       background-repeat: no-repeat;
       background-size: contain;
+    }
+  }
+}
+
+@include mq(l) {
+  .b-heading__title .emphasis.icon {
+    &--pink {
+      &::before {
+        top: -24px;
+        left: -30px;
+        width: 60px;
+        height: 60px;
+      }
+    }
+    &--orange {
+      &::before {
+        top: -26px;
+        right: -29px;
+        width: 66px;
+        height: 66px;
+      }
+    }
+    &--blue {
+      &::before {
+        top: -24px;
+        left: -30px;
+        width: 60px;
+        height: 60px;
+      }
+    }
+    &--green {
+      &::before {
+        top: -25px;
+        right: -18px;
+        width: 60px;
+        height: 60px;
+      }
+    }
+    &--purple {
+      &::before {
+        top: -34px;
+        left: -10px;
+        width: 56px;
+        height: 56px;
+      }
+      &::after {
+        top: -10px;
+        left: -30px;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+      }
+    }
+    &--yellow {
+      &::before {
+        top: -19px;
+        right: -44px;
+        width: 64px;
+        height: 64px;
+      }
     }
   }
 }
@@ -609,28 +669,52 @@
     position: absolute;
     top: 0;
     left: -40px;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
   }
   &::before {
     content: "Q";
-    @include font-size(18);
+    @include font-size(13);
     line-height: 1;
     text-align: center;
     top: 9px;
     left: -35px;
-    width: 18px;
-    height: 18px;
+    width: 13px;
+    height: 13px;
     z-index: 2;
   }
   &::after {
     left: -40px;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     background-image: url(../../img/faq_icon.svg);
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 1;
+  }
+}
+
+@include mq(l) {
+  .b-faqContents__boxTitle {
+    &::before,
+    &::after {
+      top: 0;
+      left: -40px;
+      width: 40px;
+      height: 40px;
+    }
+    &::before {
+      @include font-size(18);
+      top: 9px;
+      left: -35px;
+      width: 18px;
+      height: 18px;
+    }
+    &::after {
+      left: -40px;
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 /*
