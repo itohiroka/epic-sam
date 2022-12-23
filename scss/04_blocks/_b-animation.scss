@@ -126,18 +126,21 @@ b-animation
         animation: anime_parts01 25s linear 1s infinite;
         z-index: 1;
         width: 120%;
+        max-width: 480px;
       }
       &__parts02 {
         top: -76px;
         left: -64px;
         animation: anime_parts02 10s linear infinite;
         width: 40%;
+        max-width: 250px;
       }
       &__parts03 {
         top: -120px;
         left: 38px;
         animation: anime_parts03 140s linear infinite;
         width: 60%;
+        max-width: 340px;
       }
       &__parts04 {
         top: 150px;
@@ -145,18 +148,21 @@ b-animation
         z-index: 1;
         animation: anime_parts04 60s linear infinite;
         width: 30%;
+        max-width: 300px;
       }
       &__parts05 {
         top: 92px;
         right: -114px;
         animation: anime_parts05 40s linear infinite;
         width: 80%;
+        max-width: 450px;
       }
       &__parts06 {
         bottom: -68px;
         right: -90px;
         animation: anime_parts06 160s linear infinite;
         width: 70%;
+        max-width: 360px;
       }
     }
   }
