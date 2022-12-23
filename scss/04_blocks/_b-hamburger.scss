@@ -14,7 +14,7 @@ hamburger
   padding: 80px 24px;
   width: auto;
   height: 120%;
-  background-color: $whiteColor;
+  // background-color: $whiteColor;
   transition: transform 0.3s ease-in-out; /* IE9非対応 */
   -webkit-transform: translateX(-150%); /* Android, BrackberrXtranslateX  */
   -ms-transform: translateX(-150%); /* IE9 */
@@ -31,7 +31,7 @@ hamburger
 .m-headerNav__box {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   justify-content: center;
 }
 
@@ -127,12 +127,12 @@ hamburger
   transform: rotate(-45deg);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1310px) {
   .button-hamburger {
     display: none;
   }
 
-  .l-global-nav {
+  #g-nav-list.l-global-nav {
     position: static;
     padding: 0;
     height: 100%;
@@ -146,7 +146,7 @@ hamburger
     }
   }
 
-  .m-headerNav__box {
+  #g-nav-list .m-headerNav__box {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -168,4 +168,218 @@ hamburger
   clip: rect(1px, 1px, 1px, 1px);
   width: 1px;
   height: 1px;
+}
+
+/*
+  navigation
+----------------------------------------------- */
+
+#g-nav.panelactive {
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+/*丸の拡大*/
+.circle-bg {
+  position: absolute;
+  z-index: 3;
+  /*丸の形*/
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #242422;
+  /*丸のスタート位置と形状*/
+  transform: scale(0); /*scaleをはじめは0に*/
+  right: -18px;
+  transition: all 0.6s; /*0.6秒かけてアニメーション*/
+}
+
+.circle-bg.circleactive {
+  transform: scale(50); /*クラスが付与されたらscaleを拡大*/
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav-list {
+  display: none; /*はじめは表示なし*/
+  position: absolute;
+  top: calc(50% - 56px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#g-nav .nav-logo {
+  opacity: 0;
+  position: absolute;
+  bottom: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 40px;
+}
+
+.g-nav-img {
+  padding-top: 40px;
+  width: 296px;
+}
+
+.g-nav-img img {
+  max-width: 100%;
+}
+
+#g-nav.panelactive #g-nav-list {
+  display: flex; /*クラスが付与されたら出現*/
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+  opacity: 0; /*はじめは透過0*/
+}
+
+/*背景が出現後にナビゲーションを表示*/
+#g-nav.panelactive ul {
+  opacity: 1;
+}
+
+/* 背景が出現後にナビゲーション li を表示※レイアウトによって調整してください。不必要なら削除*/
+#g-nav.panelactive ul li,
+#g-nav.panelactive .nav-logo,
+#g-nav.panelactive .g-nav-img {
+  animation-name: gnaviAnime;
+  animation-duration: 1s;
+  animation-delay: 0.2s; /*0.2 秒遅らせて出現*/
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes gnaviAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*リストのレイアウト設定*/
+#g-nav li {
+  text-align: start;
+  list-style: none;
+}
+
+#g-nav li a {
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+#g-nav li:not(:first-child) {
+  padding-top: 24px;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  z-index: 9999; /*ボタンを最前面に*/
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  background-color: #242422;
+  border-radius: 50%;
+}
+
+.header .l-L01 {
+  z-index: 9999; /*ボタンを最前面に*/
+}
+
+.b-logo.active a {
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.openbtn.active {
+  background-color: #fff;
+  transition: all 0.4s;
+}
+
+/*×に変化*/
+.openbtn span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 14px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  width: 45%;
+}
+
+.active span {
+  background-color: #242422;
+}
+
+.openbtn span:nth-of-type(1) {
+  top: calc(42% - 2px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.openbtn span:nth-of-type(2) {
+  top: 58%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.openbtn.active span:nth-of-type(1) {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+  width: 45%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 45%;
+}
+
+@media screen and (min-width: 1310px) {
+  .openbtn {
+    display: none;
+  }
+
+  #g-nav ul {
+    opacity: 1; /*はじめは透過0*/
+  }
+
+  #g-nav-list {
+    display: block; /*はじめは表示なし*/
+  }
+
+  .g-nav-img {
+    display: none;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  #g-nav li a {
+    color: #242422;
+    font-size: 18px;
+  }
+
+  #g-nav li:not(:first-child) {
+    padding-top: 0;
+  }
 }

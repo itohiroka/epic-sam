@@ -26,15 +26,23 @@
 
 @media screen and (min-width: 1200px) {
   .header {
-    & .l-S01 {
-      height: 100px;
-    }
+    // & .l-S01 {
+    //   height: 100px;
+    // }
 
     & .l-L01 {
       width: auto;
     }
     & .l-L02 {
       width: 90%;
+    }
+  }
+}
+
+@media screen and (min-width: 1310px) {
+  .header {
+    & .l-S01 {
+      height: 100px;
     }
   }
 }

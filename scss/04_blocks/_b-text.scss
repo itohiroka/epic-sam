@@ -328,9 +328,9 @@
   /*
   header
 ----------- */
-  .b-logo {
-    @include font-size(40);
-  }
+  // .b-logo {
+  //   @include font-size(40);
+  // }
   .b-nav__title {
     @include font-size(18);
     font-size: clamp(14px, 1.25vw, 18px);
@@ -527,5 +527,11 @@
 
   .b-copyRight {
     @include font-size(12);
+  }
+}
+
+@media screen and (min-width: 1310px) {
+  .b-logo {
+    @include font-size(40);
   }
 }

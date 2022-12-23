@@ -30,24 +30,14 @@
         <div class="l-S01">
           <div class="l-S03">
             <div class="l-L01">
-              <h1 class="b-logo">
+              <h1 class="b-logo" id="headerLogo">
                 <a href="index.html">SLashNext</a>
               </h1>
             </div>
-            <nav class="l-L02">
-              <button
-                type="button"
-                class="js-button-hamburger button-hamburger"
-                aria-controls="global-nav"
-                aria-expanded="false"
-              >
-                <div class="hamburger-text">
-                  <span class="hamburger">
-                    <span class="screen-reader-text">メニューを開閉する</span>
-                  </span>
-                </div>
-              </button>
-              <div id="global-nav" class="l-global-nav">
+
+            <div class="openbtn"><span></span><span></span></div>
+            <nav id="g-nav">
+              <div id="g-nav-list" class="l-global-nav">
                 <ul class="m-headerNav__box">
                   <li class="b-nav__item b-nav__title"><a href="#s-about">SLashNextとは</a></li>
                   <li class="b-nav__item b-nav__title"><a href="#s-service">サービスの特徴</a></li>
@@ -57,8 +47,15 @@
                   <li class="b-nav__item b-nav__title"><a href="#s-creator">所属クリエイター</a></li>
                   <li class="b-nav__item b-nav__title"><a href="#s-faq">よくある質問</a></li>
                 </ul>
+                <div class="g-nav-img"><img src="img/header_01.png" alt="" /></div>
+              </div>
+              <div class="nav-logo">
+                <a href="https://cranks.co.jp/" target="_blank"
+                  ><img class="b-image" src="img/footer_cranks_01.svg" alt=""
+                /></a>
               </div>
             </nav>
+            <div class="circle-bg"></div>
           </div>
         </div>
       </header>
