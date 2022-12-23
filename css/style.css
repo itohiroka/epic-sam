@@ -1130,10 +1130,6 @@ hamburger
   padding: 80px 24px;
   width: auto;
   height: 120%;
-<<<<<<< HEAD
-=======
-  background-color: #fff;
->>>>>>> all
   transition: transform 0.3s ease-in-out; /* IE9非対応 */ /* Android, BrackberrXtranslateX  */ /* IE9 */
   transform: translateX(-150%);
 }
@@ -1146,10 +1142,6 @@ hamburger
 .m-headerNav__box {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-=======
-  align-items: center;
->>>>>>> all
   justify-content: center;
 }
 
@@ -1248,11 +1240,7 @@ hamburger
   #g-nav-list.l-global-nav::before {
     display: none;
   }
-<<<<<<< HEAD
   #g-nav-list .m-headerNav__box {
-=======
-  .m-headerNav__box {
->>>>>>> all
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1988,10 +1976,6 @@ Block
 .b-guidance {
   position: relative;
   display: flex;
-<<<<<<< HEAD
-  justify-content: center;
-=======
->>>>>>> all
   align-items: center;
   gap: 0 4%;
   background-color: #fff;
@@ -2392,10 +2376,7 @@ Block
   padding-bottom: 48px;
   display: flex;
   justify-content: space-between;
-<<<<<<< HEAD
-=======
   align-items: center;
->>>>>>> all
   gap: 0 64px;
 }
 .b-serviceContents__lowPrice .b-serviceContents__lowPriceWrapper .b-serviceContents__boxIcon:first-child {
@@ -2651,11 +2632,7 @@ Block
   display: flex;
   flex-direction: column;
   align-items: center;
-<<<<<<< HEAD
-  padding: 16px;
-=======
   padding: 16px 6px;
->>>>>>> all
 }
 .b-creatorSLash__boxLogo {
   width: 110px;
@@ -2664,11 +2641,7 @@ Block
 .b-creatorSLash__cardBox {
   display: flex;
   justify-content: space-between;
-<<<<<<< HEAD
-  gap: 0 16px;
-=======
   gap: 0 8px;
->>>>>>> all
 }
 .b-creatorSLash__cardItem {
   padding: 16px 6px;
