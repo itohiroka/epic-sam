@@ -217,6 +217,7 @@
   &__boxText {
     @include font-size(8);
     text-align: center;
+    font-weight: 500;
     &--white {
       color: $whiteColor;
     }

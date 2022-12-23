@@ -1457,6 +1457,7 @@ Block
 .b-creatorSLash__boxText {
   font-size: 0.5rem;
   text-align: center;
+  font-weight: 500;
 }
 .b-creatorSLash__boxText--white {
   color: #fff;
@@ -2406,7 +2407,7 @@ Block
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
+  padding: 16px 6px;
 }
 .b-creatorSLash__boxLogo {
   width: 110px;
@@ -2415,10 +2416,10 @@ Block
 .b-creatorSLash__cardBox {
   display: flex;
   justify-content: space-between;
-  gap: 0 16px;
+  gap: 0 8px;
 }
 .b-creatorSLash__cardItem {
-  padding: 16px 8px;
+  padding: 16px 6px;
   border-radius: 8px;
 }
 .b-creatorSLash__cardItem.blue {
@@ -2513,10 +2514,10 @@ Block
     padding-bottom: 24px;
   }
   .b-creatorSLash__cardBox {
-    gap: 0 32px;
+    gap: 0 16px;
   }
   .b-creatorSLash__cardItem {
-    padding: 24px;
+    padding: 24px 18px 28px;
     border-radius: 8px;
   }
   .b-creatorSLash__boxTitle {
