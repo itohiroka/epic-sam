@@ -2020,6 +2020,9 @@ Block
 }
 
 @media screen and (min-width: 1000px) {
+  .b-heading__title br {
+    display: none;
+  }
   .b-heading__title .emphasis.icon--pink::before {
     top: -24px;
     left: -30px;

@@ -94,6 +94,9 @@
 }
 
 @include mq(l) {
+  .b-heading__title br{
+    display: none;
+  }
   .b-heading__title .emphasis.icon {
     &--pink {
       &::before {
