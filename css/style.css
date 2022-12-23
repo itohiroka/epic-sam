@@ -2905,49 +2905,55 @@ Block
 ----------------------------------------------- */
 .b-reasonContents__boxText {
   position: relative;
-  padding-left: 36px;
+  padding-left: 32px;
 }
 .b-reasonContents__boxText::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
+  bottom: 1px;
   margin: auto 0;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 3px;
   background-color: #08b9d6;
 }
 .b-reasonContents__boxResult {
   position: relative;
-  padding-left: 36px;
+  padding-left: 22px;
 }
-.b-reasonContents__boxResult::before, .b-reasonContents__boxResult::after {
+.b-reasonContents__boxResult::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   margin: auto 0;
-  border-radius: 1.5px;
-}
-.b-reasonContents__boxResult:before {
-  left: 0px;
-  width: 20px;
-  height: 3px;
-  background: #08b9d6;
-}
-.b-reasonContents__boxResult:after {
-  left: 8px;
-  width: 8px;
-  height: 9px;
-  border-top: 3px solid #08b9d6;
-  border-right: 3px solid #08b9d6;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  width: 14px;
+  height: 11px;
+  background-image: url(../img/reason_arrowicon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
+@media screen and (min-width: 1000px) {
+  .b-reasonContents__boxText {
+    padding-left: 36px;
+  }
+  .b-reasonContents__boxText::before {
+    bottom: 4px;
+    width: 20px;
+    height: 20px;
+  }
+  .b-reasonContents__boxResult {
+    padding-left: 32px;
+  }
+  .b-reasonContents__boxResult::before {
+    width: 20px;
+    height: 16px;
+  }
+}
 /*
   flow
 ----------------------------------------------- */
