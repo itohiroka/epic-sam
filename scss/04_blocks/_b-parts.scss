@@ -32,7 +32,7 @@
       width: 36px;
       height: 36px;
       transform: rotate(7deg);
-      background-image: url(../../img/hero_04.svg);
+      background-image: url(../img/hero_04.svg);
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -53,7 +53,7 @@
       right: -4px;
       width: 34px;
       height: 34px;
-      background-image: url(../../img/hero_03.svg);
+      background-image: url(../img/hero_03.svg);
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -86,7 +86,7 @@
       width: 34px;
       height: 34px;
       transform: rotate(13deg);
-      background-image: url(../../img/hero_06.svg);
+      background-image: url(../img/hero_06.svg);
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -254,7 +254,7 @@
             margin: auto 0;
             width: 32px;
             height: 32px;
-            background-image: url(../../img/hero_04.svg);
+            background-image: url(../img/hero_04.svg);
             background-repeat: no-repeat;
             background-size: contain;
             transform: rotate(52deg);
@@ -291,7 +291,7 @@
       margin: auto 0;
       width: 14px;
       height: 14px;
-      background-image: url(../../img/hero_04.svg);
+      background-image: url(../img/hero_04.svg);
       background-repeat: no-repeat;
       background-size: contain;
       transform: rotate(50deg);
@@ -398,7 +398,7 @@
         margin: auto 0;
         width: 14px;
         height: 14px;
-        background-image: url(../../img/hero_04.svg);
+        background-image: url(../img/hero_04.svg);
         background-repeat: no-repeat;
         background-size: contain;
         transform: rotate(50deg);
@@ -503,7 +503,7 @@
     }
     &::after {
       right: -24px;
-      background-image: url(../../img/mdi_external-link.png);
+      background-image: url(../img/mdi_external-link.png);
       background-repeat: no-repeat;
       background-size: contain;
       width: 16px;
@@ -568,10 +568,10 @@
       background-size: contain;
     }
     &.blue::before {
-      background-image: url(../../img/creator_slash_02.png);
+      background-image: url(../img/creator_slash_02.png);
     }
     &.gray::before {
-      background-image: url(../../img/creator_slash_03.png);
+      background-image: url(../img/creator_slash_03.png);
     }
   }
   &__boxTitle span {
@@ -701,7 +701,7 @@
     left: -40px;
     width: 32px;
     height: 32px;
-    background-image: url(../../img/faq_icon.svg);
+    background-image: url(../img/faq_icon.svg);
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 1;

@@ -2496,7 +2496,7 @@ Block
   height: 36px;
   -webkit-transform: rotate(7deg);
           transform: rotate(7deg);
-  background-image: url(../../img/hero_04.svg);
+  background-image: url(../img/hero_04.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2513,7 +2513,7 @@ Block
   right: -4px;
   width: 34px;
   height: 34px;
-  background-image: url(../../img/hero_03.svg);
+  background-image: url(../img/hero_03.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2543,7 +2543,7 @@ Block
   height: 34px;
   -webkit-transform: rotate(13deg);
           transform: rotate(13deg);
-  background-image: url(../../img/hero_06.svg);
+  background-image: url(../img/hero_06.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2724,7 +2724,7 @@ Block
   margin: auto 0;
   width: 32px;
   height: 32px;
-  background-image: url(../../img/hero_04.svg);
+  background-image: url(../img/hero_04.svg);
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-transform: rotate(52deg);
@@ -2761,7 +2761,7 @@ Block
   margin: auto 0;
   width: 14px;
   height: 14px;
-  background-image: url(../../img/hero_04.svg);
+  background-image: url(../img/hero_04.svg);
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-transform: rotate(50deg);
@@ -2872,7 +2872,7 @@ Block
     margin: auto 0;
     width: 14px;
     height: 14px;
-    background-image: url(../../img/hero_04.svg);
+    background-image: url(../img/hero_04.svg);
     background-repeat: no-repeat;
     background-size: contain;
     -webkit-transform: rotate(50deg);
@@ -2980,7 +2980,7 @@ Block
 .m-creatorSlash .b-creatorContents__link::after,
 .m-creatorCranks .b-creatorContents__link::after {
   right: -24px;
-  background-image: url(../../img/mdi_external-link.png);
+  background-image: url(../img/mdi_external-link.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 16px;
@@ -3049,10 +3049,10 @@ Block
   background-size: contain;
 }
 .b-creatorSLash__boxTitle.blue::before {
-  background-image: url(../../img/creator_slash_02.png);
+  background-image: url(../img/creator_slash_02.png);
 }
 .b-creatorSLash__boxTitle.gray::before {
-  background-image: url(../../img/creator_slash_03.png);
+  background-image: url(../img/creator_slash_03.png);
 }
 .b-creatorSLash__boxTitle span::before, .b-creatorSLash__boxTitle span::after {
   -webkit-box-sizing: border-box;
@@ -3185,7 +3185,7 @@ Block
   left: -40px;
   width: 32px;
   height: 32px;
-  background-image: url(../../img/faq_icon.svg);
+  background-image: url(../img/faq_icon.svg);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 1;
@@ -3231,7 +3231,7 @@ Block
   right: -122px;
   width: 280px;
   height: 280px;
-  background-image: url(../../img/background_01.svg);
+  background-image: url(../img/background_01.svg);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1;
@@ -3252,7 +3252,7 @@ Block
     right: -122px;
     width: 742px;
     height: 742px;
-    background-image: url(../../img/background_01.svg);
+    background-image: url(../img/background_01.svg);
     background-repeat: no-repeat;
     background-size: contain;
     z-index: -1;
@@ -3275,7 +3275,7 @@ Block
   position: absolute;
   width: 400px;
   height: 400px;
-  background-image: url(../../img/background_02.svg);
+  background-image: url(../img/background_02.svg);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -2;
@@ -3334,7 +3334,7 @@ Block
   position: absolute;
   width: 340px;
   height: 340px;
-  background-image: url(../../img/background_03.svg);
+  background-image: url(../img/background_03.svg);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -2;
@@ -3395,7 +3395,7 @@ Block
   height: 350px;
   -webkit-transform: rotate(-11deg);
           transform: rotate(-11deg);
-  background-image: url(../../img/background_04.svg);
+  background-image: url(../img/background_04.svg);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -2;
@@ -3421,7 +3421,7 @@ Block
   position: absolute;
   width: 400px;
   height: 400px;
-  background-image: url(../../img/background_02.svg);
+  background-image: url(../img/background_02.svg);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -2;

@@ -16,7 +16,7 @@
       right: -122px;
       width: 280px;
       height: 280px;
-      background-image: url(../../img/background_01.svg);
+      background-image: url(../img/background_01.svg);
       background-repeat: no-repeat;
       background-size: contain;
       z-index: -1;
@@ -39,7 +39,7 @@
         right: -122px;
         width: 742px;
         height: 742px;
-        background-image: url(../../img/background_01.svg);
+        background-image: url(../img/background_01.svg);
         background-repeat: no-repeat;
         background-size: contain;
         z-index: -1;
@@ -69,7 +69,7 @@
       position: absolute;
       width: 400px;
       height: 400px;
-      background-image: url(../../img/background_02.svg);
+      background-image: url(../img/background_02.svg);
       background-repeat: no-repeat;
       background-size: contain;
       z-index: -2;
@@ -97,7 +97,6 @@
     }
   }
 }
-
 
 @include mq(l) {
   .s-service {
@@ -146,7 +145,7 @@
       position: absolute;
       width: 340px;
       height: 340px;
-      background-image: url(../../img/background_03.svg);
+      background-image: url(../img/background_03.svg);
       background-repeat: no-repeat;
       background-size: contain;
       z-index: -2;
@@ -213,7 +212,7 @@
       width: 350px;
       height: 350px;
       transform: rotate(-11deg);
-      background-image: url(../../img/background_04.svg);
+      background-image: url(../img/background_04.svg);
       background-repeat: no-repeat;
       background-size: contain;
       z-index: -2;
@@ -247,7 +246,7 @@
       position: absolute;
       width: 400px;
       height: 400px;
-      background-image: url(../../img/background_02.svg);
+      background-image: url(../img/background_02.svg);
       background-repeat: no-repeat;
       background-size: contain;
       z-index: -2;
