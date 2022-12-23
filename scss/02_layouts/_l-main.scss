@@ -361,8 +361,28 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 90px;
-      height: 90px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+@include mq(s) {
+  .s-difference {
+    & .l-L06 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 32px;
+      gap: 0 5px;
+      & .b-boxFlame__lineCircle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+      }
     }
   }
 }

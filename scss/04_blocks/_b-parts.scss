@@ -94,7 +94,7 @@
 }
 
 @include mq(l) {
-  .b-heading__title br{
+  .b-heading__title br {
     display: none;
   }
   .b-heading__title .emphasis.icon {
@@ -221,6 +221,8 @@
         & .b-serviceContents__boxIcon {
           padding-bottom: 24px;
           margin: 0 auto;
+          display: flex;
+          justify-content: center;
         }
       }
       &__boxIcon {
@@ -269,6 +271,8 @@
         width: 90%;
         margin: 0 auto;
         padding-bottom: 48px;
+        display: flex;
+        justify-content: center;
       }
     }
   }
@@ -296,6 +300,12 @@
       padding-left: 24px;
     }
   }
+}
+
+.b-serviceContents__boxImage {
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
 }
 
 @include mq(l) {
