@@ -1741,7 +1741,6 @@ Block
 .b-guidance {
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 0 4%;
   background-color: #fff;
@@ -1768,6 +1767,12 @@ Block
 }
 .b-guidance--service .b-guidance__icon.large, .b-guidance--reason .b-guidance__icon.large {
   width: 85px;
+}
+.b-guidance--service .b-guidance__title {
+  margin: 0 auto;
+}
+.b-guidance--reason .b-guidance__title {
+  margin-left: 8px;
 }
 .b-guidance--reason .b-reasonGuidance__title {
   margin: auto 0;
@@ -1885,6 +1890,11 @@ Block
   .b-guidance--reason .b-guidance__icon.small {
     width: 160px;
     height: 180px;
+  }
+  .b-guidance--reason .b-guidance__title {
+    margin: 0 auto;
+    vertical-align: middle;
+    display: contents;
   }
   .b-guidance--flow {
     width: 214px;
@@ -2128,6 +2138,7 @@ Block
   padding-bottom: 48px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 0 64px;
 }
 .b-serviceContents__lowPrice .b-serviceContents__lowPriceWrapper .b-serviceContents__boxIcon:first-child {
@@ -2138,7 +2149,7 @@ Block
   content: "";
   position: absolute;
   top: 0;
-  right: -18%;
+  right: -30%;
   bottom: 0;
   margin: auto 0;
   width: 32px;

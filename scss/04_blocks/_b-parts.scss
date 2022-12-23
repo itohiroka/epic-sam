@@ -235,6 +235,7 @@
         padding-bottom: 48px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         gap: 0 64px;
         & .b-serviceContents__boxIcon:first-child {
           position: relative;
@@ -243,7 +244,7 @@
             content: "";
             position: absolute;
             top: 0;
-            right: -18%;
+            right: -30%;
             bottom: 0;
             margin: auto 0;
             width: 32px;
