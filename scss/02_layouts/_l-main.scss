@@ -331,8 +331,11 @@
     padding-bottom: 32px;
   }
   & .l-L07 {
-    padding: 24px 16px 16px;
     margin-bottom: 48px;
+    & .b-boxFlame__shift {
+      padding: 24px 16px 16px;
+      margin-right: 16px;
+    }
   }
   & .l-L08 {
     & .b-difference__subText {
@@ -573,6 +576,10 @@
   }
   & .l-L13 {
     padding-bottom: 32px;
+  }
+  & .l-L14 .b-boxFlame__shift--pink,
+  .l-L14 .b-boxFlame__shift--purple{
+    margin-right: 16px;
   }
 }
 
