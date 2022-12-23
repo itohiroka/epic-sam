@@ -71,10 +71,16 @@
 
   &--flow {
     padding: 24px;
+    justify-content: center;
     & .b-guidance__icon {
       width: 60px;
     }
+    & .b-flowContents__title {
+      width: 110px;
+      text-align: center;
+    }
   }
+
 }
 
 .b-aboutContents {
