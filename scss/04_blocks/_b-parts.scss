@@ -94,6 +94,9 @@
 }
 
 @include mq(l) {
+  .b-heading__title br{
+    display: none;
+  }
   .b-heading__title .emphasis.icon {
     &--pink {
       &::before {
@@ -235,6 +238,7 @@
         padding-bottom: 48px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         gap: 0 64px;
         & .b-serviceContents__boxIcon:first-child {
           position: relative;
@@ -243,7 +247,7 @@
             content: "";
             position: absolute;
             top: 0;
-            right: -18%;
+            right: -30%;
             bottom: 0;
             margin: auto 0;
             width: 32px;
@@ -516,7 +520,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
+  padding: 16px 6px;
   &__boxLogo {
     width: 110px;
     padding-bottom: 16px;
@@ -524,10 +528,10 @@
   &__cardBox {
     display: flex;
     justify-content: space-between;
-    gap: 0 16px;
+    gap: 0 8px;
   }
   &__cardItem {
-    padding: 16px 8px;
+    padding: 16px 6px;
     border-radius: 8px;
     &.blue {
       background-color: $SLashCardColor_01;
@@ -628,10 +632,10 @@
       padding-bottom: 24px;
     }
     &__cardBox {
-      gap: 0 32px;
+      gap: 0 16px;
     }
     &__cardItem {
-      padding: 24px;
+      padding: 24px 18px 28px;
       border-radius: 8px;
     }
 

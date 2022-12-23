@@ -331,8 +331,14 @@
     padding-bottom: 32px;
   }
   & .l-L07 {
-    padding: 24px 16px 16px;
     margin-bottom: 48px;
+    & .b-boxFlame__shift {
+      padding: 24px 16px 16px;
+      margin-right: 16px;
+    }
+    & .b-differenceDiagram__subText {
+      margin: 8px 8px 0;
+    }
   }
   & .l-L08 {
     & .b-difference__subText {
@@ -386,6 +392,9 @@
     }
     & .l-L07 {
       padding: 32px;
+      & .b-differenceDiagram__subText {
+        margin: 8px 16px 8px;
+      }
     }
     & .l-L08 {
       & .b-difference__subText {
@@ -574,6 +583,10 @@
   & .l-L13 {
     padding-bottom: 32px;
   }
+  & .l-L14 .b-boxFlame__shift--pink,
+  .l-L14 .b-boxFlame__shift--purple{
+    margin-right: 16px;
+  }
 }
 
 @include mq(l) {
@@ -619,7 +632,7 @@
       width: 100%;
       padding: 24px 16px 16px 56px;
       & .b-faqContents__boxTitle {
-        margin-bottom: 24px;
+        margin-bottom: 12px;
       }
     }
   }

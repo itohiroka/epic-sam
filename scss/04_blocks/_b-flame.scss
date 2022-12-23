@@ -25,7 +25,7 @@
 .b-guidance {
   position: relative;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   gap: 0 4%;
   background-color: $whiteColor;
@@ -55,7 +55,15 @@
     }
   }
 
+  &--service {
+    & .b-guidance__title{
+      margin: 0 auto;
+    }
+  }
   &--reason {
+    & .b-guidance__title{
+      margin-left: 8px;
+    }
     & .b-reasonGuidance__title {
       margin: auto 0;
     }
@@ -178,6 +186,11 @@
           width: 160px;
           height: 180px;
         }
+      }
+      & .b-guidance__title{
+        margin: 0 auto;
+        vertical-align: middle;
+        display: contents;
       }
     }
 
