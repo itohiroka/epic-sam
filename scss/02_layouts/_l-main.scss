@@ -336,6 +336,9 @@
       padding: 24px 16px 16px;
       margin-right: 16px;
     }
+    & .b-differenceDiagram__subText {
+      margin: 8px 8px 0;
+    }
   }
   & .l-L08 {
     & .b-difference__subText {
@@ -389,6 +392,9 @@
     }
     & .l-L07 {
       padding: 32px;
+      & .b-differenceDiagram__subText {
+        margin: 8px 16px 8px;
+      }
     }
     & .l-L08 {
       & .b-difference__subText {
