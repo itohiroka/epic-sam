@@ -63,3 +63,12 @@ $("#g-nav a").click(function () {
   $(".circle-bg").removeClass("circleactive"); //丸背景のcircleactiveクラスを除去
   $("#headerLogo").removeClass("active");
 });
+
+$(document).on("click", 'a[href*="#"]', function () {
+  let time = 400;
+  let target = $(this.hash);
+  if (!target.length) return;
+  let targetY = target.offset().top;
+  $("html,body").animate({ scrollTop: targetY }, time, "swing");
+  return false;
+});
