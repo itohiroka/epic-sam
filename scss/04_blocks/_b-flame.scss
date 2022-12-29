@@ -56,12 +56,12 @@
   }
 
   &--service {
-    & .b-guidance__title{
+    & .b-guidance__title {
       margin: 0 auto;
     }
   }
   &--reason {
-    & .b-guidance__title{
+    & .b-guidance__title {
       margin-left: 8px;
     }
     & .b-reasonGuidance__title {
@@ -80,7 +80,6 @@
       text-align: center;
     }
   }
-
 }
 
 .b-aboutContents {
@@ -193,7 +192,7 @@
           height: 180px;
         }
       }
-      & .b-guidance__title{
+      & .b-guidance__title {
         margin: 0 auto;
         vertical-align: middle;
         display: contents;
@@ -206,6 +205,9 @@
       & .b-guidance__icon {
         width: 100px;
         margin-bottom: 24px;
+      }
+      & .b-flowContents__title {
+        width: auto;
       }
     }
   }

@@ -420,6 +420,7 @@
     }
     & .l-L07 {
       padding: 32px;
+      margin-bottom: 0;
       & .b-differenceDiagram__subText {
         margin: 8px 16px 8px;
       }
@@ -691,16 +692,18 @@
     position: relative;
     background-color: $messageBgColor;
     overflow: hidden;
+  }
+  & .l-S03 {
     &::before {
       content: "SLashNext";
-      @include font-size(60);
-      line-height: 1;
+      font-size: clamp(60px, 16vw, 110px);
+      line-height: 0.8;
       color: rgba(255, 255, 255, 0.7);
       text-align: center;
       position: absolute;
       left: 0;
       right: 0;
-      bottom: -10px;
+      bottom: -2px;
       margin: 0 auto;
     }
   }
@@ -715,10 +718,10 @@
 
 @include mq(l) {
   .s-message {
-    & .l-S02 {
+    & .l-S03 {
       &::before {
-        @include font-size(188);
-        bottom: -30px;
+        font-size: clamp(60px, 15.6vw, 188px);
+        bottom: -2px;
       }
     }
     & .l-L01 {

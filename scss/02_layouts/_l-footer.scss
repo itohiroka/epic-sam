@@ -27,6 +27,7 @@
     &__wrapper {
       display: flex;
       align-items: center;
+      justify-content: center;
       padding: 16px 0;
       border-bottom: 1px solid $footerCompanyLineColor;
     }
@@ -35,7 +36,7 @@
       padding-left: 24px;
     }
     &__text {
-      width: 80%;
+      width: 200px;
       & .ashizawa {
         padding-bottom: 4px;
       }

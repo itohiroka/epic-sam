@@ -376,9 +376,11 @@
   .b-serviceGuidance {
     &__mainTitle {
       @include font-size(28);
+      font-size: clamp(25px, 2.3vw, 28px);
     }
     &__subTitle {
       @include font-size(20);
+      font-size: clamp(17px, 1.6vw, 20px);
     }
   }
   .b-serviceContents {
@@ -423,7 +425,6 @@
       @include font-size(18);
     }
   }
-  
 
   /*
   reason

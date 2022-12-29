@@ -218,7 +218,7 @@ Layout
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .l-S03 {
     max-width: 1200px;
   }
@@ -377,7 +377,7 @@ Layout
   padding-bottom: 24px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .s-about .l-L01,
 .s-service .l-L01,
 .s-reason .l-L01,
@@ -472,7 +472,7 @@ Layout
   height: auto;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .s-about .l-L04 {
     padding: 56px 0;
   }
@@ -588,7 +588,7 @@ Layout
   gap: 16px 0;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .s-service .l-L04 {
     padding: 104px 0 64px 0;
   }
@@ -759,7 +759,7 @@ Layout
     height: 90px;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .s-difference .l-S03 {
     padding: 104px 0;
   }
@@ -785,6 +785,7 @@ Layout
   }
   .s-difference .l-L07 {
     padding: 32px;
+    margin-bottom: 0;
   }
   .s-difference .l-L07 .b-differenceDiagram__subText {
     margin: 8px 16px 8px;
@@ -850,7 +851,7 @@ Layout
   margin: 16px 0 32px 40px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .s-reason .l-L04 {
     padding: 104px 0 64px 0;
   }
@@ -933,7 +934,7 @@ Layout
   background-color: #fff;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .s-flow .l-S02 {
     padding-bottom: 104px;
   }
@@ -1008,7 +1009,7 @@ Layout
   margin-right: 16px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .s-creator .l-S02 {
     padding-bottom: 104px;
   }
@@ -1064,7 +1065,7 @@ Layout
   margin-bottom: 12px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .s-faq .l-S03 {
     padding-bottom: 104px;
   }
@@ -1087,16 +1088,16 @@ Layout
   background-color: #edf2f5;
   overflow: hidden;
 }
-.s-message .l-S02::before {
+.s-message .l-S03::before {
   content: "SLashNext";
-  font-size: 3.75rem;
-  line-height: 1;
+  font-size: clamp(60px, 16vw, 110px);
+  line-height: 0.8;
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -10px;
+  bottom: -2px;
   margin: 0 auto;
 }
 .s-message .l-L01 {
@@ -1107,10 +1108,10 @@ Layout
   padding-bottom: 32px;
 }
 
-@media screen and (min-width: 1000px) {
-  .s-message .l-S02::before {
-    font-size: 11.75rem;
-    bottom: -30px;
+@media screen and (min-width: 1100px) {
+  .s-message .l-S03::before {
+    font-size: clamp(60px, 15.6vw, 188px);
+    bottom: -2px;
   }
   .s-message .l-L01 {
     padding: 104px 0 120px 0;
@@ -1148,6 +1149,9 @@ Layout
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 16px 0;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -1156,7 +1160,7 @@ Layout
   padding-left: 24px;
 }
 .footer .b-footerCompany__text {
-  width: 80%;
+  width: 200px;
 }
 .footer .b-footerCompany__text .ashizawa {
   padding-bottom: 4px;
@@ -1216,7 +1220,7 @@ Layout
     height: auto;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .footer .l-S03 {
     padding: 104px 0;
   }
@@ -1528,20 +1532,21 @@ hamburger
 #g-nav-list {
   display: none; /*はじめは表示なし*/
   position: absolute;
-  top: calc(50% - 56px);
+  top: 0;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 #g-nav .nav-logo {
   opacity: 0;
   position: absolute;
   bottom: 56px;
+  bottom: clamp(32px, 5vh, 56px);
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  height: 40px;
+  max-width: 368px;
 }
 
 .g-nav-img {
@@ -1568,6 +1573,7 @@ hamburger
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  height: 100%;
 }
 
 /*ナビゲーション*/
@@ -2018,7 +2024,7 @@ Block
 /*
   @media screen and (min-width: 960px)
 ----------------------------------------------- */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .b-heading__title {
     font-size: 2.8125rem;
     text-align: left;
@@ -2072,9 +2078,11 @@ Block
   ----------- */
   .b-serviceGuidance__mainTitle {
     font-size: 1.75rem;
+    font-size: clamp(25px, 2.3vw, 28px);
   }
   .b-serviceGuidance__subTitle {
     font-size: 1.25rem;
+    font-size: clamp(17px, 1.6vw, 20px);
   }
   .b-serviceContents__number {
     font-size: 13.75rem;
@@ -2372,7 +2380,7 @@ Block
           box-shadow: 16px 16px 0 #7070d1;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .b-guidance__number.flame {
     width: 100px;
     height: 100px;
@@ -2426,6 +2434,9 @@ Block
   .b-guidance--flow .b-guidance__icon {
     width: 100px;
     margin-bottom: 24px;
+  }
+  .b-guidance--flow .b-flowContents__title {
+    width: auto;
   }
   .b-aboutContents__box {
     border-radius: 16px;
@@ -2547,7 +2558,7 @@ Block
   background-size: contain;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .b-heading__title br {
     display: none;
   }
@@ -2780,7 +2791,7 @@ Block
   padding-top: 48px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .b-serviceContents__advantage {
     padding: 32px 40px;
   }
@@ -2936,7 +2947,7 @@ Block
   background-size: contain;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .b-reasonContents__boxText {
     padding-left: 36px;
   }
@@ -3109,7 +3120,7 @@ Block
   padding-bottom: 8px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .m-creatorSlash .b-creatorContents__link,
 .m-creatorCranks .b-creatorContents__link {
     margin: 0 32px 0 24px;
@@ -3196,7 +3207,7 @@ Block
   z-index: 1;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .b-faqContents__boxTitle::before, .b-faqContents__boxTitle::after {
     top: 0;
     left: -40px;
@@ -3242,7 +3253,7 @@ Block
   z-index: -1;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .s-about .l-L04 {
     z-index: 2;
   }
@@ -3304,7 +3315,7 @@ Block
           transform: rotate(-5deg);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .s-service .l-L07::before, .s-service .l-L10::before, .s-service .l-L13::before {
     width: 930px;
     height: 930px;
@@ -3363,7 +3374,7 @@ Block
           transform: rotate(11deg);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .s-reason .l-L07::before {
     width: 700px;
     height: 700px;
@@ -3406,7 +3417,7 @@ Block
   z-index: -2;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .s-flow .l-L01::before {
     top: 130px;
     left: -210px;
@@ -3444,7 +3455,7 @@ Block
           transform: rotate(20deg);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .s-faq .l-L01::before, .s-faq .l-L01::after {
     width: 940px;
     height: 940px;
@@ -3730,7 +3741,7 @@ b-animation
   max-width: 360px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   @-webkit-keyframes anime_parts02 {
     0% {
       -webkit-transform: translate(0px, 0px);

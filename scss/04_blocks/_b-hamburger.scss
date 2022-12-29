@@ -206,18 +206,19 @@ hamburger
 #g-nav-list {
   display: none; /*はじめは表示なし*/
   position: absolute;
-  top: calc(50% - 56px);
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 }
 
 #g-nav .nav-logo {
   opacity: 0;
   position: absolute;
   bottom: 56px;
+  bottom: clamp(32px, 5vh, 56px);
   left: 50%;
   transform: translateX(-50%);
-  height: 40px;
+  max-width: 368px;
 }
 
 .g-nav-img {
@@ -235,6 +236,7 @@ hamburger
   align-items: center;
   flex-direction: column;
   width: 100%;
+  height: 100%;
 }
 
 /*ナビゲーション*/
@@ -273,7 +275,7 @@ hamburger
 }
 
 #g-nav li a {
-  color: #fff;
+  color: $whiteColor;
   display: block;
   font-weight: bold;
   font-size: 22px;
@@ -293,7 +295,7 @@ hamburger
   cursor: pointer;
   width: 32px;
   height: 32px;
-  background-color: #242422;
+  background-color: $textColor;
   border-radius: 50%;
 }
 
@@ -307,7 +309,7 @@ hamburger
 }
 
 .openbtn.active {
-  background-color: #fff;
+  background-color: $whiteColor;
   transition: all 0.4s;
 }
 
@@ -319,12 +321,12 @@ hamburger
   left: 14px;
   height: 2px;
   border-radius: 2px;
-  background-color: #fff;
+  background-color: $whiteColor;
   width: 45%;
 }
 
 .active span {
-  background-color: #242422;
+  background-color: $textColor;
 }
 
 .openbtn span:nth-of-type(1) {
@@ -375,7 +377,7 @@ hamburger
   }
 
   #g-nav li a {
-    color: #242422;
+    color: $textColor;
     font-size: 18px;
   }
 
